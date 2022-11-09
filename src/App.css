@@ -1,0 +1,29 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bigs{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+.smalls{
+  display: none;
+}
+@media screen and (max-width:780px){
+ .bigs{
+  display: none;
+ }
+ .smalls{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+ }
+}
+.mitem:hover{
+   background-color: antiquewhite;
+}
+.lgb:hover{
+    color: black;
+}
