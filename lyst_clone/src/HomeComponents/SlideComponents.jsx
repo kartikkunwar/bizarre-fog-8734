@@ -88,6 +88,22 @@ const SlideComponents = () => {
       ))}
         </Slider>     
      </div>
+     <div className='App-details-2'>
+       <h1>BREAKOUT BRANDS</h1>
+        <Slider {...settings}>
+        {breakoutBrands.map((item)=>(     
+        <div className='card'>
+          <div className='card-bottom'>
+            <h1>{item.title}</h1>
+         </div>
+         <div className='card-top'>
+            <img src={item.image} alt={item.title} style={{height:"400px"}}/>
+         </div>
+         
+        </div>
+      ))}
+        </Slider>     
+     </div>
      </div> 
   )
 }
