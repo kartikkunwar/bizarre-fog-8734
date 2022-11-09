@@ -1,0 +1,28 @@
+{
+  "product": [
+    {
+      "title": "dsfdsfdgdfgfdg",
+      "short": "dsfds",
+      "category": "Shorts",
+      "price": "10",
+      "discount": "5",
+      "id": 1
+    },
+    {
+      "title": "fdsfds",
+      "short": "dsfdsf",
+      "category": "Coats",
+      "price": "5",
+      "discount": "5",
+      "id": 2
+    },
+    {
+      "title": "fdsfds",
+      "short": "dsfdsf",
+      "category": "Coats",
+      "price": "5",
+      "discount": "500",
+      "id": 3
+    }
+  ]
+}
