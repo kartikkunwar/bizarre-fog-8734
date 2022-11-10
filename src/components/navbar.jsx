@@ -25,7 +25,7 @@ export const Navbar=()=>{
      }
      
     return[
-        <Box height="80px"  justifyContent="space-between" alignItems='center' bgColor='black' color='white' className="bigs" >
+        <Box height="80px"  justifyContent="space-between" alignItems='center' bgColor='black' color='white' className="bigs" zIndex='3'>
             <Box height="100%" width='10%' >
               <Link><Image src="ONE STOP.png" height="100%" bgColor='none'/></Link>
             </Box>
@@ -52,7 +52,7 @@ export const Navbar=()=>{
                 </Menu>
             </Box>
         </Box>,
-        <Box height="80px"   justifyContent="space-between" alignItems='center' bgColor='black'  className="smalls">
+        <Box height="80px"   justifyContent="space-between" alignItems='center' bgColor='black'  className="smalls" zIndex='3'>
             <Box>
                 <Menu>
                     <MenuButton as={IconButton} aria-label='Options' bgColor='gray.300' icon={<HamburgerIcon />} variant='outline'/>
