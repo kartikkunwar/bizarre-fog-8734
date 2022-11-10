@@ -46,7 +46,7 @@ export const SearchResults=({query,setQuery})=>{
     }
 
    return(
-    showdrop&&<Box   border='1px solid black' w='50%' margin='auto' ml='26%' mt='60px' pt='20px' position='fixed' bgColor='white' zIndex='3'>
+    showdrop&&<Box   border='1px solid black' w={{base:'50%',md:'50%',lg:'50%'}} margin='auto' ml={{base:'0',md:'26%',lg:'26%'}} mt={{base:'195px',md:'60px',lg:'60px'}} pt='20px' position='fixed' bgColor='white' zIndex='3'>
         {
             suggestion.map((el,ind)=>{
                 return <Box key={ind}><Box p='15px'>{el}</Box><Divider orientation='horizontal' /></Box>

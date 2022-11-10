@@ -47,7 +47,7 @@ export const ShowTabwomen=({setShowdownwomen})=>{
                 </HStack>
            </Box>
            <Box border='1px solid black' display='flex' >
-                <Box width='10%' display='flex' p="20px">
+                <Box width={{base:'30%',md:'15%',lg:'15%'}} display='flex' p="20px">
                     {
                         clothing&&<VStack  spacing={4}>
                         <Link><Text>All Clothing</Text></Link>
