@@ -1,6 +1,28 @@
 *{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* .App {
+  text-align: center;
+} */
+
+*{
+  margin:0%
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bigs{
   width: 100%;
   display: flex;
@@ -27,3 +49,4 @@
 .lgb:hover{
     color: black;
 }
+
