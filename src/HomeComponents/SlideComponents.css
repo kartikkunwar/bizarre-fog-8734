@@ -19,6 +19,7 @@ body{
     /* border:1px solid black; */
     border-radius: 10px; 
     height:500px;
+    cursor: pointer;
     /* color:#fff;  */
 }
 

@@ -1,16 +1,139 @@
 
 
-.homepage-main{
-    width: 100%;
-    justify-content: center;
-}
+
 .okati{
- width: 100%;
- align-items: center;
- margin-left: 80px;
+ 
  cursor: pointer;
+} 
+
+
+.product-types{
+     padding: 70px;
+    /* width: 80%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-area: auto;
+    /* text-align: center; */
+    grid-gap:40px;
+    margin-top:50PX;
+    /* margin-left: 100px; */
+}
+.types-1{
+    background:aqua;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s ;
+}
+.types-1:hover{
+    background-color: rgb(166, 200, 242);
+}
+.types-2{
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s ;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.types-2:hover{
+    background-color: rgb(0, 204, 255);
+}
+.types-1 h1{
+    font-size: 70px;
+}
+.types-1 h2{
+   font-size: 30px;
+}
+.types-1 p{
+    font-size: 18px;
+}
+.types-2 h1{
+    font-size: 40px;
+}
+.types-2 p{
+    margin-top: 20px;
+    padding:5px ;
+    font-size: 25px;
+    width: 150px;
+    border: 1px solid rgb(22, 20, 20);
+    text-align: center;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
+.most-wanted > h1{
+    font-size: 70px;
+    text-align: center;
+    padding: 50px;
+}
 
+.most-wanted-1{
+   margin: auto;
+    padding: 50px;
+    width: 80%;
+    /* height: 200px; */
+    overflow-x: scroll;
+    padding: 2%;
+    border-radius: 10px;
+  background-color: darkgrey;
 
+}
+.most-wanted-1:hover{
+    background: rgb(191, 247, 249);
+}
+.most-wanted-2{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 50px;
+    width:max-content;
+}
+.most-wanted-2 h1{
+    font-size: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+}
+.most-wanted-2  h1:hover{
+    color:blueviolet;
+}
 
+.product-types{
+    margin: auto;
+    padding: 50px;
+    width: 80%;
+    /* height: 200px; */
+    overflow-x: scroll;
+    padding: 2%;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 60px;
+  background-color: darkgrey;  
+}
+.product-types-1{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 50px;
+    width:max-content;
+    /* margin-top: 60px; */
+}
+.product-types-2{
+    padding: 20px;
+    border: 1px solid;
+}
+.product-types-2 h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.product-types-2 p{
+    font-size: 18px;
+    cursor: pointer;
+}

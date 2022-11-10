@@ -178,17 +178,17 @@ export const lystSeller=[
     },
     {
      id:5,
-     title:"A BATHING APE JACKETS",
-     image:"https://cdna.lystit.com/cms/a_bathing_ape_jacket_c40f13e02f.jpg",
+     title:"MAISON MIHARA YASUHIRO SNEAKERS",
+     image:"https://cdna.lystit.com/cms/maison_mihara_shoes_4f566934fb.jpg",
     },
     {
      id:6,
-     title:"JOIN WAS BEACHWEAR AND SWIMMER AND SWIMMER OUTFITS",
-     image:"https://cdna.lystit.com/cms/johnny_was_beachwear_812a36ae2c.jpg",
+     title:"CHIMI SUNGLASESES",
+     image:"https://cdna.lystit.com/cms/chimi_sunglasses_1629b146e4.jpg",
     },
     {
      id:7,
-     title:"CASABLANCA T_SHIRTS",
-     image:"https://cdna.lystit.com/cms/casablanca_shirt_b83fb98040.jpg",
+     title:"BONOBOS PANTS, SLACKS AND CHINOS",
+     image:"https://cdna.lystit.com/cms/bonobos_pants_ff66673693.jpg",
     },
   ]
