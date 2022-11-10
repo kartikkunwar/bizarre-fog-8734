@@ -9,6 +9,7 @@ const AddProduct = () => {
     const [title,setTitle]=useState("")
     const [short,setShort]=useState("")
     const [category,setcategory]=useState("")
+    const [gender,setgender]=useState("")
     const [price,setprice]=useState(0)
     const [discount,setdiscount]=useState(0)
 
@@ -16,6 +17,7 @@ const AddProduct = () => {
         let obj={
             title,
             short,
+            gender,
             category,
             price,
             discount
@@ -38,6 +40,10 @@ const AddProduct = () => {
                 <option value="Shirts">Shirts</option>
                 <option value="Shorts">Shorts</option>
                 <option value="Suits">Suits</option>
+            </select>
+            <select onChange={(e)=>setgender(e.target.value)}>
+                <option value="Men">Men</option>
+                <option value="Women">Women</option>
             </select>
             <input onChange={(e)=>setprice(e.target.value)} type="number" placeholder='price' />
             <input onChange={(e)=>setdiscount(e.target.value)} type="number" placeholder='Discount' />

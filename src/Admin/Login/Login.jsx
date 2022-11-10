@@ -24,8 +24,8 @@ const Login = () => {
 
     return (
         <>
-        <h1 className="text-center">Admin Login</h1>
-        <Form className='boss'>
+        {/* <h1 className="text-center">Admin Login</h1> */}
+        {/* <Form className='boss'>
             <Form.Group className="mb-3 p-2">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control value={email} onChange={(e)=>setEmail(e.target.value)} type="email" placeholder="Enter email" />
@@ -39,7 +39,7 @@ const Login = () => {
                     Submit
                 </Button>
             </div>
-        </Form>
+        </Form> */}
         </>
     );
 };
