@@ -57,13 +57,12 @@ export const Navbar=()=>{
                 <Menu>
                     <MenuButton as={IconButton} aria-label='Options' bgColor='gray.300' icon={<HamburgerIcon />} variant='outline'/>
                     <MenuList color='black'>
-                        <MenuItem className="mitem">Men</MenuItem>
-                        <MenuItem className="mitem">Women</MenuItem>
+                        <MenuItem className="mitem" onClick={setmen}>Men</MenuItem>
+                        <MenuItem className="mitem" onClick={setwomen}>Women</MenuItem>
                         <InputGroup>
                             <InputLeftElement pointerEvents='none' children={<SearchIcon color='black' />}/>
-                            <Input type='tel' placeholder='search items' />
+                            <Input type='tel' placeholder='search items' value={query} onChange={setquerychange}/>
                         </InputGroup>
-                        <MenuItem className="mitem">Attend a Workshop</MenuItem>
                     </MenuList>
                 </Menu>
             </Box>

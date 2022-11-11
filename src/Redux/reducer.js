@@ -3,7 +3,10 @@ import * as types from "./actionType"
 const initialState={
     product:[],
     isLoading:false,
-    isError:false
+    isError:false,
+    cartItem:[],
+    cartQty:0,
+    cartTotal:0
 }
 
 const reducer = (state=initialState,action) =>{
@@ -17,7 +20,7 @@ const reducer = (state=initialState,action) =>{
         case types.POST_SUCCESS_PRODUCT:
             return{
                 ...state,
-                product:payload,
+                product:[...payload],
                 isLoading:false
             }
         case types.POST_FAIL_PRODUCT:
@@ -26,6 +29,10 @@ const reducer = (state=initialState,action) =>{
                 isError:true,
                 isLoading:false
             }
+        case types.CART_SUCCESS:
+            return{
+                ...state,isError:false,isLoading:false,cartItem:[...state.cartItem,payload],cartQty:state.cartQty+1,cartTotal:state.cartTotal+Math.floor(Number(payload.price-(payload.price*(payload.discount/100))))
+            }    
         default:
             return state;
     }
