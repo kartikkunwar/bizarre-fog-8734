@@ -1,6 +1,7 @@
-import { Box, Button, Divider, HStack, StackDivider, Text, VStack } from "@chakra-ui/react"
+import { Box, Button, Divider, HStack, Image, StackDivider, Text, VStack } from "@chakra-ui/react"
 import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import axios from "axios"
 import React from "react"
 import { Link } from "react-router-dom"
 
@@ -11,7 +12,19 @@ export const ShowTab=({setShowdown})=>{
     const [clothing,setClothing]=React.useState(true)
     const [shoes,setShoes]=React.useState(false)
     const [bags,setBags]=React.useState(false)
-   
+    const [dt,setDt]=React.useState([])
+    const [showtabdata,setShowtabdata]=React.useState([])
+
+    const kartik=()=>{
+        return axios.get("http://localhost:8080/product") 
+    }
+
+    React.useEffect(()=>{
+        kartik()
+        .then((res)=>setDt(res.data))
+        .catch((err)=>console.log(err)) 
+    },[])
+    
 
     const handleclothing=()=>{
         setClothing(true);
@@ -36,26 +49,31 @@ export const ShowTab=({setShowdown})=>{
     const closeshowtab=()=>{
         setShowdown(false)
     }
+    const outdata=(e)=>{
+        const val=e.target.value
+        let con=dt.filter((el)=>{
+            return el.gender=="Men"&&el.category==val
+        }).map((el)=>el.imageList[0])
+        setShowtabdata(con)
+    }
+    
     return(
-        <Box  width="100%" border='1px solid black' position='fixed' top='80px' zIndex='2' bgColor='white'>
+        <Box  width="100%" border='1px solid black' position='fixed' top='80px' zIndex='2' bgColor='white' maxH='380px' overflow='auto'>
            <Box>
             <HStack spacing='24px'>
                 <Button onClick={handleclothing}>Clothing</Button>
-                <Button onClick={handleshoes}>Shoes</Button>
-                <Button onClick={handlebags}>Bags</Button>
                 <Link><Button onClick={handleall}>All Men</Button></Link>
                 </HStack>
            </Box>
            <Box border='1px solid black' display='flex' >
-                <Box width={{base:'30%',md:'15%',lg:'15%'}} display='flex' p="20px" >
+                <Box width={{base:'30%',md:'15%',lg:'15%'}} display='flex' p="20px">
                     {
                         clothing&&<VStack  spacing={4}>
-                        <Link><Text>All Clothing</Text></Link>
-                        <Link><Text>Shirt</Text></Link>
-                        <Link><Text>Beachwear</Text></Link>
-                        <Link><Text>Coats</Text></Link>
-                        <Link><Text>Jackets</Text></Link>
-                        <Link><Text>Shorts</Text></Link>
+                        <Button value="Shirts" onClick={outdata}>Shirt</Button>
+                        <Button value="Shorts" onClick={outdata}>Shorts</Button>
+                        <Button value="Coats" onClick={outdata}>Coats</Button>
+                        <Button value="Suits" onClick={outdata}>Suits</Button>
+                        <Button value="Beachwear" onClick={outdata}>Beachwear</Button>
                     </VStack>
                     }
                     {
@@ -79,11 +97,28 @@ export const ShowTab=({setShowdown})=>{
                 <Box h='100%' p={4} >
                     <Divider orientation='vertical'  h="250px" margin='auto'/>
                 </Box>
-                <Box position='absolute' right='20px' top='60px'>
+                <Box position='absolute' left='5px' top='50px'>
                     <FontAwesomeIcon icon={faXmarkCircle} color='black' cursor='pointer' onClick={closeshowtab} fontSize={30}></FontAwesomeIcon>
                 </Box>
-                <Box>
-
+                <Box className="checktab" pl={{base:"10px",md:'30px',lg:'100px'}}>
+                   {
+                    showtabdata.length&&showtabdata.map((el,ind)=>{
+                        return(
+                            <Box key={ind}>
+                                <Image src={el.input} w='100%' h='100%'/>
+                            </Box>
+                        )
+                    })
+                   }
+                    {
+                    !showtabdata.length&&dt.map((el,ind)=>{
+                        return(
+                            <Box key={ind}>
+                                <Image src={el.imageList[0].input} w='100%' h='100%'/>
+                            </Box>
+                        )
+                    })
+                   }
                 </Box>
            </Box>
         </Box>

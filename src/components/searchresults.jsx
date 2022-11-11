@@ -1,7 +1,9 @@
 import { Box, Divider } from "@chakra-ui/react"
 import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import axios from "axios"
 import React from "react"
+import { Link } from "react-router-dom"
 
 const data=[
     {
@@ -17,21 +19,33 @@ const data=[
         title:"shbe2"
     }
 ]
+
+
 export const SearchResults=({query,setQuery})=>{
     
     const [suggestion,setSuggestions]=React.useState([])
     const [showdrop,setShowdrop]=React.useState(false)
+    const [dt,setDt]=React.useState([])
+    const [act,setAct]=React.useState(0)
+
+    const kartik=()=>{
+        return axios.get("http://localhost:8080/product")
+        .then((res)=>setDt(res.data))
+        .catch((err)=>console.log(err))
+    }
 
     React.useEffect(()=>{
+        kartik()
+       
         if(query==""){
             setShowdrop(false)
             setSuggestions([])
         }else{
             setShowdrop(true)
             let lowertext=query.toLowerCase()
-            let newsugg=data.filter((el)=>{
+            let newsugg=dt.filter((el)=>{
                 return el.title.toLowerCase().indexOf(lowertext) !== -1?true:false;
-            }).map((el)=>el.title)
+            }).map((el)=>el)
             if(!newsugg.length){
                 setShowdrop(false)
             }else{
@@ -39,17 +53,19 @@ export const SearchResults=({query,setQuery})=>{
             }
         }
     },[query])
-
+    
     const closeshowtab=()=>{
       setShowdrop(false)
       setQuery("")
     }
 
+    
+
    return(
-    showdrop&&<Box   border='1px solid black' w={{base:'50%',md:'50%',lg:'50%'}} margin='auto' ml={{base:'0',md:'26%',lg:'26%'}} mt={{base:'195px',md:'60px',lg:'60px'}} pt='20px' position='fixed' bgColor='white' zIndex='3'>
+    showdrop&&<Box   border='1px solid black' w={{base:'50%',md:'50%',lg:'50%'}} margin='auto' ml={{base:'0',md:'26%',lg:'26%'}} mt={{base:'195px',md:'60px',lg:'60px'}} pt='20px' maxH='300px' overflow='auto' position='fixed' bgColor='white' zIndex='3' >
         {
             suggestion.map((el,ind)=>{
-                return <Box key={ind}><Box p='15px'>{el}</Box><Divider orientation='horizontal' /></Box>
+                return <Box key={ind}><Box p='15px' onMouseOver={()=>setAct(ind+1)}><Link to={`/product/${el.id}`}>{el.title}</Link></Box><Divider orientation='horizontal' /></Box>
             })
         }
         <Box position='absolute' right='10px' top='5px'>

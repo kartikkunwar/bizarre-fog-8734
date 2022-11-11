@@ -32,6 +32,12 @@
 .smalls{
   display: none;
 }
+.checktab{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: repeat(2,150px);
+  gap: 20px;
+}
 @media screen and (max-width:780px){
  .bigs{
   display: none;
@@ -42,6 +48,12 @@
   position: fixed;
   top: 0;
  }
+ .checktab{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,150px);
+  gap: 20px;
+ }
 }
 .mitem:hover{
    background-color: antiquewhite;
@@ -49,4 +61,21 @@
 .lgb:hover{
     color: black;
 }
+@media screen and (max-width:450px){
+  .checktab{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,150px);
+    gap: 20px;
+   }
+}
+@media screen and (max-width:300px){
+  .checktab{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,150px);
+    gap: 20px;
+   }
+}
+
 
