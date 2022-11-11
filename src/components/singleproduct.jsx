@@ -4,7 +4,9 @@ import React, { useEffect } from "react"
 import { useParams } from "react-router-dom"
 import {Navbar} from "./navbar"
 import {Footer} from "./footer"
-import { useSelector } from "react-redux"
+import { useSelector,useDispatch } from "react-redux"
+import Slider from "react-slick"
+import {addproductcart} from "../Redux/action"
 
 
 export const SingleProduct=()=>{
@@ -12,8 +14,16 @@ export const SingleProduct=()=>{
     const [bulk,setBulk]=React.useState([])
     const {id}=useParams()
     const [dis,setDis]=React.useState("")
+    const dispatch=useDispatch();
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
 
-    // const dat=useSelector((el)=>console.log(el.product))
+    const dat=useSelector((el)=>console.log(el))
 
     const kartik=()=>{
         return axios.get(`http://localhost:8080/product/${id}`) 
@@ -28,10 +38,12 @@ export const SingleProduct=()=>{
     useEffect(()=>{
         if(!dt.length){
             setBulk(dt.imageList)
-            setDis(Math.floor(dt.price-(dt.price*10/100)))
+            setDis(Math.floor(dt.price-(dt.price*dt.discount/100)))
         }
     })
-   
+    const cartdata=(data)=>{
+        dispatch(addproductcart(data))
+    }
     
     return[
         <Navbar/>,
@@ -47,23 +59,28 @@ export const SingleProduct=()=>{
                   }
                </Box>
                <Box width="70%" >
-                  {/* {
-                    bulk?.map((el)=>{
-                        return <Image src={el.input} h='95%' p='20px'/>
-                    })
-                  } */}
+                    <Slider {...settings}>
+                    {
+                        bulk?.map((el,ind)=>{
+                            return(
+                                <Box><Image src={el.input} key={ind} h='80%' w='100%'/></Box>
+                            )  
+                        })
+                    }
+                   </Slider>
                </Box>
             </Box>
-            <Box w={{base:'80%',md:'50%',lg:'55%'}}  display='flex' flexDirection='column' gap='20px' m={{base:'auto',md:'0',lg:'0'}}>
+            <Box w={{base:'80%',md:'50%',lg:'55%'}}  display='flex' flexDirection='column' gap='20px' m={{base:'auto',md:'0',lg:'0'}} pl='100px'>
                  <Box  mt='20px' lineHeight='50px'>
                     <Heading fontSize='25px'>One Stop</Heading>
                     <Text fontSize='25px'>{dt.title}</Text>
                  </Box><Divider orientation='horizontal'  margin='auto'/>
-                 <Box  lineHeight='50px'>
+                 <Box   width='25%' display='flex' justifyContent='space-between' alignItems='center'>
                     <Heading>${dis}</Heading>
-                    <Heading>${dt.price}</Heading>
-                    <Text>inclusive of all taxes</Text>
-                 </Box><Divider orientation='horizontal'  margin='auto'/>
+                    <Heading fontSize={20} textDecoration='line-through' color='teal'>${dt.price}</Heading>
+                 </Box><Box><Text>{dt.discount}% discount</Text></Box>
+                 <Divider orientation='horizontal'  margin='auto'/>
+                 <Text>inclusive of all taxes</Text>
                  <Box  lineHeight='50px'>
                     <Text>Select Size</Text>
                     <Button mr='20px'>S</Button>
@@ -71,8 +88,8 @@ export const SingleProduct=()=>{
                     <Button mr='20px'>L</Button>
                     <Button>XL</Button>
                  </Box><Divider orientation='horizontal'  margin='auto'/>
-                 <Box  display='flex' flexDirection='column' gap='30px'>
-                    <Button p='30px' w='60%' borderRadius='20px' bgColor='teal'>ADD TO CART</Button>
+                 <Box  display='flex' flexDirection='column' gap='30px' color='white'>
+                    <Button p='30px' w='60%' borderRadius='20px' bgColor='teal' onClick={()=>cartdata(dt)}>ADD TO CART</Button>
                     <Button p='30px' w='60%' borderRadius='20px' bgColor='teal'>ADD TO WISHLIST</Button>
                  </Box>
                

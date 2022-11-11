@@ -10,3 +10,9 @@ export const addProduct = (params) => (dispatch) => {
         return dispatch({type:types.POST_SUCCESS_PRODUCT})
     })
 }
+
+
+export const addproductcart=(data)=>(dispatch)=>{
+    
+    dispatch({type:types.CART_SUCCESS,payload:data})
+}

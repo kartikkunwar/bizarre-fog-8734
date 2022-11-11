@@ -102,7 +102,7 @@ export const ShowTab=({setShowdown})=>{
                 </Box>
                 <Box className="checktab" pl={{base:"10px",md:'30px',lg:'100px'}}>
                    {
-                    showtabdata.length&&showtabdata.map((el,ind)=>{
+                    showtabdata.length&&showtabdata?.map((el,ind)=>{
                         return(
                             <Box key={ind}>
                                 <Image src={el.input} w='100%' h='100%'/>
@@ -111,7 +111,7 @@ export const ShowTab=({setShowdown})=>{
                     })
                    }
                     {
-                    !showtabdata.length&&dt.map((el,ind)=>{
+                    !showtabdata.length&&dt?.map((el,ind)=>{
                         return(
                             <Box key={ind}>
                                 <Image src={el.imageList[0].input} w='100%' h='100%'/>
