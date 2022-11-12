@@ -1,0 +1,20 @@
+.product-list{
+    /* border:1px solid red; */
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    text-align: center;
+}
+
+.product-list div{
+    /* padding: 20px; */
+    margin-top: 10px;
+    cursor: pointer;
+   
+}
+.button-product{
+    margin-bottom: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;  
+}

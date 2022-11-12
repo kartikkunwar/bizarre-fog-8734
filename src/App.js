@@ -1,4 +1,5 @@
 import './App.css';
+
 import MainRoutes from './ProductPages/MainRoutes';
 // import HomePage from './HomeComponents/HomePage';
 // import { AllRoutes } from './Routes/allRoutes';
@@ -15,6 +16,7 @@ function App() {
      {/* <HomePage/> */}
      {/* <Footer/> */}
      <MainRoutes/>
+ 
     </div>
   );
 }

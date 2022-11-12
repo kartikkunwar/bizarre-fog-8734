@@ -7,7 +7,11 @@ import SlideComponents from './SlideComponents';
 
 
 
+
 const HomePage = () => {
+ 
+
+
   return (
     <Box width="100%">
       {/* <h1>Home Page</h1> */}

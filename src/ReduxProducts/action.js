@@ -9,7 +9,7 @@ const getProductRequest = ()=>{
 
 const getProductList = (queryParams) => (dispatch)=>{
   
-    console.log(queryParams);
+    // console.log(queryParams);
     dispatch(getProductRequest)
 
     return axios.get("http://localhost:8080/product",queryParams).then((res)=>{
