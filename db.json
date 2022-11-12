@@ -2801,5 +2801,13 @@
       "discount": "50",
       "id": 103
     }
+  ],
+  "sigin": [
+    {
+      "name": "juber",
+      "email": "juber@123",
+      "password": "7894",
+      "id": 1
+    }
   ]
 }

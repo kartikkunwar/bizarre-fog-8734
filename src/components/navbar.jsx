@@ -27,7 +27,7 @@ export const Navbar=()=>{
     return[
         <Box height="80px"  justifyContent="space-between" alignItems='center' bgColor='black' color='white' className="bigs" >
             <Box height="100%" width='10%' >
-              <Link><Image src="ONE STOP.png" height="100%" bgColor='none'/></Link>
+              <Link><Image src="ONE STOP.png" height="70%" mt='10px' ml='35px' bgColor='none'/></Link>
             </Box>
             <Box display='flex' width='10%' >
                 <Button mr='5px' bg='none' onClick={setwomen}>Women</Button ><Divider orientation='vertical' height='20px' margin='auto'/>

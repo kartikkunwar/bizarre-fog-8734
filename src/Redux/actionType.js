@@ -5,3 +5,14 @@ export const GET_FAIL_PRODUCT = "GET_FAIL_PRODUCT"
 export const POST_REQUEST_PRODUCT = "GET_REQUEST_PRODUCT"
 export const POST_SUCCESS_PRODUCT = "GET_SUCCESS_PRODUCT"
 export const POST_FAIL_PRODUCT = "GET_FAIL_PRODUCT"
+
+export const POST_REQUEST_SignUp = "GET_REQUEST_SignUp"
+export const POST_SUCCESS_SignUp = "GET_SUCCESS_SignUp"
+export const POST_FAIL_SignUp = "GET_FAIL_SignUp"
+
+
+export const POST_REQUEST_SignIn = "GET_REQUEST_SignIn"
+export const POST_SUCCESS_SignIn = "GET_SUCCESS_SignIn"
+export const POST_FAIL_SignIn = "GET_FAIL_SignIn"
+
+
