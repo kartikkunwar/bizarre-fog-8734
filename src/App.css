@@ -1,13 +1,14 @@
-*{
+/* *{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+} */
 /* .App {
   text-align: center;
 } */
 
-*{
+/* *{
   margin:0%
-}
+} */
+
 
  
 
@@ -49,4 +50,3 @@
 .lgb:hover{
     color: black;
 }
-
