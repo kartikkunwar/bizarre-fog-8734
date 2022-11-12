@@ -1,4 +1,4 @@
-import { Box, Divider } from "@chakra-ui/react"
+import { Box, Divider, Image } from "@chakra-ui/react"
 import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import axios from "axios"
@@ -62,10 +62,13 @@ export const SearchResults=({query,setQuery})=>{
     
 
    return(
-    showdrop&&<Box   border='1px solid black' w={{base:'50%',md:'50%',lg:'50%'}} margin='auto' ml={{base:'0',md:'26%',lg:'26%'}} mt={{base:'195px',md:'60px',lg:'60px'}} pt='20px' maxH='300px' overflow='auto' position='fixed' bgColor='white' zIndex='3' >
+    showdrop&&<Box   border='1px solid black' w={{base:'50%',md:'50%',lg:'50%'}} margin='auto' ml={{base:'0',md:'26%',lg:'26%'}} mt={{base:'195px',md:'60px',lg:'60px'}} pt='20px' maxH='300px' overflow='auto' position='fixed' top='0' bgColor='white' zIndex='3' >
         {
             suggestion.map((el,ind)=>{
-                return <Box key={ind}><Box p='15px' onMouseOver={()=>setAct(ind+1)}><Link to={`/product/${el.id}`}>{el.title}</Link></Box><Divider orientation='horizontal' /></Box>
+                return <Link to={`/product/${el.id}`}><Box key={ind} pl='15px' h="100px" display='flex' alignItems='center'>
+                    <Box w={{base:'40%',md:'40%',lg:'15%'}}  h='100%' pl='2%'><Image src={el.imageList[0].input} h='100%' w='80%'/></Box>
+                    <Box pl='10px'>{el.title}</Box>
+                    </Box><Divider orientation='horizontal' /></Link>
             })
         }
         <Box position='absolute' right='10px' top='5px'>

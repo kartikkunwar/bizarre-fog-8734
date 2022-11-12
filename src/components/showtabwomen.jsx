@@ -31,16 +31,6 @@ export const ShowTabwomen=({setShowdownwomen})=>{
         setShoes(false);
         setBags(false);
     }
-    const handleshoes=()=>{
-        setClothing(false);
-        setShoes(true);
-        setBags(false); 
-    }
-    const handlebags=()=>{
-        setClothing(false);
-        setShoes(false);
-        setBags(true);   
-    }
     const handleall=()=>{
         setClothing(false);
         setShoes(false);
@@ -110,7 +100,7 @@ export const ShowTabwomen=({setShowdownwomen})=>{
                         )
                     })
                    }
-                    {
+                    {/* {
                     !showtabdata.length&&dt.map((el,ind)=>{
                         return(
                             <Box key={ind}>
@@ -118,7 +108,7 @@ export const ShowTabwomen=({setShowdownwomen})=>{
                             </Box>
                         )
                     })
-                   }
+                   } */}
                 </Box>
            </Box>
         </Box>

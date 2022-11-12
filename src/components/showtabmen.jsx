@@ -31,16 +31,6 @@ export const ShowTab=({setShowdown})=>{
         setShoes(false);
         setBags(false);
     }
-    const handleshoes=()=>{
-        setClothing(false);
-        setShoes(true);
-        setBags(false); 
-    }
-    const handlebags=()=>{
-        setClothing(false);
-        setShoes(false);
-        setBags(true);   
-    }
     const handleall=()=>{
         setClothing(false);
         setShoes(false);
@@ -56,7 +46,7 @@ export const ShowTab=({setShowdown})=>{
         }).map((el)=>el.imageList[0])
         setShowtabdata(con)
     }
-    console.log(showtabdata)
+    
     return(
         <Box  width="100%" border='1px solid black' position='fixed' top='80px' zIndex='2' bgColor='white' maxH='380px' overflow='auto'>
            <Box>
@@ -105,12 +95,12 @@ export const ShowTab=({setShowdown})=>{
                     showtabdata.length&&showtabdata?.map((el,ind)=>{
                         return(
                             <Box key={ind}>
-                                <Link to="/"><Image src={el.input} w='100%' h='100%'/></Link>
+                                <Link to="/"><Image src={el.input} alt={el.title} w='100%' h='100%'/></Link>
                             </Box>
                         )
                     })
                    }
-                    {
+                    {/* {
                     !showtabdata.length&&dt?.map((el,ind)=>{
                         return(
                             <Box key={ind}>
@@ -118,7 +108,7 @@ export const ShowTab=({setShowdown})=>{
                             </Box>
                         )
                     })
-                   }
+                   } */}
                 </Box>
            </Box>
         </Box>
