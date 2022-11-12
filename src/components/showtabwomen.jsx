@@ -62,7 +62,7 @@ export const ShowTabwomen=({setShowdownwomen})=>{
            <Box>
             <HStack spacing='24px'>
                 <Button onClick={handleclothing}>Clothing</Button>
-                <Link><Button onClick={handleall}>All Women</Button></Link>
+                <Link to='/'><Button onClick={handleall}>All Women</Button></Link>
                 </HStack>
            </Box>
            <Box border='1px solid black' display='flex' >
@@ -105,7 +105,7 @@ export const ShowTabwomen=({setShowdownwomen})=>{
                     showtabdata.length&&showtabdata.map((el,ind)=>{
                         return(
                             <Box key={ind}>
-                                <Image src={el.input} w='100%' h='100%'/>
+                                <Link to="/"><Image src={el.input} w='100%' h='100%'/></Link>
                             </Box>
                         )
                     })

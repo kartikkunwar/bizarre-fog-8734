@@ -7,11 +7,14 @@ import React from "react"
 import { ShowTab } from "./showtabmen"
 import { ShowTabwomen } from "./showtabwomen"
 import { SearchResults } from "./searchresults"
+import { useSelector } from "react-redux"
 
 export const Navbar=()=>{
       const [showdown,setShowdown]=React.useState(false)
       const [showdownwomen,setShowdownwomen]=React.useState(false)
       const [query,setQuery]=React.useState("")
+
+      const qtydata=useSelector((el)=>el.cartQty)
       const setmen=()=>{
          setShowdown(true)
          setShowdownwomen(false)
@@ -27,7 +30,7 @@ export const Navbar=()=>{
     return[
         <Box height="80px"  justifyContent="space-between" alignItems='center' bgColor='black' color='white' className="bigs" zIndex='3'>
             <Box height="100%" width='10%' >
-              <Link><Image src="ONE STOP.png" height="100%" bgColor='none'/></Link>
+              <Link to='/'><Image src="ONE STOP.png" height="100%" bgColor='none'/></Link>
             </Box>
             <Box display='flex' width='10%' >
                 <Button mr='5px' bg='none' onClick={setwomen}>Women</Button ><Divider orientation='vertical' height='20px' margin='auto'/>
@@ -40,7 +43,7 @@ export const Navbar=()=>{
                 </InputGroup>
             </Box>
             <Box width='5%' ml="3%">
-                <span>1</span><FontAwesomeIcon icon={faCartArrowDown} color='white' fontSize={25}></FontAwesomeIcon>
+                <span>{qtydata}</span><Link to='/cart'><FontAwesomeIcon icon={faCartArrowDown} color='white' fontSize={25}></FontAwesomeIcon></Link>
             </Box>
             <Box width='15%'  textAlign='center'>
             <Menu >
@@ -73,7 +76,7 @@ export const Navbar=()=>{
                 <Menu>
                     <MenuButton><FontAwesomeIcon icon={faUser} color='white' fontSize={30}></FontAwesomeIcon></MenuButton>
                     <MenuList>
-                        <MenuItem className="mitem"><span>1</span><FontAwesomeIcon icon={faCartArrowDown} color='black' fontSize={25}></FontAwesomeIcon></MenuItem>
+                        <Link to='/cart'><MenuItem className="mitem"><span>{qtydata}</span><FontAwesomeIcon icon={faCartArrowDown} color='black' fontSize={25}></FontAwesomeIcon></MenuItem></Link>
                         <MenuItem className="mitem">Logout</MenuItem>
                         <MenuItem className="mitem">Settings</MenuItem>                                                
                     </MenuList>
