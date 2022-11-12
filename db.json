@@ -1,160 +1,6 @@
 {
   "product": [
     {
-      "title": "FAADDICTION",
-      "short": "Men's Shirt Casual Printed Halfsleeve",
-      "category": "Beachwear",
-      "imageList": [
-        {
-          "input": "https://m.media-amazon.com/images/I/81l6kwGgwdL._UY741_.jpg",
-          "input_rank": 1
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/81u5Gc1HDBL._UX679_.jpg",
-          "input_rank": 2
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/81u9XHi5yIL._UX679_.jpg",
-          "input_rank": 3
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/A1KDSZJJpLL._UX679_.jpg",
-          "input_rank": 4
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/61nzBCBaW5L._UX679_.jpg",
-          "input_rank": 5
-        }
-      ],
-      "gender": "",
-      "price": "499",
-      "discount": "10",
-      "id": 1
-    },
-    {
-      "title": "VLAM",
-      "short": "Mens Regular Fit Surfing Wave Beachwear Oversize Unisex Tshirt",
-      "category": "Beachwear",
-      "imageList": [
-        {
-          "input": "https://m.media-amazon.com/images/I/71N1ogYIj-L._UY741_.jpg",
-          "input_rank": 1
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/71kKIVHLByL._UX679_.jpg",
-          "input_rank": 2
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/71MkEmpPf6L._UY741_.jpg",
-          "input_rank": 3
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/41Htx5fs5DL._UY741_.jpg",
-          "input_rank": 4
-        }
-      ],
-      "gender": "",
-      "price": "599",
-      "discount": "15",
-      "id": 2
-    },
-    {
-      "title": "Lecherous Stylish Boxer",
-      "short": "Shorts for Men - Soft Cool Latest Print Cotton Boxers Sizes S M L XL XXL for Casual, Beachwear, Trendy Comfort wear Fitting.",
-      "category": "Beachwear",
-      "imageList": [
-        {
-          "input": "https://m.media-amazon.com/images/I/31qMfqgROgL.jpg",
-          "input_rank": 1
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/51PPkSKP0ZL._UY741_.jpg",
-          "input_rank": 2
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/51Twngjq+iL._UY741_.jpg",
-          "input_rank": 3
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/618Px0MPNgL._UY741_.jpg",
-          "input_rank": 4
-        }
-      ],
-      "gender": "",
-      "price": "299",
-      "discount": "15",
-      "id": 3
-    },
-    {
-      "title": "Vedu Creation Stylish Boxer",
-      "short": "Shorts for Men - Soft Cool Latest Print Cotton Boxers Sizes S M L XL for Casual, Beachwear, Trendy Comfort wear Fitting.",
-      "category": "Beachwear",
-      "imageList": [
-        {
-          "input": "https://m.media-amazon.com/images/I/51t0dhFcM7L.jpg",
-          "input_rank": 1
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/61xIYif0AuL._UX679_.jpg",
-          "input_rank": 2
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/71RWRVDS8jL._UX679_.jpg",
-          "input_rank": 3
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/61SEgM66hEL._UY741_.jpg",
-          "input_rank": 4
-        }
-      ],
-      "gender": "",
-      "price": "495",
-      "discount": "10",
-      "id": 4
-    },
-    {
-      "title": "Peppyzone Men's",
-      "short": "Camouflage/Military Printed Cotton Shorts",
-      "category": "Beachwear",
-      "imageList": [
-        {
-          "input": "https://m.media-amazon.com/images/I/61pO1ISIYUL._UY606_.jpg",
-          "input_rank": 1
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/61HPrZwXIRL._UY606_.jpg",
-          "input_rank": 2
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/61w3j09HSwL._UY606_.jpg",
-          "input_rank": 3
-        }
-      ],
-      "gender": "",
-      "price": "599",
-      "discount": "20",
-      "id": 5
-    },
-    {
-      "title": "PRIMEKDR Men's Polycotton",
-      "short": "Solid Printed Stitched Half Sleeve Casual Shirts Summer, Vacation & Beachwear Shirts AP001",
-      "category": "Beachwear",
-      "imageList": [
-        {
-          "input": "https://m.media-amazon.com/images/I/41QGh9u2-4L.jpg",
-          "input_rank": 1
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/51UyNBJiA3L._UY741_.jpg",
-          "input_rank": 2
-        }
-      ],
-      "gender": "",
-      "price": "599",
-      "discount": "10",
-      "id": 6
-    },
-    {
       "title": "THE ARCHER",
       "short": "Men's Cotton Multicolour Printed Vest",
       "category": "Beachwear",
@@ -170,19 +16,11 @@
         {
           "input": "https://m.media-amazon.com/images/I/81shkc3ZBjL._UY741_.jpg",
           "input_rank": 3
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/71liRg2SzCL._UY741_.jpg",
-          "input_rank": 4
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/71Y7fD8MtyL._UY741_.jpg",
-          "input_rank": 5
         }
       ],
-      "gender": "",
-      "price": "499",
-      "discount": "15",
+      "gender": "Men",
+      "price": "599",
+      "discount": "20",
       "id": 7
     },
     {
@@ -207,7 +45,7 @@
           "input_rank": 4
         }
       ],
-      "gender": "",
+      "gender": "Men",
       "price": "1299",
       "discount": "10",
       "id": 8
@@ -230,7 +68,7 @@
           "input_rank": 3
         }
       ],
-      "gender": "",
+      "gender": "Men",
       "price": "499",
       "discount": "10",
       "id": 9
@@ -257,7 +95,7 @@
           "input_rank": 4
         }
       ],
-      "gender": "",
+      "gender": "Men",
       "price": "799",
       "discount": "20",
       "id": 10
@@ -319,44 +157,6 @@
       "price": "449",
       "discount": "10",
       "id": 12
-    },
-    {
-      "title": "THE UNDERWORLD.CO Tee+Short",
-      "short": "Lounge Wear For Girls and Women | Nightwear for Girls | Beachwear Dress for Girls | Nightdress for Girls |",
-      "category": "Beachwear",
-      "imageList": [
-        {
-          "input": "https://m.media-amazon.com/images/I/71UX7zZLNRL._UX679_.jpg",
-          "input_rank": 1
-        }
-      ],
-      "gender": "Women",
-      "price": "1450",
-      "discount": "30",
-      "id": 13
-    },
-    {
-      "title": "Fairro Comfortable Cotton Printed",
-      "short": "Unisex Lounge Boxer Shorts with Inside Exposed Waistband for Men's & Women's - Perfect Boxer for Summer Season (Pack of 1)",
-      "category": "Beachwear",
-      "imageList": [
-        {
-          "input": "https://m.media-amazon.com/images/I/514RCKYepOL._UY879_.jpg",
-          "input_rank": 1
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/51e43kKnw5L._UY741_.jpg",
-          "input_rank": 2
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/514RCKYepOL._UY741_.jpg",
-          "input_rank": 3
-        }
-      ],
-      "gender": "Women",
-      "price": "399",
-      "discount": "10",
-      "id": 14
     },
     {
       "title": "Beach Hat",
@@ -684,33 +484,6 @@
       "price": "999",
       "discount": "30",
       "id": 27
-    },
-    {
-      "title": "Allen Solly Men's Jacket",
-      "short": "Allen Solly Men's Jacket",
-      "category": "Coats",
-      "imageList": [
-        {
-          "input": "https://m.media-amazon.com/images/I/61zXxLhtF5L._UY741_.jpg",
-          "input_rank": 1
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/61xppc6J2QL._UY741_.jpg",
-          "input_rank": 2
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/51VFZEgVD8L._UY741_.jpg",
-          "input_rank": 3
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/51HH5AbCrtL._UY741_.jpg",
-          "input_rank": 4
-        }
-      ],
-      "gender": "Men",
-      "price": "1589",
-      "discount": "50",
-      "id": 28
     },
     {
       "title": "Red Tape Men's Solid Jacket",
@@ -1597,33 +1370,6 @@
       "price": "499",
       "discount": "20",
       "id": 62
-    },
-    {
-      "title": "Fabricorn Stylish",
-      "short": "Plain Green Long Sleeve Cotton Tshirt for Women (Green)",
-      "category": "Shirts",
-      "imageList": [
-        {
-          "input": "https://m.media-amazon.com/images/I/71obC3wAsFL._UY879_.jpg",
-          "input_rank": 1
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/61VsjgG8oYL._UY741_.jpg",
-          "input_rank": 2
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/714zspC5UCL._UY741_.jpg",
-          "input_rank": 3
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/71UWTu377wL._UY741_.jpg",
-          "input_rank": 4
-        }
-      ],
-      "gender": "Women",
-      "price": "429",
-      "discount": "10",
-      "id": 63
     },
     {
       "title": "U.S. POLO ASSN. Men's Regular Shorts",
