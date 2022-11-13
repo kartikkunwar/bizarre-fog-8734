@@ -52,7 +52,7 @@ export const ShowTab=({setShowdown})=>{
            <Box>
             <HStack spacing='24px'>
                 <Button onClick={handleclothing}>Clothing</Button>
-                <Link to='/'><Button onClick={handleall}>All Men</Button></Link>
+                <Link to='/product'><Button onClick={handleall}>All Men</Button></Link>
                 </HStack>
            </Box>
            <Box border='1px solid black' display='flex' >

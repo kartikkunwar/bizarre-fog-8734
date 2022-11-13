@@ -1,7 +1,7 @@
 import { Button } from '@chakra-ui/react';
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useLocation, useSearchParams } from 'react-router-dom';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { getProductList } from '../Redux/action';
 
 import "./UserProduct.css"
@@ -34,7 +34,7 @@ const UserProducts = () => {
     <>
       {productList.length > 0 && productList.map(product => {
         return (
-          <div key={product.id} className="product-list">
+         <Link to={`/product/${product.id}`}> <div key={product.id} className="product-list">
             <div> <h3>{product.title}</h3></div>
             <div>
               <img src={product.mainImage} alt={product.title} style={{ height: "300px", width: "100%" }} />
@@ -49,7 +49,7 @@ const UserProducts = () => {
             <div>
             <button className='button-product'>BUY NOW</button>
             </div>
-          </div>
+          </div></Link>
         )
       })}
     </>
