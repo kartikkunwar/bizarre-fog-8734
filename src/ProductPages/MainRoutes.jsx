@@ -12,6 +12,7 @@ import {Landing} from "../components/landing"
 import {SingleProduct} from "../components/singleproduct"
 import {Cart} from "../components/cart"
 import DeleteProduct from "../Admin/Products/DeleteProduct"
+import { NotFound } from '../components/PageNotFound'
 
 
 const MainRoutes = () => {
@@ -27,7 +28,7 @@ const MainRoutes = () => {
             <Route path='/editproduct' element={<EditProduct/>}/>
             <Route path='/updateproduct' element={<DeleteProduct/>}/>
             <Route path='/addproduct' element={<AddProduct/>}/>
-            <Route path="*" element={<h3>Page Not Found</h3>} />
+            <Route path="*" element={<NotFound/>} />
         </Routes>
     )
 }

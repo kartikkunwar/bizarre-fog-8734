@@ -42,8 +42,8 @@ export const Navbar=()=>{
                     <Input type='tel' placeholder='search items' value={query} onChange={setquerychange}/>
                 </InputGroup>
             </Box>
-            <Box width='5%' ml="3%">
-                <span>{qtydata}</span><Link to='/cart'><FontAwesomeIcon icon={faCartArrowDown} color='white' fontSize={25}></FontAwesomeIcon></Link>
+            <Box width='5%'  ml="3%" display='flex' alignItems='center'>
+                <Box bgColor='yellow' p='8px' color='black' borderRadius='50%'><span bgColor='yellow'>{qtydata}</span></Box><Link to='/cart'><FontAwesomeIcon icon={faCartArrowDown} color='white' fontSize={25}></FontAwesomeIcon></Link>
             </Box>
             <Box width='15%'  textAlign='center'>
             <Menu >
@@ -76,7 +76,7 @@ export const Navbar=()=>{
                 <Menu>
                     <MenuButton><FontAwesomeIcon icon={faUser} color='white' fontSize={30}></FontAwesomeIcon></MenuButton>
                     <MenuList>
-                        <Link to='/cart'><MenuItem className="mitem"><span>{qtydata}</span><FontAwesomeIcon icon={faCartArrowDown} color='black' fontSize={25}></FontAwesomeIcon></MenuItem></Link>
+                        <Link to='/cart'><MenuItem className="mitem" bgColor='lightyellow'><span>{qtydata}</span><FontAwesomeIcon icon={faCartArrowDown} color='black' fontSize={25}></FontAwesomeIcon></MenuItem></Link>
                         <MenuItem className="mitem">Logout</MenuItem>
                         <MenuItem className="mitem">Settings</MenuItem>                                                
                     </MenuList>
