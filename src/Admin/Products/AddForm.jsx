@@ -9,7 +9,7 @@ const AddForm = () => {
     const [title, setTitle] = useState("")
     const [short, setShort] = useState("")
     const [category, setcategory] = useState("")
-    const [gender, setgender] = useState("")
+    const [gender, setgender] = useState("Men")
     const [imageList, setInputList] = useState([
         {
             input: "",

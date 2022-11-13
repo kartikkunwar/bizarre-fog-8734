@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import { useDispatch , useSelector} from 'react-redux';
+import {getProduct} from "../Redux/action"
 
 const DisplayInformation = () => {
+
+    const dispatch = useDispatch()
+
+    useEffect(()=>{
+        dispatch(getProduct())
+    },[])
+
+    const data = useSelector(store=>store.product)
+    console.log(data);
+
     return (
         <div className="content-wrapper">
             {/* Content Header (Page header) */}
@@ -65,7 +78,7 @@ const DisplayInformation = () => {
                             {/* small box */}
                             <div className="small-box bg-danger">
                                 <div className="inner">
-                                    <h3>65</h3>
+                                    <h3>{data.length}</h3>
                                     <p>Products</p>
                                 </div>
                                 <div className="icon">
