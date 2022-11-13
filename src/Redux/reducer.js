@@ -1,9 +1,13 @@
 import * as types from "./actionType"
+import { getlocaldata,setlocaldata } from "../utils/localstoragedata"
 
 const initialState={
     product:[],
+    allProduct:[],
     isLoading:false,
-    isError:false
+    isError:false,
+    cartItem:getlocaldata("mcart")||[],
+    cartQty:getlocaldata("mquantity")||0,
 }
 
 const reducer = (state=initialState,action) =>{
@@ -17,7 +21,7 @@ const reducer = (state=initialState,action) =>{
         case types.POST_SUCCESS_PRODUCT:
             return{
                 ...state,
-                product:payload,
+                product:[...payload],
                 isLoading:false
             }
         case types.POST_FAIL_PRODUCT:
@@ -26,6 +30,7 @@ const reducer = (state=initialState,action) =>{
                 isError:true,
                 isLoading:false
             }
+
             case types.GET_PRODUCTS_REQUEST:
                 return{
                     ...state, 
@@ -46,6 +51,39 @@ const reducer = (state=initialState,action) =>{
                    isError:true
                 }
     
+
+        case types.GET_SUCCESS_ALLPRODUCT:
+            return {
+                ...state,
+                isError:false,
+                isLoading:false,
+                allProduct:payload
+            }  
+        case types.CART_SUCCESS:
+            const item=state.allProduct.find((el)=>el.id==payload.id)
+            const incart=state.cartItem.find((item)=>item.id==payload.id?true:false)
+            const addcart=incart?state.cartItem.map(item=>item.id==payload.id?{...item,qty:item.qty+1}:item):[...state.cartItem,{...item,qty:1}]
+            setlocaldata("mcart",addcart)
+            const incqty=incart?state.cartQty:state.cartQty+1
+            setlocaldata("mquantity",incqty)
+            return{
+                ...state,isError:false,isLoading:false,cartItem:addcart,cartQty:incqty
+            } 
+        case types.CART_REMOVE_SUCCESS:
+            const remite=state.cartItem.filter((el)=>el.id!==payload.id)
+            setlocaldata("mcart",remite)
+            const decqty=state.cartQty-1
+            setlocaldata("mquantity",decqty)
+            return{
+                ...state,cartItem:remite,cartQty:decqty
+            } 
+        case types.CART_ADJUST_SUCCESS:
+            const qtychng=state.cartItem.map((el)=>el.id==payload.item.id?{...el,qty:payload.qty}:el)
+            setlocaldata("mcart",qtychng)
+            return{
+                ...state,cartItem:qtychng
+            }
+
         default:
             return state;
     }
