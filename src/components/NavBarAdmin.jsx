@@ -9,7 +9,7 @@ const NavBarAdmin = () => {
                 <li className="nav-item">
                     <a className="nav-link" data-widget="pushmenu" href="#" role="button"><i className="fas fa-bars" /></a>
                 </li>
-                <Link to="/">
+                <Link to="/dashboard">
                     <li className="nav-item d-none d-sm-inline-block">
                         <a href="" className="nav-link">Home</a>
                     </li>

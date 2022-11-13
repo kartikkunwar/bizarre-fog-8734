@@ -43,7 +43,6 @@ const reducer = (state = initialState, action) => {
                 isLoading: false,
                 product: payload
             }
-
         case types.GET_PRODUCTS_FAILURE:
             return {
                 ...state,
@@ -133,6 +132,47 @@ const reducer = (state = initialState, action) => {
                 isLoading: false,
                 isError: true
             }
+
+            case types.POST_REQUEST_SignUp:
+                return{
+                    ...state,
+                    isLoading:true
+                }
+                case types.POST_SUCCESS_SignUp:
+                return{
+                    ...state,
+                    isLoading:false,
+                    sigin:[...payload]
+                    
+                }
+                case types.POST_FAIL_SignUp:
+                return{
+                    ...state,
+                    isLoading:false,
+                    isError:true
+                }
+                case types.POST_REQUEST_SignIn:
+                    return{
+                        ...state,
+                        isLoading:true
+                    }
+                    case types.POST_SUCCESS_SignIn:
+                    return{
+                        ...state,
+                        isLoading:false,
+                        sigin:[...payload]
+                        
+                    }
+                    case types.POST_FAIL_SignIn:
+                    return{
+                        ...state,
+                        isLoading:false,
+                        isError:true
+                    }
+    
+    
+    
+
 
   
         default:

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, Navigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -13,24 +14,27 @@ const Login = () => {
         }
         console.log(obj);
         if (obj.email === "admin@gmail.com" && obj.password === "admin") {
-            alert("correct")
+            alert("correct");
+            // <Link to="/dashboard" replace={true} />
         } else {
             alert("Wrong")
         }
     }
 
     return (
-        <div style={{margin:"auto",marginTop:"10%"}} className="login-box">
-            <div className="login-logo">
-                <a href="../../index2.html"><b>One</b>Stop</a>
-            </div>
+        <div style={{ margin: "auto", marginTop: "10%" }} className="login-box">
+            <Link to="/">
+                <div className="login-logo">
+                    <a href="#"><b>One</b>Stop</a>
+                </div>
+            </Link>
             {/* /.login-logo */}
             <div className="card">
                 <div className="card-body login-card-body">
                     <p className="login-box-msg">Sign in to start your session</p>
-                    <form>
+                    <div>
                         <div className="input-group mb-3">
-                            <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" className="form-control" placeholder="Email" />
+                            <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" className="form-control" placeholder="Email" />
                             <div className="input-group-append">
                                 <div className="input-group-text">
                                     <span className="fas fa-envelope" />
@@ -38,7 +42,7 @@ const Login = () => {
                             </div>
                         </div>
                         <div className="input-group mb-3">
-                            <input value={password} onChange={(e)=>setPassword(e.target.value)} type="password" className="form-control" placeholder="Password" />
+                            <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" className="form-control" placeholder="Password" />
                             <div className="input-group-append">
                                 <div className="input-group-text">
                                     <span className="fas fa-lock" />
@@ -47,12 +51,12 @@ const Login = () => {
                         </div>
                         <div className="row">
                             {/* /.col */}
-                            <div style={{margin:"auto"}} className="col-4">
+                            <div style={{ margin: "auto" }} className="col-4">
                                 <button onClick={handleclick} type="submit" className="btn btn-primary btn-block">Sign In</button>
                             </div>
                             {/* /.col */}
                         </div>
-                    </form>
+                    </div>
                     {/* /.social-auth-links */}
                     <p className="mb-1">
                         <a href="#">Back To Home</a>

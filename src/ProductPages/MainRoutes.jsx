@@ -14,7 +14,6 @@ import {Cart} from "../components/cart"
 import DeleteProduct from "../Admin/Products/DeleteProduct"
 import { NotFound } from '../components/PageNotFound'
 
-
 const MainRoutes = () => {
     return (
         <Routes>    

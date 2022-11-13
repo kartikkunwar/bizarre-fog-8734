@@ -34,3 +34,11 @@ export const GET_REQUEST_ALLPRODUCT = "GET_REQUEST_ALLPRODUCT"
 export const GET_SUCCESS_ALLPRODUCT = "GET_SUCCESS_ALLPRODUCT"
 export const GET_FAIL_ALLPRODUCT = "GET_FAIL_ALLPRODUCT"
 
+export const POST_REQUEST_SignUp = "GET_REQUEST_SignUp"
+export const POST_SUCCESS_SignUp = "GET_SUCCESS_SignUp"
+export const POST_FAIL_SignUp = "GET_FAIL_SignUp"
+
+
+export const POST_REQUEST_SignIn = "GET_REQUEST_SignIn"
+export const POST_SUCCESS_SignIn = "GET_SUCCESS_SignIn"
+export const POST_FAIL_SignIn = "GET_FAIL_SignIn"

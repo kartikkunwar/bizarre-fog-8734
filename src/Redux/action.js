@@ -83,3 +83,23 @@ export const getAllProduct=(dispatch)=>{
    .catch((err)=>console.log(err))
 
 }
+
+export const UserRegister = (params) => (dispatch) => {
+    dispatch({ type: types.POST_REQUEST_SignUp })
+    return axios.post("http://localhost:8080/sigin", params).then((res) => {
+         console.log(res);
+        return dispatch({type:types.POST_SUCCESS_SignUp,paylod:res.data})
+    }).catch((err) => {
+        return dispatch({type:types.POST_FAIL_SignUp})
+    })
+}
+
+export const UserSignIn = (params) => (dispatch) => {
+    dispatch({ type: types.POST_REQUEST_SignIn })
+    return axios.post("http://localhost:8080/sigin", params).then((res) => {
+         console.log(res);
+        return dispatch({type:types.POST_SUCCESS_SignIn,paylod:res.data})
+    }).catch((err) => {
+        return dispatch({type:types.POST_FAIL_SignIn})
+    })
+}
