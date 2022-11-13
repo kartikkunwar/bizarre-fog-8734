@@ -7,8 +7,8 @@ import { Provider } from 'react-redux';
 import { ChakraProvider } from '@chakra-ui/react';
 import {BrowserRouter} from "react-router-dom"
 
-// import { store } from './Redux/store';
-import { store } from './ReduxProducts/store';
+import { store } from './Redux/store';
+
 
 
 

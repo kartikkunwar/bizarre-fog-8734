@@ -1,10 +1,7 @@
 import './App.css';
 
 import MainRoutes from './ProductPages/MainRoutes';
-// import HomePage from './HomeComponents/HomePage';
-// import { AllRoutes } from './Routes/allRoutes';
-// import {Navbar} from "./components/navbar"
-// import {Footer} from "./components/footer"
+
 
 
 
@@ -12,8 +9,8 @@ import MainRoutes from './ProductPages/MainRoutes';
 function App() {
   return (
     <div className="App">
-    
- 
+
+      <MainRoutes />
     </div>
   );
 }
