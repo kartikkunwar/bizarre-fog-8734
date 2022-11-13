@@ -1,13 +1,13 @@
 import { Box, Button, Divider, Heading, Image, Text } from "@chakra-ui/react"
 import axios from "axios"
 import React, { useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { Navigate, useNavigate, useParams } from "react-router-dom"
 import {Navbar} from "./navbar"
 import {Footer} from "./footer"
 import { useSelector,useDispatch } from "react-redux"
 import Slider from "react-slick"
 import {addproductcart} from "../Redux/action"
-
+import {getAllProduct} from "../Redux/action"
 
 export const SingleProduct=()=>{
     const [dt,setDt]=React.useState([])
@@ -15,6 +15,7 @@ export const SingleProduct=()=>{
     const {id}=useParams()
     const [dis,setDis]=React.useState("")
     const dispatch=useDispatch();
+    // const navigate=useNavigate();
     const settings = {
         dots: false,
         infinite: true,
@@ -23,7 +24,6 @@ export const SingleProduct=()=>{
         slidesToScroll: 1
       };
 
-    const dat=useSelector((el)=>console.log(el))
 
     const kartik=()=>{
         return axios.get(`http://localhost:8080/product/${id}`) 
@@ -40,6 +40,10 @@ export const SingleProduct=()=>{
             setBulk(dt.imageList)
             setDis(Math.floor(dt.price-(dt.price*dt.discount/100)))
         }
+    })
+
+    useEffect(()=>{
+        dispatch(getAllProduct)
     })
     const cartdata=(data)=>{
         dispatch(addproductcart(data))
@@ -72,12 +76,12 @@ export const SingleProduct=()=>{
             </Box>
             <Box w={{base:'80%',md:'50%',lg:'55%'}}  display='flex' flexDirection='column' gap='20px' m={{base:'auto',md:'0',lg:'0'}} pl='100px'>
                  <Box  mt='20px' lineHeight='50px'>
-                    <Heading fontSize='25px'>One Stop</Heading>
-                    <Text fontSize='25px'>{dt.title}</Text>
+                    <Heading fontSize='25px' color='gray'>One Stop</Heading>
+                    <Text fontSize='25px' color='gray'>{dt.title}</Text>
                  </Box><Divider orientation='horizontal'  margin='auto'/>
-                 <Box   width='25%' display='flex' justifyContent='space-between' alignItems='center'>
-                    <Heading>${dis}</Heading>
-                    <Heading fontSize={20} textDecoration='line-through' color='teal'>${dt.price}</Heading>
+                 <Box   width='55%' display='flex' alignItems='center'>
+                    <Heading>₹ {dis}</Heading>
+                    <Heading fontSize={20} textDecoration='line-through' color='teal' ml='20px'>₹ {dt.price}</Heading>
                  </Box><Box><Text>{dt.discount}% discount</Text></Box>
                  <Divider orientation='horizontal'  margin='auto'/>
                  <Text>inclusive of all taxes</Text>

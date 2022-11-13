@@ -31,16 +31,6 @@ export const ShowTabwomen=({setShowdownwomen})=>{
         setShoes(false);
         setBags(false);
     }
-    const handleshoes=()=>{
-        setClothing(false);
-        setShoes(true);
-        setBags(false); 
-    }
-    const handlebags=()=>{
-        setClothing(false);
-        setShoes(false);
-        setBags(true);   
-    }
     const handleall=()=>{
         setClothing(false);
         setShoes(false);
@@ -62,7 +52,7 @@ export const ShowTabwomen=({setShowdownwomen})=>{
            <Box>
             <HStack spacing='24px'>
                 <Button onClick={handleclothing}>Clothing</Button>
-                <Link><Button onClick={handleall}>All Women</Button></Link>
+                <Link to='/'><Button onClick={handleall}>All Women</Button></Link>
                 </HStack>
            </Box>
            <Box border='1px solid black' display='flex' >
@@ -105,12 +95,12 @@ export const ShowTabwomen=({setShowdownwomen})=>{
                     showtabdata.length&&showtabdata.map((el,ind)=>{
                         return(
                             <Box key={ind}>
-                                <Image src={el.input} w='100%' h='100%'/>
+                                <Link to="/"><Image src={el.input} w='100%' h='100%'/></Link>
                             </Box>
                         )
                     })
                    }
-                    {
+                    {/* {
                     !showtabdata.length&&dt.map((el,ind)=>{
                         return(
                             <Box key={ind}>
@@ -118,7 +108,7 @@ export const ShowTabwomen=({setShowdownwomen})=>{
                             </Box>
                         )
                     })
-                   }
+                   } */}
                 </Box>
            </Box>
         </Box>
