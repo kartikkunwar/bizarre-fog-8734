@@ -90,8 +90,8 @@ const EditForm = ({titleprop,shortprop,categoryprop,genderprop,imageprop,pricepr
                         </div>
                         <div className="col-sm-6">
                             <ol className="breadcrumb float-sm-right">
-                                <li className="breadcrumb-item"><a href="#">Home</a></li>
-                                <li className="breadcrumb-item active">General Form</li>
+                                <li className="breadcrumb-item"><a href="#">Admin</a></li>
+                                <li className="breadcrumb-item active">Edit Products</li>
                             </ol>
                         </div>
                     </div>
