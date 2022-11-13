@@ -12,10 +12,7 @@ import MainRoutes from './ProductPages/MainRoutes';
 function App() {
   return (
     <div className="App">
-     {/* <Navbar/> */}
-     {/* <HomePage/> */}
-     {/* <Footer/> */}
-     <MainRoutes/>
+    
  
     </div>
   );
