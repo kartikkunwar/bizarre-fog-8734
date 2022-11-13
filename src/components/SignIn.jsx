@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Box, Button, Grid, GridItem, Input,Image,Text, Flex,FormControl } from '@chakra-ui/react'
 import { Link} from 'react-router-dom';
-import { signin_attemp } from '../Redux/AuthReducer/action';
+import { signin_attemp } from '../Redux/action';
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'
 
@@ -41,7 +41,7 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    dispatch(signin_attemp(loginData))
+    // dispatch(signin_attemp(loginData))
     dispatch(UserSignIn(loginData))
   }
  console.log(loginData)

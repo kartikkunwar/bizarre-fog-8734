@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Box, Button, Grid, GridItem, Input,Image,Text, Flex,span } from '@chakra-ui/react'
 import { Link, useNavigate, } from 'react-router-dom';
-import { signup_attemp } from '../Redux/AuthReducer/action';
+import { signup_attemp } from '../Redux/action';
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 import {eye} from 'react-icons-kit/feather/eye'
 import {Icon} from "react-icons-kit"
@@ -44,7 +44,7 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    signup_attemp(form, navigate);
+    // signup_attemp(form, navigate);
  dispatch(UserRegister(form))
   };
 
