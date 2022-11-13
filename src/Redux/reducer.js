@@ -30,6 +30,28 @@ const reducer = (state=initialState,action) =>{
                 isError:true,
                 isLoading:false
             }
+
+            case types.GET_PRODUCTS_REQUEST:
+                return{
+                    ...state, 
+                    isLoading:true,
+                }
+    
+                case types.GET_PRODUCTS_SUCCESS:
+                return{
+                    ...state,
+                    isLoading:false,
+                    product:payload
+                }
+    
+                case types.GET_PRODUCTS_FAILURE:
+                return{
+                    ...state,
+                    isLoading:false,
+                   isError:true
+                }
+    
+
         case types.GET_SUCCESS_ALLPRODUCT:
             return {
                 ...state,
@@ -53,6 +75,60 @@ const reducer = (state=initialState,action) =>{
             const decqty=state.cartQty-1
             setlocaldata("mquantity",decqty)
             return{
+                ...state,isError:false,isLoading:false,cartItem:[...state.cartItem,payload],cartQty:state.cartQty+1,cartTotal:state.cartTotal+Math.floor(Number(payload.price-(payload.price*(payload.discount/100))))
+            }
+        case types.GET_REQUEST_PRODUCT:
+            return{
+                ...state,
+                isError:false,
+                isLoading:true
+            }
+        case types.GET_SUCCESS_PRODUCT:
+            return{
+                ...state,
+                isLoading:false,
+                product:[...payload]
+            }
+        case types.GET_FAIL_PRODUCT:
+            return{
+                ...state,
+                isLoading:false,
+                isError:true
+            }
+        case types.DELETE_REQUEST_PRODUCT:
+            return{
+                ...state,
+                isLoading:true,
+            }
+        case type.GET_SUCCESS_PRODUCT:
+            return{
+                ...state,
+                isLoading:false,
+                product:[...payload]
+            }
+        case types.DELETE_FAIL_PRODUCT:
+            return{
+                ...state,
+                isLoading:false,
+                isError:true
+            }
+        case types.UPDATE_REQUEST_PRODUCT:
+            return{
+                ...state,
+                isLoading:true
+            }
+        case types.UPDATE_SUCCESS_PRODUCT:
+            return{
+                ...state,
+                isLoading:false,
+                product:[...payload]
+            }
+        case types.UPDATE_FAIL_PRODUCT:
+            return{
+                ...state,
+                isLoading:false,
+                isError:true
+            }
                 ...state,cartItem:remite,cartQty:decqty
             } 
         case types.CART_ADJUST_SUCCESS:
