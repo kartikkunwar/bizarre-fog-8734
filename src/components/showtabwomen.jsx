@@ -46,13 +46,13 @@ export const ShowTabwomen = ({ setShowdownwomen }) => {
         }).map((el) => el.imageList[0])
         setShowtabdata(con)
     }
-
-    return (
-        <Box width="100%" border='1px solid black' position='fixed' top='80px' zIndex='2' bgColor='white' maxH='380px' overflow='auto'>
-            <Box>
-                <HStack spacing='24px'>
-                    <Button onClick={handleclothing}>Clothing</Button>
-                    <Link to='/product'><Button onClick={handleall}>All Women</Button></Link>
+    
+    return(
+        <Box  width="100%" border='1px solid black' position='fixed' top='80px' zIndex='2' bgColor='white' maxH='380px' overflow='auto'>
+           <Box>
+            <HStack spacing='24px'>
+                <Button onClick={handleclothing}>Clothing</Button>
+                <Link to='/product'><Button onClick={handleall}>All Women</Button></Link>
                 </HStack>
             </Box>
             <Box border='1px solid black' display='flex' >

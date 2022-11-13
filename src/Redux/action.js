@@ -65,7 +65,7 @@ const getProductRequest = ()=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE})
     })
  }
- 
+
 export const addproductcart=(data)=>(dispatch)=>{
     dispatch({type:types.CART_SUCCESS,payload:data})
 }

@@ -43,7 +43,6 @@ const reducer = (state = initialState, action) => {
                 isLoading: false,
                 product: payload
             }
-
         case types.GET_PRODUCTS_FAILURE:
             return {
                 ...state,
@@ -73,7 +72,13 @@ const reducer = (state = initialState, action) => {
             const decqty = state.cartQty - 1
             setlocaldata("mquantity", decqty)
             return {
-                ...state, isError: false, isLoading: false, cartItem: [...state.cartItem, payload], cartQty: state.cartQty + 1, cartTotal: state.cartTotal + Math.floor(Number(payload.price - (payload.price * (payload.discount / 100))))
+                ...state, cartItem: remite, cartQty: decqty
+            }
+        case types.CART_ADJUST_SUCCESS:
+            const qtychng = state.cartItem.map((el) => el.id == payload.item.id ? { ...el, qty: payload.qty } : el)
+            setlocaldata("mcart", qtychng)
+            return {
+                ...state, cartItem: qtychng
             }
         case types.GET_REQUEST_PRODUCT:
             return {
@@ -127,12 +132,8 @@ const reducer = (state = initialState, action) => {
                 isLoading: false,
                 isError: true
             }
-        case types.CART_ADJUST_SUCCESS:
-            const qtychng = state.cartItem.map((el) => el.id == payload.item.id ? { ...el, qty: payload.qty } : el)
-            setlocaldata("mcart", qtychng)
-            return {
-                ...state, cartItem: qtychng
-            }
+
+  
         default:
             return state;
     }

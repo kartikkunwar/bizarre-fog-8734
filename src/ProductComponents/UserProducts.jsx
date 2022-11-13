@@ -34,24 +34,22 @@ const UserProducts = () => {
     <>
       {productList.length > 0 && productList.map(product => {
         return (
-          <Link to={`/product/${product.id}`}>
-            <div key={product.id} className="product-list">
-              <div> <h3>{product.title}</h3></div>
-              <div>
-                <img src={product.mainImage} alt={product.title} style={{ height: "300px", width: "100%" }} />
-              </div>
-              <div>
-                {product.category}
-              </div>
-              <div>
-                <h4> ${product.price}</h4>
-
-              </div>
-              <div>
-                <button className='button-product'>BUY NOW</button>
-              </div>
+         <Link to={`/product/${product.id}`}> <div key={product.id} className="product-list">
+            <div> <h3>{product.title}</h3></div>
+            <div>
+              <img src={product.mainImage} alt={product.title} style={{ height: "300px", width: "100%" }} />
             </div>
-          </Link>
+            <div>
+              {product.category}
+            </div>
+            <div>
+              <h4> ${product.price}</h4>
+
+            </div>
+            <div>
+            <button className='button-product'>BUY NOW</button>
+            </div>
+          </div></Link>
         )
       })}
     </>
