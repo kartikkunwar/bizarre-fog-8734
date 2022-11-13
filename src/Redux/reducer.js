@@ -30,6 +30,28 @@ const reducer = (state=initialState,action) =>{
                 isError:true,
                 isLoading:false
             }
+
+            case types.GET_PRODUCTS_REQUEST:
+                return{
+                    ...state, 
+                    isLoading:true,
+                }
+    
+                case types.GET_PRODUCTS_SUCCESS:
+                return{
+                    ...state,
+                    isLoading:false,
+                    product:payload
+                }
+    
+                case types.GET_PRODUCTS_FAILURE:
+                return{
+                    ...state,
+                    isLoading:false,
+                   isError:true
+                }
+    
+
         case types.GET_SUCCESS_ALLPRODUCT:
             return {
                 ...state,
@@ -61,6 +83,7 @@ const reducer = (state=initialState,action) =>{
             return{
                 ...state,cartItem:qtychng
             }
+
         default:
             return state;
     }
