@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 
 const SidePannalAdmin = () => {
     return (
         <aside className="main-sidebar sidebar-dark-primary elevation-4">
             {/* Brand Logo */}
-            <a href="index3.html" className="brand-link">
-                <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
+            <a href="#" className="brand-link">
+                <img src="ONE STOP.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
                 <span className="brand-text font-weight-light">OneStop</span>
             </a>
             {/* Sidebar */}
@@ -13,7 +14,7 @@ const SidePannalAdmin = () => {
                 {/* Sidebar user panel (optional) */}
                 <div className="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div className="image">
-                        <img src="dist/img/user2-160x160.jpg" className="img-circle elevation-2" alt="User Image" />
+                        <img src="ONE STOP.png" className="img-circle elevation-2" alt="User Image" />
                     </div>
                     <div className="info">
                         <a href="#" className="d-block">Admin</a>
@@ -48,30 +49,22 @@ const SidePannalAdmin = () => {
                                 </p>
                             </a>
                             <ul className="nav nav-treeview">
-                                <li className="nav-item">
-                                    <a href="pages/forms/general.html" className="nav-link">
-                                        <i className="far fa-circle nav-icon" />
-                                        <p>Add Products</p>
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="pages/forms/advanced.html" className="nav-link">
-                                        <i className="far fa-circle nav-icon" />
-                                        <p>Remove Products</p>
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="pages/forms/editors.html" className="nav-link">
-                                        <i className="far fa-circle nav-icon" />
-                                        <p>Update Products</p>
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="pages/forms/validation.html" className="nav-link">
-                                        <i className="far fa-circle nav-icon" />
-                                        <p>Show Product</p>
-                                    </a>
-                                </li>
+                                <Link to="/addproduct">
+                                    <li className="nav-item">
+                                        <a href="pages/forms/general.html" className="nav-link">
+                                            <i className="far fa-circle nav-icon" />
+                                            <p>Add Products</p>
+                                        </a>
+                                    </li>
+                                </Link>
+                                <Link to="/updateproduct">
+                                    <li className="nav-item">
+                                        <a href="#" className="nav-link">
+                                            <i className="far fa-circle nav-icon" />
+                                            <p>Update Products</p>
+                                        </a>
+                                    </li>
+                                </Link>
                             </ul>
                         </li>
                         <li className="nav-item">
@@ -90,21 +83,9 @@ const SidePannalAdmin = () => {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="pages/forms/advanced.html" className="nav-link">
-                                        <i className="far fa-circle nav-icon" />
-                                        <p>Remove Users</p>
-                                    </a>
-                                </li>
-                                <li className="nav-item">
                                     <a href="pages/forms/editors.html" className="nav-link">
                                         <i className="far fa-circle nav-icon" />
                                         <p>Update Users</p>
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="pages/forms/validation.html" className="nav-link">
-                                        <i className="far fa-circle nav-icon" />
-                                        <p>Show Users</p>
                                     </a>
                                 </li>
                             </ul>

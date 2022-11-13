@@ -9,7 +9,6 @@ import SidePannalAdmin from '../../components/SidePannalAdmin';
 const Dashboard = () => {
     return (
         <div className="wrapper">
-            <PreLoader/>
             <NavBarAdmin/>
             <SidePannalAdmin/>
             <DisplayInformation/>
