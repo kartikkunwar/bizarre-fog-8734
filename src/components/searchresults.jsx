@@ -5,21 +5,6 @@ import axios from "axios"
 import React from "react"
 import { Link } from "react-router-dom"
 
-const data = [
-    {
-        title: "shoe"
-    },
-    {
-        title: "shae1"
-    },
-    {
-        title: "watch"
-    },
-    {
-        title: "shbe2"
-    }
-]
-
 
 export const SearchResults = ({ query, setQuery }) => {
 

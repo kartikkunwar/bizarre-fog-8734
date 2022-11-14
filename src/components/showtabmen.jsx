@@ -95,7 +95,7 @@ export const ShowTab=({setShowdown})=>{
                     showtabdata.length&&showtabdata?.map((el,ind)=>{
                         return(
                             <Box key={ind}>
-                                <Link to="/"><Image src={el.input} alt={el.title} w='100%' h='100%'/></Link>
+                                <Link to="/product"><Image src={el.input} alt={el.title} w='100%' h='100%'/></Link>
                             </Box>
                         )
                     })

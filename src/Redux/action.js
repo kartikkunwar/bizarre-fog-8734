@@ -64,7 +64,10 @@ const getProductRequest = ()=>{
     }).catch((err)=>{
         dispatch({type:types.GET_PRODUCTS_FAILURE})
     })
- }
+
+}
+
+
 
 export const addproductcart=(data)=>(dispatch)=>{
     dispatch({type:types.CART_SUCCESS,payload:data})
@@ -95,3 +98,23 @@ export const adminLoginSuccess = (dispatch) =>{
 export const adminLoginFail = (dispatch) =>{
     return dispatch({type:types.GET_FAIL_ADMIN})
 }
+
+export const UserRegister = (params) => (dispatch) => {
+    dispatch({ type: types.POST_REQUEST_SignUp })
+    return axios.post("http://localhost:8080/sigin", params).then((res) => {
+         console.log(res);
+        return dispatch({type:types.POST_SUCCESS_SignUp,paylod:res.data})
+    }).catch((err) => {
+        return dispatch({type:types.POST_FAIL_SignUp})
+    })
+}
+
+export const UserSignIn = (dispatch) => {
+    // dispatch({ type: types.POST_REQUEST_SignIn })
+    return axios.get("http://localhost:8080/sigin").then((res) => {
+        //  console.log(res);
+        return dispatch({type:types.POST_SUCCESS_SignIn,paylod:res.data})
+    }).catch((err) => {
+        return dispatch({type:types.POST_FAIL_SignIn})
+    })
+} 

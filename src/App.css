@@ -52,3 +52,10 @@
     gap: 20px;
    }
 }
+.btnhv:hover{
+   color: honeydew;
+   -webkit-transform: scale(1.12);
+  -ms-transform: scale(1.12);
+  transform: scale(1.12);
+  transition: 1s ease-in-out;
+}

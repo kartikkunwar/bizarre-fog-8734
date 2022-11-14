@@ -13,7 +13,7 @@ const HomePage = () => {
 
 
   return (
-    <Box width="100%">
+    <Box width="100%" mt='80px'>
       {/* <h1>Home Page</h1> */}
       <div className='homepage-main'>
 
@@ -21,7 +21,7 @@ const HomePage = () => {
 
         <div className='okati'>
           <Carousel>
-            <Carousel.Item interval={1000}>
+            <Carousel.Item interval={3000}>
               <img
                 className="d-block w-100"
                 src="https://cdna.lystit.com/cms/blackfriday_XL_2800_1050_23a75a1eaf.gif"
@@ -29,7 +29,7 @@ const HomePage = () => {
                 style={{ width: "100%" }}
               />
             </Carousel.Item>
-            <Carousel.Item interval={500}>
+            <Carousel.Item interval={3000}>
               <img
                 className="d-block w-100"
                 src="https://cdna.lystit.com/cms/DESKTOP_XL_292112190c.png"
