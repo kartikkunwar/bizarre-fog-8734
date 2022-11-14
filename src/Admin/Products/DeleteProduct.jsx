@@ -1,19 +1,19 @@
 import React from 'react';
-import DisplayInformation from '../../components/DisplayInformation';
 import FooterAdmin from '../../components/FooterAdmin';
 import NavBarAdmin from '../../components/NavBarAdmin';
 import SidePannalAdmin from '../../components/SidePannalAdmin';
+import AddForm from './AddForm';
+import DeleteForm from './DeleteForm';
 
-
-const Dashboard = () => {
+const DeleteProduct = () => {
     return (
-        <div className="wrapper">
-            <NavBarAdmin/>
-            <SidePannalAdmin/>
-            <DisplayInformation/>
+        <div>
+            <NavBarAdmin />
+            <SidePannalAdmin />
+            <DeleteForm />
             <FooterAdmin/>
         </div>
     );
 };
 
-export default Dashboard;
+export default DeleteProduct;

@@ -1,16 +1,17 @@
 import './App.css';
 
 
-import MainRoutes from './ProductPages/MainRoutes';
+
 
 
 function App() {
   return (
-    <div className="App"> 
-
-      <MainRoutes />
+    <div className="App">
+    
+    
     </div>
   );
 }
+
 
 export default App;

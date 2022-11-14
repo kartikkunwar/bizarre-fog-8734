@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Heading, Image, Input, Text } from "@chakra-ui/react"
+import { AlertIcon, Box, Button, Divider, Heading, Image, Input, Text } from "@chakra-ui/react"
 import React from "react"
 import { useSelector, useDispatch } from "react-redux"
 import Slider from "react-slick"
@@ -6,6 +6,11 @@ import { Navbar } from "./navbar"
 import { Footer } from "./footer"
 import { removeProductCart } from "../Redux/action"
 import { adjustItemqty } from "../Redux/action"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {faBagShopping} from "@fortawesome/free-solid-svg-icons"
+import { Link } from "react-router-dom"
+import ClockLoader from "react-spinners/ClockLoader";
+import { Alert } from "react-bootstrap"
 
 export const Cart = () => {
 
@@ -14,7 +19,9 @@ export const Cart = () => {
     const [totalprice, setTotalPrice] = React.useState(0)
     const [disc, setDisc] = React.useState(0)
     const [code, setCode] = React.useState("")
+    const [flag,setFlag]=React.useState(false)
     const dispatch = useDispatch()
+    const [anim,setAmin]=React.useState(false)
 
     const settings = {
         dots: false,
@@ -30,6 +37,9 @@ export const Cart = () => {
         data.forEach(el => {
             p += el.qty * Math.floor(el.price - (el.price * el.discount / 100))
         })
+
+        data.length?setFlag(true):setFlag(false)
+         
         totalp = p
         setDisc(0)
         if (code == "NEW200" && price > 999) {
@@ -43,6 +53,13 @@ export const Cart = () => {
         setPrice(p)
         setTotalPrice(totalp)
     })
+
+    React.useEffect(()=>{
+        setAmin(true)
+        setTimeout(()=>{
+           setAmin(false)
+        },1000)
+    },[])
 
     const adjustqtydec = (item, val) => {
         if(val==1){
@@ -64,9 +81,21 @@ export const Cart = () => {
 
 
 
-    return [
-        <Navbar />,
-        <Box width='90%' m='auto' textAlign='center' mt='100px'>
+    return (
+        <>
+        {
+           anim&&<Box width='100%' h='100vh' display='flex' alignItems='center' justifyContent='center'><ClockLoader
+           color={'teal'}
+           loading={anim}
+           size={150}
+           aria-label="Loading Spinner"
+           data-testid="loader"
+         /></Box>
+        }
+        {
+            !anim&&[
+                <Navbar />,
+        flag&&<Box width='90%' m='auto' textAlign='center' mt='100px'>
             <Heading>My Cart Items</Heading>
             <Box w='100%' m='auto' display={{ base: 'block', md: 'block', lg: 'flex' }} justifyContent='space-between' mt='80px'>
                 <Box width={{ base: '70%', md: '70%', lg: '45%' }} m={{ base: 'auto', md: 'auto', lg: '0' }}>
@@ -96,8 +125,8 @@ export const Cart = () => {
                                         </Box>
                                     </Box><Divider orientation='horizontal' margin='auto' mt="20px" />
                                     <Box display='flex' justifyContent='left' gap="10%" mt="20px" color='white'>
-                                        <Button width='45%' onClick={() => removeitem(el)} bgColor='teal'>Remove Item</Button>
-                                        <Button width='45%' bgColor='teal'>Add To Wishlist</Button>
+                                        <Button width='45%' className="btnhv" colorScheme='teal' onClick={() => removeitem(el)} bgColor='teal'>Remove Item</Button>
+                                        <Button width='45%' className="btnhv" colorScheme='teal' bgColor='teal'>Add To Wishlist</Button>
                                     </Box>
                                 </Box>
                             )
@@ -141,11 +170,26 @@ export const Cart = () => {
                     </Box>
                     <Box display={{ base: 'block', md: 'block', lg: 'flex' }} justifyContent='space-around'>
                         <Box w={{ base: '100%', md: '100%', lg: '30%' }} display='flex' alignItems='center' bgColor='lightyellow'><Text fontSize={30}>Total  ₹ {totalprice}</Text></Box>
-                        <Box w={{ base: '100%', md: '100%', lg: '80%' }} color='white'><Button w='80%' bgColor='teal' p='30px' fontSize={22}>Checkout</Button></Box>
+                        <Box w={{ base: '100%', md: '100%', lg: '80%' }} color='white'><Button w='80%' bgColor='teal' p='30px' className="btnhv" colorScheme='teal' fontSize={22}>Checkout</Button></Box>
                     </Box>
                 </Box>
             </Box>
         </Box>,
+        !flag&&<Box  width='70%' m="auto" mt="100px">
+             <Box mt='150px' display={{base:'block',md:'block',lg:'flex'}} justifyContent='space-around' >
+                <Box w={{base:'100%',md:'90%',lg:'50%'}} m='auto'>
+                   <Image src="https://cdn.dribbble.com/users/887568/screenshots/3172047/ufo.gif" h="100%" w='100%'/>
+                </Box>
+                <Box w={{base:'100%',md:'90%',lg:'48%'}} textAlign='center' pt='15%' m='auto'>
+                    <Heading>Cart is Empty !</Heading>
+                    <Divider orientation='horizontal' margin='auto' mt="20px" />
+                    <Link to='/'><Button w={{base:'100%',md:'90%',lg:'80%'}} p='30px' fontSize='22px' className="btnhv" colorScheme='teal' mt='50px'><FontAwesomeIcon icon={faBagShopping} color='white' fontSize={25}></FontAwesomeIcon> Continue Shopping</Button></Link>
+                </Box>
+             </Box>
+        </Box>,
         <Footer />
-    ]
+            ]
+        }
+        </>
+    )
 }

@@ -4,7 +4,7 @@
       "title": "FAADDICTION",
       "short": "Men's Shirt Casual Printed Halfsleeve",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/81l6kwGgwdL._UY741_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/81l6kwGgwdL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81l6kwGgwdL._UY741_.jpg",
@@ -29,14 +29,14 @@
       ],
       "gender": "",
       "price": "499",
-      "discount": "10",
+      "discount": "20",
       "id": 1
     },
     {
       "title": "VLAM",
       "short": "Mens Regular Fit Surfing Wave Beachwear Oversize Unisex Tshirt",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/71N1ogYIj-L._UY741_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/71N1ogYIj-L._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71N1ogYIj-L._UY741_.jpg",
@@ -64,7 +64,7 @@
       "title": "Lecherous Stylish Boxer",
       "short": "Shorts for Men - Soft Cool Latest Print Cotton Boxers Sizes S M L XL XXL for Casual, Beachwear, Trendy Comfort wear Fitting.",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/31qMfqgROgL.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/31qMfqgROgL.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/31qMfqgROgL.jpg",
@@ -92,7 +92,7 @@
       "title": "Vedu Creation Stylish Boxer",
       "short": "Shorts for Men - Soft Cool Latest Print Cotton Boxers Sizes S M L XL for Casual, Beachwear, Trendy Comfort wear Fitting.",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/51t0dhFcM7L.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/51t0dhFcM7L.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51t0dhFcM7L.jpg",
@@ -120,8 +120,7 @@
       "title": "Peppyzone Men's",
       "short": "Camouflage/Military Printed Cotton Shorts",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/61pO1ISIYUL._UY606_.jpg",
-      
+      "mainImage": "https://m.media-amazon.com/images/I/61pO1ISIYUL._UY606_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61pO1ISIYUL._UY606_.jpg",
@@ -145,8 +144,7 @@
       "title": "PRIMEKDR Men's Polycotton",
       "short": "Solid Printed Stitched Half Sleeve Casual Shirts Summer, Vacation & Beachwear Shirts AP001",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/41QGh9u2-4L.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/41QGh9u2-4L.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/41QGh9u2-4L.jpg",
@@ -166,8 +164,7 @@
       "title": "THE ARCHER",
       "short": "Men's Cotton Multicolour Printed Vest",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/61wwA+fCOZL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61wwA+fCOZL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61wwA+fCOZL._UX679_.jpg",
@@ -180,27 +177,18 @@
         {
           "input": "https://m.media-amazon.com/images/I/81shkc3ZBjL._UY741_.jpg",
           "input_rank": 3
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/71liRg2SzCL._UY741_.jpg",
-          "input_rank": 4
-        },
-        {
-          "input": "https://m.media-amazon.com/images/I/71Y7fD8MtyL._UY741_.jpg",
-          "input_rank": 5
         }
       ],
-      "gender": "",
-      "price": "499",
-      "discount": "15",
+      "gender": "Men",
+      "price": "599",
+      "discount": "20",
       "id": 7
     },
     {
       "title": "Tusok Men Women Rayon Shirt",
       "short": "Top Combo Twinning Casual Hawaiian Aloha Flower Floral Leaf Party Beach Vacation Quirky Tropical Printed Multi Colorful Sky Palm Flamingo Printed",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/81DJlCw8lmL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81DJlCw8lmL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81DJlCw8lmL._UY879_.jpg",
@@ -219,8 +207,8 @@
           "input_rank": 4
         }
       ],
-      "gender": "",
-      "price": "129",
+      "gender": "Men",
+      "price": "1299",
       "discount": "10",
       "id": 8
     },
@@ -228,7 +216,7 @@
       "title": "XPIOR",
       "short": "Funky Printed Shirt for Men",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/51FNFmM459L._UX569_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/51FNFmM459L._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51FNFmM459L._UX569_.jpg",
@@ -243,7 +231,7 @@
           "input_rank": 3
         }
       ],
-      "gender": "",
+      "gender": "Men",
       "price": "499",
       "discount": "10",
       "id": 9
@@ -252,7 +240,7 @@
       "title": "U.S. POLO ASSN",
       "short": "Men's Regular Shorts",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/51tT+cYY08L._UX679_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/51tT+cYY08L._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51tT+cYY08L._UX679_.jpg",
@@ -271,7 +259,7 @@
           "input_rank": 4
         }
       ],
-      "gender": "",
+      "gender": "Men",
       "price": "799",
       "discount": "20",
       "id": 10
@@ -280,8 +268,7 @@
       "title": "Yonala Women's Swimsuit",
       "short": "Cover up Beach Long Kimono Bathing Suit Chiffon Floral Cardigan",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/61-0IaDOOtL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61-0IaDOOtL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61-0IaDOOtL._UY741_.jpg",
@@ -317,8 +304,7 @@
       "title": "Xs and Os Women's Satin",
       "short": "Plain/Solid Nightwear Set Pack of 1",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/61JPLMkHVmL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61JPLMkHVmL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61JPLMkHVmL._UY879_.jpg",
@@ -342,8 +328,7 @@
       "title": "THE UNDERWORLD.CO Tee+Short",
       "short": "Lounge Wear For Girls and Women | Nightwear for Girls | Beachwear Dress for Girls | Nightdress for Girls |",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/71UX7zZLNRL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71UX7zZLNRL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71UX7zZLNRL._UX679_.jpg",
@@ -359,7 +344,7 @@
       "title": "Fairro Comfortable Cotton Printed",
       "short": "Unisex Lounge Boxer Shorts with Inside Exposed Waistband for Men's & Women's - Perfect Boxer for Summer Season (Pack of 1)",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/514RCKYepOL._UY879_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/514RCKYepOL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/514RCKYepOL._UY879_.jpg",
@@ -383,7 +368,7 @@
       "title": "Beach Hat",
       "short": "FabSeasons Beach Hat for Women",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/71z70uKqD2L._SL1500_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/71z70uKqD2L._SL1500_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71z70uKqD2L._SL1500_.jpg",
@@ -407,8 +392,7 @@
       "title": "Body Glove Women's Standard",
       "short": "Smoothies Skylar Solid Zip Front One Piece Swimsuit",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/81ZbtB6UTsL._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81ZbtB6UTsL._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81ZbtB6UTsL._UX569_.jpg",
@@ -428,8 +412,7 @@
       "title": "Body Glove Women's",
       "short": "Standard Electra One Piece Swimsuit with Strappy Back Detail",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/71znKggHWtL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71znKggHWtL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71znKggHWtL._UY879_.jpg",
@@ -457,8 +440,7 @@
       "title": "Aagman",
       "short": "Multicolor Beachwear Shorts",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/41e4uHtuiyS.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/41e4uHtuiyS.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/41e4uHtuiyS.jpg",
@@ -486,8 +468,7 @@
       "title": "Body Glove Women's",
       "short": "Body Glove Women's Standard Long Sleeve Paddle One Piece Swimsuit with UPF 50+",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/81TRy-WoWyS._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81TRy-WoWyS._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81TRy-WoWyS._UY879_.jpg",
@@ -511,8 +492,7 @@
       "title": "Body Glove Women's",
       "short": "Body Glove Women's Standard Long Sleeve Paddle One Piece Swimsuit with UPF 50+",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/81H1JV7cTXL._SX569._SX._UX._SY._UY_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81H1JV7cTXL._SX569._SX._UX._SY._UY_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81H1JV7cTXL._SX569._SX._UX._SY._UY_.jpg",
@@ -532,8 +512,7 @@
       "title": "Body Glove Women's",
       "short": "Body Glove Women's Standard Long Sleeve Paddle One Piece Swimsuit with UPF 50+",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/91Ht7WZnyiL._SX569._SX._UX._SY._UY_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/91Ht7WZnyiL._SX569._SX._UX._SY._UY_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/91Ht7WZnyiL._SX569._SX._UX._SY._UY_.jpg",
@@ -561,8 +540,7 @@
       "title": "AWG ALL WEATHER GEAR",
       "short": "Men's Spectra Cotton Casual Sports Jacket - Black",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/518O7o2rEXL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/518O7o2rEXL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/518O7o2rEXL._UX679_.jpg",
@@ -594,8 +572,7 @@
       "title": "Scott International Men's Solid",
       "short": "Scott International Men's Solid Wind Cheater Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/510GbRxnfgL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/510GbRxnfgL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/510GbRxnfgL._UX679_.jpg",
@@ -623,8 +600,7 @@
       "title": "Ben Martin",
       "short": "Ben Martin Men's Quilted Bomber Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/61eMJalktNL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61eMJalktNL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61eMJalktNL._UY879_.jpg",
@@ -652,7 +628,7 @@
       "title": "Men's Windcheater",
       "short": "Amazon Brand - Symbol Men's Windcheater",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/71gnMeN6XSL._UX569_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/71gnMeN6XSL._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71gnMeN6XSL._UX569_.jpg",
@@ -676,7 +652,7 @@
       "title": "Fit Bomber Jacket",
       "short": "LEOTUDE Men's Regular Fit Bomber Jacket (Color: Black)",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/61UIHcgQUvL._UY741_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/61UIHcgQUvL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61UIHcgQUvL._UY741_.jpg",
@@ -700,7 +676,7 @@
       "title": "Nylon Full Sleeve Bomber Jacket",
       "short": "Ben Martin Men's Nylon Full Sleeve Bomber Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/61mqx2-CJdL._UX679_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/61mqx2-CJdL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61mqx2-CJdL._UX679_.jpg",
@@ -732,7 +708,7 @@
       "title": "Allen Solly Men's Jacket",
       "short": "Allen Solly Men's Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/61zXxLhtF5L._UY741_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/61zXxLhtF5L._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61zXxLhtF5L._UY741_.jpg",
@@ -760,8 +736,7 @@
       "title": "Red Tape Men's Solid Jacket",
       "short": "Red Tape Men's Solid Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/61OSrzodR2L._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61OSrzodR2L._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61OSrzodR2L._UX679_.jpg",
@@ -785,8 +760,7 @@
       "title": "Men's Hooded Bomber Jacket / winter wear",
       "short": "Men's Hooded Bomber Jacket / winter wear",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/51BHyoK6w8L._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51BHyoK6w8L._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51BHyoK6w8L._UY879_.jpg",
@@ -814,8 +788,7 @@
       "title": "Triumph Men Sports Jacket",
       "short": "Full Zip Workout Running Gym Track Jacket Lightweight Sports Jacket Winter Outdoor Stylish Jackets",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/51zx26GKJJL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51zx26GKJJL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51zx26GKJJL._UX679_.jpg",
@@ -839,8 +812,7 @@
       "title": "Amazon Brand - Symbol Men's Windcheater",
       "short": "Amazon Brand - Symbol Men's Windcheater",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/61df4EyP-JL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61df4EyP-JL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61df4EyP-JL._UX679_.jpg",
@@ -856,8 +828,7 @@
       "title": "Sumitra Fashionable Full Sleeve",
       "short": "Western Style With Buttoned Full Front Opening Classic Collar Solid Regular Jacket For Women",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/51LcTkEfBpL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51LcTkEfBpL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51LcTkEfBpL._UY741_.jpg",
@@ -889,8 +860,7 @@
       "title": "AZZMIC COLLECTION",
       "short": "Women's White Collared Neck Full Sleeves Denim Solid Cropped Jacket Multi-Colour",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/41Cp11cDezL.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/41Cp11cDezL.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/41Cp11cDezL.jpg",
@@ -918,8 +888,7 @@
       "title": "Fabricorn Plain Black Stylish Sweatshirt for Women (Black)",
       "short": "Fabricorn Plain Black Stylish Sweatshirt for Women (Black)",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/71JAtYR3tLL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71JAtYR3tLL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71JAtYR3tLL._UY741_.jpg",
@@ -947,8 +916,7 @@
       "title": "Women's Jacket",
       "short": "Women's Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/71JPyRX76AL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71JPyRX76AL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71JPyRX76AL._UY879_.jpg",
@@ -972,8 +940,7 @@
       "title": "FUNDAY FASHION Women's Tie-Dye Jacket",
       "short": "FUNDAY FASHION Women's Tie-Dye Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/71L5eJB35rL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71L5eJB35rL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71L5eJB35rL._UY879_.jpg",
@@ -1001,8 +968,7 @@
       "title": "Brazo Women's Latest Stylish Winter Wear Jacket",
       "short": "Brazo Women's Latest Stylish Winter Wear Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/718kaRUCFlL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/718kaRUCFlL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/718kaRUCFlL._UX679_.jpg",
@@ -1030,8 +996,7 @@
       "title": "Dream of Glory Inc. Women's Jacket",
       "short": "Dream of Glory Inc. Women's Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/61VKsNDOSUL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61VKsNDOSUL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61VKsNDOSUL._UY741_.jpg",
@@ -1051,8 +1016,7 @@
       "title": "YA Fashion Latest Stylish Women's",
       "short": "Creep Leather Fabric Full Sleeves Zipper Jacket With Fur Winter Wear",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/51II4tiA2yL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51II4tiA2yL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/7133kcRBxvL._UY879_.jpg",
@@ -1080,8 +1044,7 @@
       "title": "DNEXT Women's Solid Jacket",
       "short": "DNEXT Women's Solid Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/51II4tiA2yL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51II4tiA2yL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51II4tiA2yL._UY741_.jpg",
@@ -1109,8 +1072,7 @@
       "title": "Amazon Brand - Eden & Ivy Women's Quilted Jacket",
       "short": "Amazon Brand - Eden & Ivy Women's Quilted Jacket",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/81w3PYjQO6L._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81w3PYjQO6L._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81w3PYjQO6L._UX569_.jpg",
@@ -1142,8 +1104,7 @@
       "title": "Amazon Brand - Symbol Women's Quilted",
       "short": "Amazon Brand - Symbol Women's Quilted",
       "category": "Coats",
-      "mainImage":"https://m.media-amazon.com/images/I/71R3tu0B1JL._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71R3tu0B1JL._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71R3tu0B1JL._UX569_.jpg",
@@ -1163,8 +1124,7 @@
       "title": "UATHAYAM Delight Cotton Full Sleeve",
       "short": "Solid Slim Fit White Trending Formal Shirt for Men (Pack of 1)",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/41PkqQlviDL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/41PkqQlviDL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/41PkqQlviDL._UX679_.jpg",
@@ -1192,8 +1152,7 @@
       "title": "Dennis Lingo Men's Slim Fit Shirt",
       "short": "Dennis Lingo Men's Slim Fit Shirt",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/61KNBTw4K8S._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61KNBTw4K8S._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61KNBTw4K8S._UX679_.jpg",
@@ -1221,8 +1180,7 @@
       "title": "IndoPrimo Men's Regular Fit Casual Shirt",
       "short": "IndoPrimo Men's Regular Fit Casual Shirt",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/71yM0xUAetL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71yM0xUAetL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71yM0xUAetL._UX679_.jpg",
@@ -1250,8 +1208,7 @@
       "title": "IndoPrimo Men's Poly Cotton",
       "short": "Casual Shirt for Men Half Sleeves",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/91TkGWgK4ML._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/91TkGWgK4ML._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/91TkGWgK4ML._UX679_.jpg",
@@ -1275,8 +1232,7 @@
       "title": "Diverse Men Casual Shirt",
       "short": "Diverse Men Casual Shirt",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/512pBZ7L-JL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/512pBZ7L-JL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/512pBZ7L-JL._UX679_.jpg",
@@ -1304,8 +1260,7 @@
       "title": "IndoPrimo Men's",
       "short": "Regular Fit Cotton Casual Shirt for Men Full Sleeve",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/61mI3QmECUL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61mI3QmECUL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61mI3QmECUL._UY741_.jpg",
@@ -1329,8 +1284,7 @@
       "title": "DROPSHOP MART Casual Shirt",
       "short": "Fashionable Shirt for Men II Premium Cotton Shirt II Stylish Shirt for Men II Latest Men Casual Shirt II Luxury Shirts ||",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/41KcNSgN19L.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/41KcNSgN19L.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/41KcNSgN19L.jpg",
@@ -1354,8 +1308,7 @@
       "title": "Dennis Lingo Men Casual Shirt",
       "short": "Dennis Lingo Men Casual Shirt",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/61qcnAHZP3L._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61qcnAHZP3L._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61qcnAHZP3L._UX679_.jpg",
@@ -1387,8 +1340,7 @@
       "title": "Van Heusen Sport Men Casual Shirt",
       "short": "Van Heusen Sport Men Casual Shirt",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/512k6ktmOIS._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/512k6ktmOIS._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/512k6ktmOIS._UY879_.jpg",
@@ -1416,8 +1368,7 @@
       "title": "LINOGES Men REGULER Stylish Shirts",
       "short": "LINOGES Men REGULER Stylish Shirts",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/61BJhvfE04L._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61BJhvfE04L._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61BJhvfE04L._UY741_.jpg",
@@ -1437,8 +1388,7 @@
       "title": "Amazon Brand - Symbol Women Polo Shirt",
       "short": "Amazon Brand - Symbol Women Polo Shirt",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/81EIVq8-sDL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81EIVq8-sDL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81EIVq8-sDL._UY879_.jpg",
@@ -1462,8 +1412,7 @@
       "title": "COTLAND Fashions",
       "short": "Jaipuri Cotton Floral Printed Shaded Shirt for Women",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/81-GJANQqlL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81-GJANQqlL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81-GJANQqlL._UX679_.jpg",
@@ -1495,8 +1444,7 @@
       "title": "HUIS & LOISIR Women",
       "short": "Cotton Multi Colour Printed Shirt & Pyjama Set (Nightsuit)",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/814TJfIMfWL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/814TJfIMfWL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/814TJfIMfWL._UY879_.jpg",
@@ -1528,8 +1476,7 @@
       "title": "Desi Belle Women Shirt",
       "short": "Desi Belle Women Shirt",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/81v2dfEYQzS._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81v2dfEYQzS._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81v2dfEYQzS._UX569_.jpg",
@@ -1561,8 +1508,7 @@
       "title": "MIZAGO Women's Classic Fit Shirt",
       "short": "MIZAGO Women's Classic Fit Shirt",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/616pnwevuUL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/616pnwevuUL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/616pnwevuUL._UY879_.jpg",
@@ -1590,8 +1536,7 @@
       "title": "Funday Fashion",
       "short": "Regular Wear Full Sleeve Men Denim Jacket",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/71zvFv-ol4L._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71zvFv-ol4L._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71zvFv-ol4L._UY741_.jpg",
@@ -1619,8 +1564,7 @@
       "title": "Blue Ronin Women's",
       "short": "Cotton Regular Fit Formal/Casual Shirt",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/61Q8aKhTPNL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61Q8aKhTPNL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61Q8aKhTPNL._UX679_.jpg",
@@ -1652,8 +1596,7 @@
       "title": "Leriya Fashion Women's",
       "short": "Corduroy Button Down Pocket Shirts Casual Long Sleeve Oversized Blouses Tops",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/71LMGs6dccL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71LMGs6dccL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71LMGs6dccL._UY741_.jpg",
@@ -1685,8 +1628,7 @@
       "title": "Chimpaaanzee Women",
       "short": "Chimpaaanzee Women Checkered Full Sleeve Up Down Crop Shirt",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/71jCp4mdu2L._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71jCp4mdu2L._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71jCp4mdu2L._UX679_.jpg",
@@ -1714,8 +1656,7 @@
       "title": "Fabricorn Stylish",
       "short": "Plain Green Long Sleeve Cotton Tshirt for Women (Green)",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/71obC3wAsFL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71obC3wAsFL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71obC3wAsFL._UY879_.jpg",
@@ -1743,8 +1684,7 @@
       "title": "U.S. POLO ASSN. Men's Regular Shorts",
       "short": "U.S. POLO ASSN. Men's Regular Shorts",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/81DD0oqeg0L._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81DD0oqeg0L._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81DD0oqeg0L._UX569_.jpg",
@@ -1776,8 +1716,7 @@
       "title": "U.S. POLO ASSN. Mens Solid Cotton Mid Rise Shorts - Pack of 1",
       "short": "U.S. POLO ASSN. Mens Solid Cotton Mid Rise Shorts - Pack of 1",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/51oZS9hnKlL._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51oZS9hnKlL._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51oZS9hnKlL._UX569_.jpg",
@@ -1805,8 +1744,7 @@
       "title": "KART BLACK Men's",
       "short": "Regular Fit Shorts with Pocket|Casual Knit Shorts|Printed Shorts|Over Sized Shorts|(S,M,L,XL,XXL,3XL,4XL,5XL) Combo Pack of 3",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/71wV3KdFmkL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71wV3KdFmkL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71wV3KdFmkL._UX679_.jpg",
@@ -1838,8 +1776,7 @@
       "title": "Amazon Brand - Symbol Men Knit Lounge Shorts",
       "short": "Amazon Brand - Symbol Men Knit Lounge Shorts",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/61E63aX5RbL._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61E63aX5RbL._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61E63aX5RbL._UX569_.jpg",
@@ -1867,8 +1804,7 @@
       "title": "Chromozome Men's Regular Shorts",
       "short": "Chromozome Men's Regular Shorts",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/61aA1ucTyJL._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61aA1ucTyJL._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61aA1ucTyJL._UX569_.jpg",
@@ -1900,8 +1836,7 @@
       "title": "Diverse Men's Chino Shorts",
       "short": "Diverse Men's Chino Shorts",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/71Ij7NVyJqL._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71Ij7NVyJqL._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71Ij7NVyJqL._UX569_.jpg",
@@ -1933,8 +1868,7 @@
       "title": "Diverse Men's Chino Shorts",
       "short": "Diverse Men's Chino Shorts",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/71ORaztO+IL._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71ORaztO+IL._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71ORaztO+IL._UX569_.jpg",
@@ -1962,8 +1896,7 @@
       "title": "Diverse Men's Chino Shorts",
       "short": "Diverse Men's Chino Shorts",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/71RPbaiNLPL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71RPbaiNLPL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71RPbaiNLPL._UY879_.jpg",
@@ -1991,8 +1924,7 @@
       "title": "JUGULAR Men's Cotton Regular Fit Shorts'",
       "short": "JUGULAR Men's Cotton Regular Fit Shorts'",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/61RYFKyYTIL._UY606_.jpg",
-      
+      "mainImage": "https://m.media-amazon.com/images/I/61RYFKyYTIL._UY606_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61RYFKyYTIL._UY606_.jpg",
@@ -2012,8 +1944,7 @@
       "title": "Diverse Men Cotton Shorts",
       "short": "Diverse Men Cotton Shorts",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/81pCvnfYHAL._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81pCvnfYHAL._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81pCvnfYHAL._UX569_.jpg",
@@ -2041,8 +1972,7 @@
       "title": "NYKD By Nykaa Cotton",
       "short": "Stretchable Cycling Shorts For Women (Shorties / Underskirt Shorts) - Nyp083",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/61Ei9OT2YyL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61Ei9OT2YyL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61Ei9OT2YyL._UY741_.jpg",
@@ -2074,8 +2004,7 @@
       "title": "Yoga Gym Tights",
       "short": "Activewear Cycling Biker Shorts for Women with 2 Side Pockets 4 Way Stretch Nyke Lykra with Broad Waist Band Regular and Plus Sizes",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/417dXXmDZRL.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/417dXXmDZRL.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/417dXXmDZRL.jpg",
@@ -2103,8 +2032,7 @@
       "title": "Regalia Procot Womens",
       "short": "Girls Cotton Lycra Cycling Shorts with Lace, Underskirt Slips Safety Shorts 4 Way Stretchable S to 4XL Combo Pack",
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/51+o7cDNyTL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51+o7cDNyTL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51+o7cDNyTL._UX679_.jpg",
@@ -2132,8 +2060,7 @@
       "title": "Regalia Procot Womens",
       "short": "Tights Shorts Underskirts Cycling Shorts for Yoga Running Gym Sleepwear Beachwear 4 Way Stretchable Cotton Lycra Combo Pack S to 4XL Sizes",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/51x2lLsRGML._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51x2lLsRGML._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51x2lLsRGML._UX679_.jpg",
@@ -2164,10 +2091,9 @@
     {
       "title": "Amazon Brand",
       "short": "Eden & Ivy Women Pyjama Bottom",
-
       "category": "Beachwear",
-      "mainImage":"https://m.media-amazon.com/images/I/71uh0lBjihL._UX466_.jpg",
-       "imageList": [
+      "mainImage": "https://m.media-amazon.com/images/I/71uh0lBjihL._UX466_.jpg",
+      "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71uh0lBjihL._UX466_.jpg",
           "input_rank": 1
@@ -2198,8 +2124,7 @@
       "title": "My Swag Women's",
       "short": "Floral Print Daily Use Casual Outdoor Shorts with 2 Pockets",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/61etC+Jou5L._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61etC+Jou5L._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61etC+Jou5L._UY741_.jpg",
@@ -2231,8 +2156,7 @@
       "title": "Amazon Brand",
       "short": "Eden & Ivy Women T-Shirt & Shorts Set",
       "category": "Shirts",
-      "mainImage":"https://m.media-amazon.com/images/I/815uoGdy7qL._UX569_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/815uoGdy7qL._UX569_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/815uoGdy7qL._UX569_.jpg",
@@ -2264,8 +2188,7 @@
       "title": "fasla Women's",
       "short": "Cotton Shorts Pack of 3",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/61ttVUj0HzL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61ttVUj0HzL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81wvZYYzSSL._UX679_.jpg",
@@ -2301,8 +2224,7 @@
       "title": "ZEYO Women's",
       "short": "Cotton Dot Printed Night Suit Set of Top & Shorts 5226",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/81r7-JzcuEL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81r7-JzcuEL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81r7-JzcuEL._UY879_.jpg",
@@ -2330,8 +2252,7 @@
       "title": "Amazon Brand",
       "short": "Eden & Ivy Women Shorts",
       "category": "Shorts",
-      "mainImage":"https://m.media-amazon.com/images/I/91Q4w7SZ85L._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/91Q4w7SZ85L._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/91Q4w7SZ85L._UY879_.jpg",
@@ -2363,8 +2284,7 @@
       "title": "Amante Solid",
       "short": "Mid Rise Seamed Shorty Panty",
       "category": "",
-      "mainImage":"https://m.media-amazon.com/images/I/8105eErXOTL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/8105eErXOTL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/8105eErXOTL._UX679_.jpg",
@@ -2393,8 +2313,7 @@
       "title": "REFULGENT Men's",
       "short": "Regular Fit 2-Piece Suit Two Button Blazer with Pants Set",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/515SnDeQ00L._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/515SnDeQ00L._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/515SnDeQ00L._UX679_.jpg",
@@ -2426,8 +2345,7 @@
       "title": "MANQ Men's",
       "short": "Slim Fit Single Breasted Blazer",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/51sOQ9iud4L._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51sOQ9iud4L._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51sOQ9iud4L._UX679_.jpg",
@@ -2455,8 +2373,7 @@
       "title": "MANQ Men's",
       "short": "Slim Fit Tuxedo Suit",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/51vcDQ0pFOL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51vcDQ0pFOL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51vcDQ0pFOL._UX679_.jpg",
@@ -2488,8 +2405,7 @@
       "title": "Peter England",
       "short": "Men's Polyester Blend Two Piece Suit-Dress Set",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/518TW5xRPJL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/518TW5xRPJL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/518TW5xRPJL._UY879_.jpg",
@@ -2517,8 +2433,7 @@
       "title": "Peter England",
       "short": "Men's Polyester Blend Blue 2 Piece Suit Business Vest (PISUWNSPM29406_Navy_42)",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/51OYpQGOyUL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51OYpQGOyUL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51OYpQGOyUL._UY741_.jpg",
@@ -2550,8 +2465,7 @@
       "title": "Shaan Fashion",
       "short": "2 Button Single Breasted Coat Suit Casual, Formal for Men's Available in 6 Size (Blazer with Trouser)",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/61bZtAh76wL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61bZtAh76wL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61bZtAh76wL._UY741_.jpg",
@@ -2583,8 +2497,7 @@
       "title": "FAVOROSKI Designer",
       "short": "Men's Slim Italian Fit Shawl Collar Tuxedo Suit Blazer",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/71OhvvYpnSL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71OhvvYpnSL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71OhvvYpnSL._UY879_.jpg",
@@ -2620,8 +2533,7 @@
       "title": "FAVOROSKI Designer",
       "short": "Men's Slim Italian Fit Shawl Collar Tuxedo Suit Blazer, Beige",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/81M1laomJFL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/81M1laomJFL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/81M1laomJFL._UY879_.jpg",
@@ -2649,8 +2561,7 @@
       "title": "WINTAGE Men's",
       "short": "Regular Fit 3-piece Suit",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/715PgjoYcGL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/715PgjoYcGL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/715PgjoYcGL._UY879_.jpg",
@@ -2682,8 +2593,7 @@
       "title": "GoSriKi",
       "short": "Women Kurta",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/61362Rup3XL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61362Rup3XL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61362Rup3XL._UY741_.jpg",
@@ -2719,8 +2629,7 @@
       "title": "ANNI DESIGNER",
       "short": "Women's Ruby Cotton Straight Embroidery Kurti with Pant & Dupatta Set (White-Show Baby-Nw)",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/61nmHrgEQbL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61nmHrgEQbL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61nmHrgEQbL._UY741_.jpg",
@@ -2756,8 +2665,7 @@
       "title": "MEERA FAB",
       "short": "Women's Cotton Printed Kurta with Palazzo & Dupatta Set",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/41MFzzwLarL.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/41MFzzwLarL.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/41MFzzwLarL.jpg",
@@ -2785,8 +2693,7 @@
       "title": "GoSriKi Women's",
       "short": "Cotton Blend Kurta with Pant & Dupatta",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/71QqpYeQ87L._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71QqpYeQ87L._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71QqpYeQ87L._UX679_.jpg",
@@ -2822,8 +2729,7 @@
       "title": "Amayra Women's",
       "short": "Rayon Printed Straight Kurti with Palazzos and Dupatta Set",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/71Vjk5S0HKL._UY741_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/71Vjk5S0HKL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/71Vjk5S0HKL._UY741_.jpg",
@@ -2851,8 +2757,7 @@
       "title": "Amayra Women's",
       "short": "Rayon Printed Straight Kurti with Palazzos and Dupatta Set",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/51yz-CmbcML._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51yz-CmbcML._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51yz-CmbcML._UX679_.jpg",
@@ -2880,7 +2785,7 @@
       "title": "ANNI DESIGNER",
       "short": "Women's Cotton Blend Straight Printed Kurta with Pant (Lochna)",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/61IzrpxjBfL._UY741_.jpg",
+      "mainImage": "https://m.media-amazon.com/images/I/61IzrpxjBfL._UY741_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61IzrpxjBfL._UY741_.jpg",
@@ -2908,8 +2813,7 @@
       "title": "GoSriKi Women",
       "short": "Kurta with Palazzo & Dupatta",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/61s7eK1FBAL._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61s7eK1FBAL._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61s7eK1FBAL._UX679_.jpg",
@@ -2941,8 +2845,7 @@
       "title": "YAZU LIFESTYLE",
       "short": "Georgette Sharara Suit Set for Women| Kurta Sharara Set with Dupatta|Embroidery Sequence Work Sharara Suit for Women",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/61ZPaNu3GxL._UY879_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/61ZPaNu3GxL._UY879_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/61ZPaNu3GxL._UY879_.jpg",
@@ -2970,8 +2873,7 @@
       "title": "ANNI DESIGNER",
       "short": "Women's Cotton Straight Printed Kurta with Pant & Dupatta (SHIPRA Light Green)",
       "category": "Suits",
-      "mainImage":"https://m.media-amazon.com/images/I/51BYXAzys0L._UX679_.jpg",
-
+      "mainImage": "https://m.media-amazon.com/images/I/51BYXAzys0L._UX679_.jpg",
       "imageList": [
         {
           "input": "https://m.media-amazon.com/images/I/51BYXAzys0L._UX679_.jpg",
