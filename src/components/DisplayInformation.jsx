@@ -1,18 +1,20 @@
 import React, { useEffect } from 'react';
 
-import { useDispatch , useSelector} from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import {getProduct} from "../Redux/action"
+import { getProduct, UserSignIn } from "../Redux/action"
 
 const DisplayInformation = () => {
 
     const dispatch = useDispatch()
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(getProduct())
-    },[])
+        dispatch(UserSignIn())
+    }, [])
 
-    const data = useSelector(store=>store.product)
+    const data = useSelector(store => store.product)
+    const logindata = useSelector(store => store.sigin)
     console.log(data);
 
     return (
@@ -65,13 +67,15 @@ const DisplayInformation = () => {
                             {/* small box */}
                             <div className="small-box bg-warning">
                                 <div className="inner">
-                                    <h3>44</h3>
+                                    <h3>{logindata.length}</h3>
                                     <p>User Registrations</p>
                                 </div>
                                 <div className="icon">
                                     <i className="ion ion-person-add" />
                                 </div>
-                                <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
+                                <Link to="/updateuser">
+                                    <p style={{ textAlign: "center" }} className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></p>
+                                </Link>
                             </div>
                         </div>
                         {/* ./col */}
@@ -86,7 +90,7 @@ const DisplayInformation = () => {
                                     <i className="ion ion-pie-graph" />
                                 </div>
                                 <Link to="/updateproduct">
-                                <p style={{textAlign:"center"}} href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></p>
+                                    <p style={{ textAlign: "center" }} className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></p>
                                 </Link>
                             </div>
                         </div>

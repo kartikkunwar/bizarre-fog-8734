@@ -2283,7 +2283,7 @@
     {
       "title": "Amante Solid",
       "short": "Mid Rise Seamed Shorty Panty",
-      "category": "",
+      "category": "Shorts",
       "mainImage": "https://m.media-amazon.com/images/I/8105eErXOTL._UX679_.jpg",
       "imageList": [
         {
@@ -2306,7 +2306,6 @@
       "gender": "Women",
       "price": "309",
       "discount": "10",
-      "category":"Shorts",
       "id": 84
     },
     {
@@ -2943,46 +2942,15 @@
   "sigin": [
     {
       "name": "juber",
-      "email": "juber@123",
+      "email": "juber@gmail.com",
       "password": "7894",
       "id": 1
     },
     {
-      "name": "alex kr",
-      "email": "alex@123gmail.com",
-      "password": "123456",
-      "id": 2
-    },
-    {
-      "name": "alex kr",
-      "email": "alex@123gmail.com",
-      "password": "123456",
-      "id": 3
-    },
-    {
-      "name": "alex kr",
-      "email": "alex@123gmail.com",
-      "password": "123456",
-      "id": 4
-    },
-    {
-      "name": "alex kr",
-      "email": "alex@123gmail.com",
-      "password": "123456",
-      "id": 5
-    },
-    {
-      "name": "atul kr",
-      "email": "atul@123gmail.com",
-      "password": "5252",
-      "id": 6
-    },
-    {
       "name": "rahul sharma",
-      "email": "rahul7877@gmail.com",
+      "email": "rahul@gmail.com",
       "password": "1010",
       "id": 7
     }
   ]
-
 }
