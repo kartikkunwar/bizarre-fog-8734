@@ -1,7 +1,8 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import HomePage from '../HomeComponents/HomePage'
+
 import AllProducts from './AllProducts'
+
 import Login from "../Admin/Login/Login"
 import Dashboard from "../Admin/Dashboard/Dashboard"
 import ContactAdmin from '../components/ContactAdmin'
@@ -17,13 +18,14 @@ import SignIn from  "../components/SignIn"
 import SignUp from  "../components/SignUp"
 import { PrivateRoute } from '../kartikcontext/privateroute'
 
+
 const MainRoutes = () => {
     return (
         <Routes>    
-            <Route path="/" element={<Landing/>} />
-            <Route path="/product" element={<AllProducts />} />
-            <Route path="/product/:id" element={<SingleProduct />} />
-            <Route path="/cart" element={<PrivateRoute><Cart /></PrivateRoute>} />
+            <Route path="/" element={<Landing/>}/>
+            <Route path="/product" element={<AllProducts />}/>
+            <Route path="/product/:id" element={<SingleProduct />}/>
+            <Route path="/cart" element={<PrivateRoute><Cart /></PrivateRoute>}/>
             <Route path='/admin' element={<Login/>}/>
             <Route path='/signin' element={<SignIn/>}/>
             <Route path='/signup' element={<SignUp/>}/>
@@ -32,7 +34,7 @@ const MainRoutes = () => {
             <Route path='/editproduct' element={<EditProduct/>}/>
             <Route path='/updateproduct' element={<DeleteProduct/>}/>
             <Route path='/addproduct' element={<AddProduct/>}/>
-            <Route path="*" element={<NotFound/>} />
+            <Route path="*" element={<NotFound/>}/>
         </Routes>
     )
 }
