@@ -83,3 +83,15 @@ export const getAllProduct=(dispatch)=>{
    .catch((err)=>console.log(err))
 
 }
+
+export const adminLoginRequest = (dispatch) =>{
+    return dispatch({type:types.GET_REQUEST_ADMIN})
+}
+
+export const adminLoginSuccess = (dispatch) =>{
+    return dispatch({type:types.GET_SUCCESS_ADMIN})
+}
+
+export const adminLoginFail = (dispatch) =>{
+    return dispatch({type:types.GET_FAIL_ADMIN})
+}

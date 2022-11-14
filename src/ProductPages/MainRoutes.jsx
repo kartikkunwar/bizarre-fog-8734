@@ -12,6 +12,7 @@ import {Landing} from "../components/landing"
 import {SingleProduct} from "../components/singleproduct"
 import {Cart} from "../components/cart"
 import DeleteProduct from "../Admin/Products/DeleteProduct"
+import { PrivateRouteAdmin } from '../components/PrivateRouteAdmin'
 
 const MainRoutes = () => {
     return (
@@ -21,11 +22,11 @@ const MainRoutes = () => {
             <Route path="/product/:id" element={<SingleProduct />} />
             <Route path="/cart" element={<Cart />} />
             <Route path='/admin' element={<Login/>}/>
-            <Route path='/dashboard' element={<Dashboard/>}/>
-            <Route path='/contactcard' element={<ContactAdmin/>}/>
-            <Route path='/editproduct' element={<EditProduct/>}/>
-            <Route path='/updateproduct' element={<DeleteProduct/>}/>
-            <Route path='/addproduct' element={<AddProduct/>}/>
+            <Route path='/dashboard' element={ <Dashboard/> }/>
+            <Route path='/contactcard' element={<PrivateRouteAdmin> <ContactAdmin/> </PrivateRouteAdmin>}/>
+            <Route path='/editproduct' element={<PrivateRouteAdmin> <EditProduct/> </PrivateRouteAdmin>}/>
+            <Route path='/updateproduct' element={<PrivateRouteAdmin> <DeleteProduct/> </PrivateRouteAdmin>}/>
+            <Route path='/addproduct' element={<PrivateRouteAdmin> <AddProduct/> </PrivateRouteAdmin>}/>
             <Route path="*" element={<h3>Page Not Found</h3>} />
         </Routes>
     )

@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch,useSelector } from 'react-redux';
-import { addProduct, updateProduct } from '../../Redux/action';
+import {  updateProduct } from '../../Redux/action';
+import { useNavigate } from 'react-router-dom';
 
 const EditForm = ({titleprop,shortprop,categoryprop,genderprop,imageprop,priceprop,discountprop,id}) => {
 
     console.log(imageprop,id);
+
+    const navigate = useNavigate()
 
     const dispatch = useDispatch()
 
@@ -74,6 +77,7 @@ const EditForm = ({titleprop,shortprop,categoryprop,genderprop,imageprop,pricepr
             discount
         }
         dispatch(updateProduct(obj))
+        navigate("/updateproduct")
         // dispatch(addProduct(obj))
         // console.log(obj);
 

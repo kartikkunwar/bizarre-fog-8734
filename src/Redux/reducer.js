@@ -8,6 +8,8 @@ const initialState = {
     isError: false,
     cartItem: getlocaldata("mcart") || [],
     cartQty: getlocaldata("mquantity") || 0,
+    isadminAuth:true,
+    isuserauth:false
 }
 
 const reducer = (state = initialState, action) => {
@@ -132,8 +134,21 @@ const reducer = (state = initialState, action) => {
                 isLoading: false,
                 isError: true
             }
-
-  
+        case types.GET_REQUEST_ADMIN:
+            return{
+                ...state,
+                isadminAuth:false
+            }
+        case types.GET_SUCCESS_ADMIN:
+            return{
+                ...state,
+                isadminAuth:true
+            }
+        case types.GET_FAIL_ADMIN:
+            return{
+                ...state,
+                isadminAuth:false
+            }  
         default:
             return state;
     }
