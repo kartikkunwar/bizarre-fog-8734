@@ -68,8 +68,6 @@ const getProductRequest = ()=>{
 }
 
 
- }
-
 
 export const addproductcart=(data)=>(dispatch)=>{
     dispatch({type:types.CART_SUCCESS,payload:data})
