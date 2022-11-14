@@ -9,6 +9,7 @@ import Slider from "react-slick"
 import {addproductcart} from "../Redux/action"
 import {getAllProduct} from "../Redux/action"
 import ClockLoader from "react-spinners/ClockLoader";
+import { PassContext } from "../kartikcontext/passcontext";
 
 export const SingleProduct=()=>{
     const [dt,setDt]=React.useState([])
@@ -18,6 +19,8 @@ export const SingleProduct=()=>{
     const [dis,setDis]=React.useState("")
     const dispatch=useDispatch();
     const [showalert,setShowalert]=React.useState(false)
+    const {log,changelog}=React.useContext(PassContext)
+    const [lgalert,setLgalert]=React.useState(false)
     // const navigate=useNavigate();
     const settings = {
         dots: false,
@@ -55,11 +58,19 @@ export const SingleProduct=()=>{
         },2000)
     },[])
     const cartdata=(data)=>{
+        
+        if(log){
         dispatch(addproductcart(data))
         setShowalert(true)
         setTimeout(()=>{
            setShowalert(false)
         },5000)
+    }else{
+        setLgalert(true)
+        setTimeout(()=>{
+            setLgalert(false)
+         },5000)
+    }
     }
     
     return(
@@ -127,11 +138,21 @@ export const SingleProduct=()=>{
            </Box>,
            <Box>
            {
-               showalert&&<Box p='20px'><Alert status='success'>
+               showalert&&<Box w='30%' position='absolute'  top='-10' right='0'><Alert status='success'>
                <AlertIcon />
                     Product added to cart
            </Alert></Box>
            }
+       </Box>,
+       <Box>
+          {
+            lgalert&&<Box w='30%' position='absolute'  top='-10' right='0'>
+                <Alert status='error'>
+                    <AlertIcon />
+                    Please Login first
+                </Alert>
+            </Box>
+          }
        </Box>,
            <Footer/>]
         }

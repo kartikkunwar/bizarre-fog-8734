@@ -101,7 +101,7 @@ export const UserSignIn = (dispatch) => {
     // dispatch({ type: types.POST_REQUEST_SignIn })
     return axios.get("http://localhost:8080/sigin").then((res) => {
         //  console.log(res);
-        return dispatch({type:types.POST_SUCCESS_SignIn,paylod:res.data})
+        return dispatch({type:types.POST_SUCCESS_SignIn,payload:res.data})
     }).catch((err) => {
         return dispatch({type:types.POST_FAIL_SignIn})
     })
