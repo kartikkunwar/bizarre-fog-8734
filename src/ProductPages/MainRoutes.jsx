@@ -1,13 +1,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-
 import AllProducts from './AllProducts'
-
 import Login from "../Admin/Login/Login"
 import Dashboard from "../Admin/Dashboard/Dashboard"
 import ContactAdmin from '../components/ContactAdmin'
 import EditProduct from '../Admin/Products/EditProduct'
-import UserProducts from '../ProductComponents/UserProducts'
 import AddProduct from "../Admin/Products/AddProduct"
 import {Landing} from "../components/landing"
 import {SingleProduct} from "../components/singleproduct"
