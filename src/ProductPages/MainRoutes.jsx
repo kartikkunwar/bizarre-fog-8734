@@ -1,7 +1,8 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import HomePage from '../HomeComponents/HomePage'
+
 import AllProducts from './AllProducts'
+
 import Login from "../Admin/Login/Login"
 import Dashboard from "../Admin/Dashboard/Dashboard"
 import ContactAdmin from '../components/ContactAdmin'
@@ -14,6 +15,7 @@ import {Cart} from "../components/cart"
 import DeleteProduct from "../Admin/Products/DeleteProduct"
 import { NotFound } from '../components/PageNotFound'
 
+
 const MainRoutes = () => {
     return (
         <Routes>    
@@ -21,6 +23,7 @@ const MainRoutes = () => {
             <Route path="/product" element={<AllProducts />} />
             <Route path="/product/:id" element={<SingleProduct />} />
             <Route path="/cart" element={<Cart />} />
+
             <Route path='/admin' element={<Login/>}/>
             <Route path='/dashboard' element={<Dashboard/>}/>
             <Route path='/contactcard' element={<ContactAdmin/>}/>
@@ -28,6 +31,7 @@ const MainRoutes = () => {
             <Route path='/updateproduct' element={<DeleteProduct/>}/>
             <Route path='/addproduct' element={<AddProduct/>}/>
             <Route path="*" element={<NotFound/>} />
+
         </Routes>
     )
 }
