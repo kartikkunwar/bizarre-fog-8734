@@ -39,7 +39,7 @@ const Login = () => {
     }
 
     return (
-        <div style={{ margin: "auto", marginTop: "10%" }} className="login-box">
+        <div style={{ margin: "auto", marginTop: "10%"}} className="login-box">
             <Link to="/">
                 <div className="login-logo">
                     <a href="#"><b>One</b>Stop</a>

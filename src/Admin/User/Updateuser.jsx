@@ -10,7 +10,7 @@ const Updateuser = () => {
             <NavBarAdmin />
             <SidePannalAdmin />
             <DisplayForm/>
-            {/* <FooterAdmin /> */}
+            <FooterAdmin />
         </div>
     );
 };

@@ -11,7 +11,7 @@ const AddProduct = () => {
             <NavBarAdmin />
             <SidePannalAdmin />
             <AddForm />
-            <FooterAdmin/>
+            {/* <FooterAdmin/> */}
         </div>
     );
 };

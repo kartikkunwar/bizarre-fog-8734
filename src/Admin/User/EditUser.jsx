@@ -15,7 +15,7 @@ const EditUser = () => {
             <NavBarAdmin/>
             <SidePannalAdmin/>
             <EditFormuser nameprop={data.name} emailprop={data.email} idprop={data.id}/>
-            {/* <FooterAdmin/> */}
+            <FooterAdmin/>
         </div>
     );
 };

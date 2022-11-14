@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom"
+import logo from "../Admin/Photo/ONE STOP.png"
 
 const SidePannalAdmin = () => {
     return (
@@ -7,7 +8,7 @@ const SidePannalAdmin = () => {
             {/* Brand Logo */}
             <Link to="/">
                 <a href="#" className="brand-link">
-                    <img src="ONE STOP.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
+                    <img src={logo} alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
                     <span className="brand-text font-weight-light">OneStop</span>
                 </a>
             </Link>
@@ -17,7 +18,7 @@ const SidePannalAdmin = () => {
                 <Link to="/dashboard">
                     <div className="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div className="image">
-                            <img src="ONE STOP.png" className="img-circle elevation-2" alt="User Image" />
+                            <img src={logo} className="img-circle elevation-2" alt="User Image" />
                         </div>
                         <div className="info">
                             <a href="#" className="d-block">Admin</a>

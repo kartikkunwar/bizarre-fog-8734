@@ -136,7 +136,7 @@ const ContactAdmin = () => {
                 {/* /.content */}
             </div>
             {/* /.content-wrapper */}
-            <FooterAdmin/>
+            {/* <FooterAdmin/> */}
         </div>
 
     );
