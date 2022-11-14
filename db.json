@@ -2897,5 +2897,50 @@
       "discount": "50",
       "id": 103
     }
+  ],
+  "sigin": [
+    {
+      "name": "juber",
+      "email": "juber@123",
+      "password": "7894",
+      "id": 1
+    },
+    {
+      "name": "alex kr",
+      "email": "alex@123gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "alex kr",
+      "email": "alex@123gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "alex kr",
+      "email": "alex@123gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "name": "alex kr",
+      "email": "alex@123gmail.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "name": "atul kr",
+      "email": "atul@123gmail.com",
+      "password": "5252",
+      "id": 6
+    },
+    {
+      "name": "rahul sharma",
+      "email": "rahul7877@gmail.com",
+      "password": "1010",
+      "id": 7
+    }
   ]
+
 }
