@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, Button, Grid, GridItem, Input,Image,Text, Flex,FormControl } from '@chakra-ui/react'
 import { Link} from 'react-router-dom';
 import { signin_attemp } from '../Redux/action';
@@ -9,13 +9,26 @@ import {FcGoogle} from 'react-icons/fc'
 import {BsFacebook} from 'react-icons/bs'
 import {BsApple} from 'react-icons/bs'
 import './SignIn.css'
-import {useDispatch} from 'react-redux'
+import {useDispatch,useSelector} from 'react-redux'
 import { UserSignIn } from '../Redux/action';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { PassContext } from "../kartikcontext/passcontext";
 
 
 const SignIn = () => {
-  // const auth = useSelector(state => state.Auth.auth)
+  // const data=useSelector((el)=>console.log(el))
+  const [dt,setDt]=useState([])
+  const {log,changelog}=React.useContext(PassContext)
+  const kartik=()=>{
+    return axios.get("http://localhost:8080/sigin") 
+}
 
+React.useEffect(()=>{
+    kartik()
+    .then((res)=>setDt(res.data))
+    .catch((err)=>console.log(err)) 
+},[])
  
   const dispatch = useDispatch()
   const initialState = { 
@@ -23,10 +36,14 @@ const SignIn = () => {
    password: ""
    }
 
+   useEffect(()=>{
+    dispatch(UserSignIn)
+   })
+
   const [loginData, setLoginData] = useState(initialState)
   const [icon , setIcon]=useState(eyeOff)
   const [pass, setPass]= useState(false);
-
+ const navigate=useNavigate()
 
   const handleToggle=()=>{
     if(pass===false){
@@ -37,18 +54,34 @@ const SignIn = () => {
       setPass(false)
     }
   }
-
+  
 
   const handleSubmit = (e) => {
     e.preventDefault()
     // dispatch(signin_attemp(loginData))
-    dispatch(UserSignIn(loginData))
-  }
- console.log(loginData)
+    // dispatch(UserSignIn(loginData))
+    // if(auth){
+    //   navigate("/")
+    // }
+
+   
+    const x=dt.filter((el)=>{
+      return el.email==loginData.email&&el.password==loginData.password
+    })
+      if(x.length){
+        changelog();
+        navigate("/")
+      }else{
+        alert("wrong info")
+      }
+    
+  // }
+//  console.log(loginData)
   // if (auth) {
   //   return <Navigate to='/' />
   // }
-
+        // navigate("/")
+  }
 
 
   return (
@@ -61,7 +94,7 @@ const SignIn = () => {
     
         
   
-       <FormControl  onSubmit={handleSubmit} >
+       <FormControl   >
 
             <Input w="85%"   p="25px"  mt="25px" borderRadius="10px" type="email" name="email" placeholder='Email address' onChange={e => { setLoginData({ ...loginData, [e.target.name]: e.target.value }) }}
             />
@@ -81,14 +114,14 @@ const SignIn = () => {
           </p>
          
          <Button size="md"  p="25px"  width="85%"   borderRadius="10px" borderColor="black.500"    backgroundColor="black"  color="white" mt="25px"  
-            type={'submit'}>SignIn</Button>
+            onClick={handleSubmit}>SignIn</Button>
 
         
          </FormControl>
 
        <div style={{ marginBottom: "100px" }} className="create">
          <p>Already have an account?</p>
-         <Link style={{ textDecoration: "underline", marginLeft: "5px" }} to="/Signin"><strong>Singup</strong></Link>
+         <Link style={{ textDecoration: "underline", marginLeft: "5px" }} to="/signin"><strong>Singup</strong></Link>
          <br/>
          <hr/>
          <Box   h='300px' w='full'  mt='50px' >

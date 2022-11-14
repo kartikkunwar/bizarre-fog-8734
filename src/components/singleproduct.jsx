@@ -52,7 +52,7 @@ export const SingleProduct=()=>{
         setAmin(true)
         setTimeout(()=>{
            setAmin(false)
-        },1000)
+        },2000)
     },[])
     const cartdata=(data)=>{
         dispatch(addproductcart(data))

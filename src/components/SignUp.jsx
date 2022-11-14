@@ -25,7 +25,7 @@ const SignUp = () => {
   const [icon , setIcon]=useState(eyeOff)
 
   const [pass, setPass]= useState(false);
-
+  
 
 // console.log(form)
 
@@ -45,7 +45,9 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // signup_attemp(form, navigate);
- dispatch(UserRegister(form))
+   dispatch(UserRegister(form))
+   navigate("/signin")
+     
   };
 
  

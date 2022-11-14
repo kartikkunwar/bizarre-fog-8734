@@ -1,6 +1,6 @@
 import { ChevronDownIcon, HamburgerIcon,SearchIcon } from "@chakra-ui/icons"
 import { Box, Button, Image, Text, Menu,MenuButton,MenuList,MenuItem,IconButton,Input, InputGroup, InputLeftElement, Divider } from "@chakra-ui/react"
-import { Link } from "react-router-dom"
+import { Link,useNavigate } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faUser,faCartArrowDown} from "@fortawesome/free-solid-svg-icons"
 import React from "react"
@@ -8,11 +8,14 @@ import { ShowTab } from "./showtabmen"
 import { ShowTabwomen } from "./showtabwomen"
 import { SearchResults } from "./searchresults"
 import { useSelector } from "react-redux"
+import { PassContext } from "../kartikcontext/passcontext";
 
 export const Navbar=()=>{
       const [showdown,setShowdown]=React.useState(false)
       const [showdownwomen,setShowdownwomen]=React.useState(false)
       const [query,setQuery]=React.useState("")
+      const {log,changelog}=React.useContext(PassContext)
+      const navigate=useNavigate();
 
       const qtydata=useSelector((el)=>el.cartQty)
       const setmen=()=>{
@@ -25,6 +28,13 @@ export const Navbar=()=>{
      }
      const setquerychange=(e)=>{
         setQuery(e.target.value)
+     }
+     const lgio=()=>{
+        if(log){
+            changelog();
+        }else{
+         navigate("/signin")
+        }
      }
      
     return[
@@ -47,10 +57,11 @@ export const Navbar=()=>{
             </Box>
             <Box width='15%'  textAlign='center'>
             <Menu >
-                 <MenuButton className="lgb" as={Button} bgColor='teal' rightIcon={<ChevronDownIcon />}>Login / Signup</MenuButton>
+                 <MenuButton className="lgb" as={Button} bgColor='teal' rightIcon={<ChevronDownIcon />} ><FontAwesomeIcon icon={faUser} color='white' fontSize={30}></FontAwesomeIcon></MenuButton>
                     <MenuList color='black'>
-                        <Link><MenuItem className="mitem">Signup</MenuItem></Link>
-                        <Link><MenuItem className="mitem">Login</MenuItem></Link>
+                        <Link to='/signup'><MenuItem className="mitem">{!log? 'Signup': 'Settings'}</MenuItem></Link>
+                        <MenuItem className="mitem" onClick={lgio}>{!log? 'Login': 'Logout'}</MenuItem>
+                        <Link to='/admin'><MenuItem className="mitem">Admin Login</MenuItem></Link>
                     </MenuList>
                 </Menu>
             </Box>
@@ -77,8 +88,9 @@ export const Navbar=()=>{
                     <MenuButton><FontAwesomeIcon icon={faUser} color='white' fontSize={30}></FontAwesomeIcon></MenuButton>
                     <MenuList>
                         <Link to='/cart'><MenuItem className="mitem" bgColor='lightyellow'><span>{qtydata}</span><FontAwesomeIcon icon={faCartArrowDown} color='black' fontSize={25}></FontAwesomeIcon></MenuItem></Link>
-                        <MenuItem className="mitem">Logout</MenuItem>
-                        <MenuItem className="mitem">Settings</MenuItem>                                                
+                        <MenuItem className="mitem" onClick={lgio}>{!log? 'Login': 'Logout'}</MenuItem>
+                        <MenuItem className="mitem">{!log? 'Signup': 'Settings'}</MenuItem>
+                        <Link to='/admin'><MenuItem className="mitem">Admin Login</MenuItem></Link>                                                
                     </MenuList>
                 </Menu>
             </Box>

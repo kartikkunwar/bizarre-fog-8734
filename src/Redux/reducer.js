@@ -4,6 +4,7 @@ import { getlocaldata, setlocaldata } from "../utils/localstoragedata"
 const initialState = {
     product: [],
     allProduct: [],
+    sigin:[],
     isLoading: false,
     isError: false,
     cartItem: getlocaldata("mcart") || [],
@@ -160,7 +161,7 @@ const reducer = (state = initialState, action) => {
                     return{
                         ...state,
                         isLoading:false,
-                        sigin:[...payload]
+                        sigin:payload
                         
                     }
                     case types.POST_FAIL_SignIn:

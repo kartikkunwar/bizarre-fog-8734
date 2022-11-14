@@ -13,6 +13,9 @@ import {SingleProduct} from "../components/singleproduct"
 import {Cart} from "../components/cart"
 import DeleteProduct from "../Admin/Products/DeleteProduct"
 import { NotFound } from '../components/PageNotFound'
+import SignIn from  "../components/SignIn"
+import SignUp from  "../components/SignUp"
+import { PrivateRoute } from '../kartikcontext/privateroute'
 
 const MainRoutes = () => {
     return (
@@ -20,8 +23,10 @@ const MainRoutes = () => {
             <Route path="/" element={<Landing/>} />
             <Route path="/product" element={<AllProducts />} />
             <Route path="/product/:id" element={<SingleProduct />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart" element={<PrivateRoute><Cart /></PrivateRoute>} />
             <Route path='/admin' element={<Login/>}/>
+            <Route path='/signin' element={<SignIn/>}/>
+            <Route path='/signup' element={<SignUp/>}/>
             <Route path='/dashboard' element={<Dashboard/>}/>
             <Route path='/contactcard' element={<ContactAdmin/>}/>
             <Route path='/editproduct' element={<EditProduct/>}/>

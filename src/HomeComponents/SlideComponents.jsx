@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { breakoutBrands, hotRightNow, lystSeller, lystSellerTwo, trendngNow } from './data';
 import "./SlideComponents.css"
+import { Link } from 'react-router-dom';
 
 const SlideComponents = () => {
   const settings = {
@@ -45,14 +46,14 @@ const SlideComponents = () => {
       <div className='App-details'>
         <Slider {...settings}>
           {lystSeller.map((item) => (
-            <div className='card'>
+            <Link to='/product'><div className='card'>
               <div className='card-top'>
                 <img src={item.image} alt={item.title} style={{ height: "500px" }} />
               </div>
               <div className='card-bottom'>
                 <h1>{item.title}</h1>
               </div>
-            </div>
+            </div></Link>
           ))}
         </Slider>
       </div>
@@ -60,14 +61,14 @@ const SlideComponents = () => {
       <div className='App-details-1'>
         <Slider {...settings}>
           {lystSellerTwo.map((item) => (
-            <div className='card'>
+            <Link to='/product'><div className='card'>
               <div className='card-top'>
                 <img src={item.image} alt={item.title} style={{ height: "500px" }} />
               </div>
               <div className='card-bottom'>
                 <h1>{item.title}</h1>
               </div>
-            </div>
+            </div></Link>
           ))}
         </Slider>
       </div>
@@ -76,7 +77,7 @@ const SlideComponents = () => {
         <h1>BREAKOUT BRANDS</h1>
         <Slider {...settings}>
           {breakoutBrands.map((item) => (
-            <div className='card'>
+            <Link to='/product'><div className='card'>
               <div className='card-bottom'>
                 <h1>{item.title}</h1>
               </div>
@@ -84,7 +85,7 @@ const SlideComponents = () => {
                 <img src={item.image} alt={item.title} style={{ height: "400px" }} />
               </div>
 
-            </div>
+            </div></Link>
           ))}
         </Slider>
       </div>
@@ -93,7 +94,7 @@ const SlideComponents = () => {
         <h1>BREAKOUT BRANDS</h1>
         <Slider {...settings}>
           {breakoutBrands.map((item) => (
-            <div className='card'>
+            <Link to='/product'><div className='card'>
               <div className='card-bottom'>
                 <h1>{item.title}</h1>
               </div>
@@ -101,7 +102,7 @@ const SlideComponents = () => {
                 <img src={item.image} alt={item.title} style={{ height: "400px" }} />
               </div>
 
-            </div>
+            </div></Link>
           ))}
         </Slider>
       </div>
@@ -110,7 +111,7 @@ const SlideComponents = () => {
         <h1>TRENDING NOW</h1>
         <Slider {...settings}>
           {trendngNow.map((item) => (
-            <div className='card'>
+            <Link to='/product'><div className='card'>
               <div className='card-bottom'>
                 <h1>{item.title}</h1>
               </div>
@@ -118,7 +119,7 @@ const SlideComponents = () => {
                 <img src={item.image} alt={item.title} style={{ height: "400px" }} />
               </div>
 
-            </div>
+            </div></Link>
           ))}
         </Slider>
       </div>
@@ -127,7 +128,7 @@ const SlideComponents = () => {
         <h1>HOT RIGHT NOW</h1>
         <Slider {...settings}>
           {hotRightNow.map((item) => (
-            <div className='card'>
+            <Link to='/product'><div className='card'>
               <div className='card-bottom'>
                 <h1>{item.title}</h1>
               </div>
@@ -135,7 +136,7 @@ const SlideComponents = () => {
                 <img src={item.image} alt={item.title} style={{ height: "400px" }} />
               </div>
 
-            </div>
+            </div></Link>
           ))}
         </Slider>
       </div>
