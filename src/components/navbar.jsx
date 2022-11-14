@@ -1,5 +1,5 @@
 import { ChevronDownIcon, HamburgerIcon,SearchIcon } from "@chakra-ui/icons"
-import { Box, Button, Image, Text, Menu,MenuButton,MenuList,MenuItem,IconButton,Input, InputGroup, InputLeftElement, Divider } from "@chakra-ui/react"
+import { Box, Button, Image, Text, Menu,MenuButton,MenuList,MenuItem,IconButton,Input, InputGroup, InputLeftElement, Divider, Alert, AlertIcon } from "@chakra-ui/react"
 import { Link,useNavigate } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faUser,faCartArrowDown} from "@fortawesome/free-solid-svg-icons"
@@ -9,12 +9,14 @@ import { ShowTabwomen } from "./showtabwomen"
 import { SearchResults } from "./searchresults"
 import { useSelector } from "react-redux"
 import { PassContext } from "../kartikcontext/passcontext";
+import ONESTOP from "../Admin/Photo/ONE STOP.png"
 
 export const Navbar=()=>{
       const [showdown,setShowdown]=React.useState(false)
       const [showdownwomen,setShowdownwomen]=React.useState(false)
       const [query,setQuery]=React.useState("")
       const {log,changelog}=React.useContext(PassContext)
+      const [lgalert,setLgalert]=React.useState(false)
       const navigate=useNavigate();
 
       const qtydata=useSelector((el)=>el.cartQty)
@@ -32,6 +34,10 @@ export const Navbar=()=>{
      const lgio=()=>{
         if(log){
             changelog();
+            setLgalert(true)
+        setTimeout(()=>{
+            setLgalert(false)
+         },5000)
         }else{
          navigate("/signin")
         }
@@ -40,7 +46,7 @@ export const Navbar=()=>{
     return[
         <Box height="80px"  justifyContent="space-between" alignItems='center' bgColor='black' color='white' className="bigs" zIndex='3'>
             <Box height="100%" width='10%' >
-              <Link to='/'><Image src="ONE STOP.png" height="100%" bgColor='none'/></Link>
+              <Link to='/'><Image src={ONESTOP} height="100%" bgColor='none'/></Link>
             </Box>
             <Box display='flex' width='10%' >
                 <Button mr='5px' bg='none' onClick={setwomen}>Women</Button ><Divider orientation='vertical' height='20px' margin='auto'/>
@@ -94,6 +100,16 @@ export const Navbar=()=>{
                     </MenuList>
                 </Menu>
             </Box>
+        </Box>,
+        <Box>
+        {
+          lgalert&&<Box w='30%' position='absolute'  top='10' right='0' zIndex='9999'>
+              <Alert status='error'>
+                  <AlertIcon />
+                  User Logged Out
+              </Alert>
+          </Box>
+        }
         </Box>,
         showdown&&<ShowTab setShowdown={setShowdown}/>,
         showdownwomen&&<ShowTabwomen setShowdownwomen={setShowdownwomen}/>,
