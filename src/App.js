@@ -1,4 +1,8 @@
 import './App.css';
+// import Checkout from './components/Checkout';
+// import { Footer } from './components/footer';
+// import { Navbar } from './components/navbar';
+import MainRoutes from './ProductPages/MainRoutes';
 
 
 
@@ -7,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    
+  <MainRoutes/>
     
     </div>
   );

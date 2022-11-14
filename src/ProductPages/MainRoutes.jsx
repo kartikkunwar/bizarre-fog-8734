@@ -12,6 +12,14 @@ import {Landing} from "../components/landing"
 import {SingleProduct} from "../components/singleproduct"
 import {Cart} from "../components/cart"
 import DeleteProduct from "../Admin/Products/DeleteProduct"
+import Checkout from '../components/Checkout'
+import CartCard from '../components/CartCard'
+import CartDetailCard from '../components/CartDetailCard'
+import DeliveryAddressContainer from '../components/DeliveryAddressContainer'
+import PaymentDetails from '../components/PaymentDetails'
+import CardPayment from '../components/CardPayment'
+import FinalCheckout from '../components/FinalCheckout'
+
 
 const MainRoutes = () => {
     return (
@@ -26,6 +34,8 @@ const MainRoutes = () => {
             <Route path='/editproduct' element={<EditProduct/>}/>
             <Route path='/updateproduct' element={<DeleteProduct/>}/>
             <Route path='/addproduct' element={<AddProduct/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
+            <Route path='/payment' element={<FinalCheckout/>}/>
             <Route path="*" element={<h3>Page Not Found</h3>} />
         </Routes>
     )
