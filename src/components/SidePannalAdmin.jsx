@@ -5,13 +5,16 @@ const SidePannalAdmin = () => {
     return (
         <aside className="main-sidebar sidebar-dark-primary elevation-4">
             {/* Brand Logo */}
-            <a href="#" className="brand-link">
-                <img src="ONE STOP.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
-                <span className="brand-text font-weight-light">OneStop</span>
-            </a>
+            <Link to="/">
+                <a href="#" className="brand-link">
+                    <img src="ONE STOP.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
+                    <span className="brand-text font-weight-light">OneStop</span>
+                </a>
+            </Link>
             {/* Sidebar */}
             <div className="sidebar">
                 {/* Sidebar user panel (optional) */}
+                <Link to="/dashboard">
                 <div className="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div className="image">
                         <img src="ONE STOP.png" className="img-circle elevation-2" alt="User Image" />
@@ -20,6 +23,7 @@ const SidePannalAdmin = () => {
                         <a href="#" className="d-block">Admin</a>
                     </div>
                 </div>
+                </Link>
                 <div className="form-inline">
                     <div className="input-group" data-widget="sidebar-search">
                         <input className="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search" />

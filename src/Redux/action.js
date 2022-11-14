@@ -87,6 +87,18 @@ export const getAllProduct=(dispatch)=>{
 
 }
 
+export const adminLoginRequest = (dispatch) =>{
+    return dispatch({type:types.GET_REQUEST_ADMIN})
+}
+
+export const adminLoginSuccess = (dispatch) =>{
+    return dispatch({type:types.GET_SUCCESS_ADMIN})
+}
+
+export const adminLoginFail = (dispatch) =>{
+    return dispatch({type:types.GET_FAIL_ADMIN})
+}
+
 export const UserRegister = (params) => (dispatch) => {
     dispatch({ type: types.POST_REQUEST_SignUp })
     return axios.post("http://localhost:8080/sigin", params).then((res) => {
@@ -105,4 +117,4 @@ export const UserSignIn = (dispatch) => {
     }).catch((err) => {
         return dispatch({type:types.POST_FAIL_SignIn})
     })
-}
+} 

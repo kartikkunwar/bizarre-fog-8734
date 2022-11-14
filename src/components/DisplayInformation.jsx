@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { useDispatch , useSelector} from 'react-redux';
+import { Link } from 'react-router-dom';
 import {getProduct} from "../Redux/action"
 
 const DisplayInformation = () => {
@@ -84,7 +85,9 @@ const DisplayInformation = () => {
                                 <div className="icon">
                                     <i className="ion ion-pie-graph" />
                                 </div>
-                                <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></a>
+                                <Link to="/updateproduct">
+                                <p style={{textAlign:"center"}} href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right" /></p>
+                                </Link>
                             </div>
                         </div>
                         {/* ./col */}

@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { addProduct } from '../../Redux/action';
 
 const AddForm = () => {
 
     const dispatch = useDispatch()
+
+    const navigate = useNavigate()
 
     const [title, setTitle] = useState("")
     const [short, setShort] = useState("")
@@ -63,6 +66,7 @@ const AddForm = () => {
             discount
         }
         dispatch(addProduct(obj))
+        navigate("/updateproduct")
         // console.log(obj);
 
     }

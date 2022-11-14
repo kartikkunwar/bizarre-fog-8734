@@ -1,22 +1,39 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { adminLoginFail, adminLoginRequest, adminLoginSuccess } from '../../Redux/action';
 
 const Login = () => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const auth = useSelector((store) => store.isadminAuth)
+
+    useEffect(() => {
+        console.log(auth);
+    }, [])
+
     const handleclick = () => {
+        dispatch(adminLoginRequest)
+        // console.log(auth,"after reques");
         let obj = {
             email,
             password
         }
         console.log(obj);
+
         if (obj.email === "admin@gmail.com" && obj.password === "admin") {
-            alert("correct");
-            // <Link to="/dashboard" replace={true} />
+            // alert("correct");
+            dispatch(adminLoginSuccess)
+            console.log(auth);
+            // console.log(auth,"after Success");
+            navigate("/dashboard");
         } else {
+            dispatch(adminLoginFail)
             alert("Wrong")
         }
     }
@@ -58,9 +75,11 @@ const Login = () => {
                         </div>
                     </div>
                     {/* /.social-auth-links */}
-                    <p className="mb-1">
-                        <a href="#">Back To Home</a>
-                    </p>
+                    <Link to="/">
+                        <p className="mb-1">
+                            <a href="#">Back To Home</a>
+                        </p>
+                    </Link>
                 </div>
                 {/* /.login-card-body */}
             </div>

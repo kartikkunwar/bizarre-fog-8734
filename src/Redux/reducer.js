@@ -4,11 +4,13 @@ import { getlocaldata, setlocaldata } from "../utils/localstoragedata"
 const initialState = {
     product: [],
     allProduct: [],
-    sigin:[],
+    sigin: [],
     isLoading: false,
     isError: false,
     cartItem: getlocaldata("mcart") || [],
     cartQty: getlocaldata("mquantity") || 0,
+    isadminAuth: true,
+    isuserauth: false
 }
 
 const reducer = (state = initialState, action) => {
@@ -133,49 +135,57 @@ const reducer = (state = initialState, action) => {
                 isLoading: false,
                 isError: true
             }
+        case types.GET_REQUEST_ADMIN:
+            return {
+                ...state,
+                isadminAuth: false
+            }
+        case types.GET_SUCCESS_ADMIN:
+            return {
+                ...state,
+                isadminAuth: true
+            }
+        case types.GET_FAIL_ADMIN:
+            return {
+                ...state,
+                isadminAuth: false
+            }
+        case types.POST_REQUEST_SignUp:
+            return {
+                ...state,
+                isLoading: true
+            }
+        case types.POST_SUCCESS_SignUp:
+            return {
+                ...state,
+                isLoading: false,
+                sigin: [...payload]
 
-            case types.POST_REQUEST_SignUp:
-                return{
-                    ...state,
-                    isLoading:true
-                }
-                case types.POST_SUCCESS_SignUp:
-                return{
-                    ...state,
-                    isLoading:false,
-                    sigin:[...payload]
-                    
-                }
-                case types.POST_FAIL_SignUp:
-                return{
-                    ...state,
-                    isLoading:false,
-                    isError:true
-                }
-                case types.POST_REQUEST_SignIn:
-                    return{
-                        ...state,
-                        isLoading:true
-                    }
-                    case types.POST_SUCCESS_SignIn:
-                    return{
-                        ...state,
-                        isLoading:false,
-                        sigin:payload
-                        
-                    }
-                    case types.POST_FAIL_SignIn:
-                    return{
-                        ...state,
-                        isLoading:false,
-                        isError:true
-                    }
-    
-    
-    
+            }
+        case types.POST_FAIL_SignUp:
+            return {
+                ...state,
+                isLoading: false,
+                isError: true
+            }
+        case types.POST_REQUEST_SignIn:
+            return {
+                ...state,
+                isLoading: true
+            }
+        case types.POST_SUCCESS_SignIn:
+            return {
+                ...state,
+                isLoading: false,
+                sigin: payload
 
-
-  
+            }
+        case types.POST_FAIL_SignIn:
+            return {
+                ...state,
+                isLoading: false,
+                isError: true
+            }
         default:
             return state;
     }
