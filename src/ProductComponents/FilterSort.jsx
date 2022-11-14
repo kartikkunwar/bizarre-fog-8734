@@ -12,6 +12,25 @@ const FilterSort = () => {
 
     const [categoryType, setCategoryType] = useState(searchParams.getAll("category") || [])
 
+    const[genderType,setGenderType] = useState(searchParams.getAll("gender") || [])
+
+
+    const handleGenderFilter = (e)=>{
+        
+        const genderOption = e.target.value;
+        // console.log(genderOption)
+
+        let newGenderType = [...genderType];
+      
+        if(newGenderType.includes(genderOption)){
+            newGenderType.splice(newGenderType.indexOf(genderOption),1)
+        }else{
+            newGenderType.push(genderOption)
+        }
+       
+        setGenderType(newGenderType)
+    }
+
     const handleFilter = (e) => {
 
         const option = e.target.value;
@@ -33,11 +52,11 @@ const FilterSort = () => {
     useEffect(() => {
         const params = {};
         categoryType && (params.category = categoryType);
-
+        genderType && (params.gender = genderType) 
         sortBy && (params.sortBy = sortBy);
         setSearchParams(params)
 
-    }, [categoryType, setSearchParams, sortBy])
+    }, [categoryType, setSearchParams, sortBy,genderType])
 
     return (
         <div className='filter'>
@@ -76,14 +95,26 @@ const FilterSort = () => {
             <div onChange={handleSortBy}>
                 <div className='filter-2'>
                     <input type="radio" name="sortBy" value="asc" defaultChecked={sortBy === 'asc'} />
-                    <label>High - Low</label>
+                    <label>Low - High</label>
                 </div>
 
                 <div className='filter-2'>
                     <input type="radio" name="sortBy" value="desc" defaultChecked={sortBy === 'desc'} />
-                    <label>Low - High</label>
+                    <label>High - Low</label>
                 </div>
                 </div>
+            </div>
+            <div className='filter-1'>
+            <h4>Gender</h4>
+      <div className='filter-2'>
+            <input type="checkbox" value="Women" defaultChecked={genderType.includes("Women")} onChange={handleGenderFilter}/>
+            <label>Women</label>
+        </div>
+
+        <div className='filter-2'>
+            <input type="checkbox" value="Men" defaultChecked={genderType.includes("Men")} onChange={handleGenderFilter}/>
+            <label>Men</label>
+        </div>
             </div>
         </div>
     )

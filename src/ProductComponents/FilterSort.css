@@ -1,10 +1,21 @@
+/* .filter{
+    display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,max-content));
+justify-content: center;
+ gap: 30px;
+ z-index: -10;
+} */
+/* .filter-1{
+    display: flex;
+} */
 .filter  h2{
     font-size: 40px;
     margin-bottom: 20px;
+
 }
 .filter-1{
     margin-bottom: 20px;
-    
+
 }
 .filter-1 h4{
     font-size: 25px;
@@ -12,5 +23,5 @@
 
 }
 .filter-2 label{
-   margin-left: 10px;
+   margin-left: 10px;  
 }

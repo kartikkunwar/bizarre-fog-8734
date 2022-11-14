@@ -220,7 +220,7 @@
         }
       ],
       "gender": "",
-      "price": "1299",
+      "price": "129",
       "discount": "10",
       "id": 8
     },
@@ -309,7 +309,7 @@
         }
       ],
       "gender": "Women",
-      "price": "4325",
+      "price": "432",
       "discount": "50",
       "id": 11
     },
@@ -351,7 +351,7 @@
         }
       ],
       "gender": "Women",
-      "price": "1450",
+      "price": "145",
       "discount": "30",
       "id": 13
     },
@@ -420,7 +420,7 @@
         }
       ],
       "gender": "Women",
-      "price": "5725",
+      "price": "572",
       "discount": "20",
       "id": 16
     },
@@ -449,7 +449,7 @@
         }
       ],
       "gender": "Women",
-      "price": "6300",
+      "price": "630",
       "discount": "20",
       "id": 17
     },
@@ -478,7 +478,7 @@
         }
       ],
       "gender": "Women",
-      "price": "1195",
+      "price": "119",
       "discount": "20",
       "id": 18
     },
@@ -503,7 +503,7 @@
         }
       ],
       "gender": "Women",
-      "price": "13807",
+      "price": "138",
       "discount": "10",
       "id": 19
     },
@@ -524,7 +524,7 @@
         }
       ],
       "gender": "Women",
-      "price": "11554",
+      "price": "115",
       "discount": "20",
       "id": 20
     },
@@ -553,7 +553,7 @@
         }
       ],
       "gender": "Women",
-      "price": "24681",
+      "price": "246",
       "discount": "50",
       "id": 21
     },
@@ -668,7 +668,7 @@
         }
       ],
       "gender": "Men",
-      "price": "1089",
+      "price": "108",
       "discount": "10",
       "id": 25
     },
@@ -752,7 +752,7 @@
         }
       ],
       "gender": "Men",
-      "price": "1589",
+      "price": "158",
       "discount": "50",
       "id": 28
     },
@@ -777,7 +777,7 @@
         }
       ],
       "gender": "Men",
-      "price": "2069",
+      "price": "269",
       "discount": "50",
       "id": 29
     },
@@ -806,7 +806,7 @@
         }
       ],
       "gender": "Men",
-      "price": "1199",
+      "price": "119",
       "discount": "60",
       "id": 30
     },
@@ -831,7 +831,7 @@
         }
       ],
       "gender": "Men",
-      "price": "1199",
+      "price": "119",
       "discount": "60",
       "id": 31
     },
@@ -848,7 +848,7 @@
         }
       ],
       "gender": "Men",
-      "price": "1109",
+      "price": "110",
       "discount": "50",
       "id": 32
     },
@@ -1043,7 +1043,7 @@
         }
       ],
       "gender": "Women",
-      "price": "2399",
+      "price": "239",
       "discount": "50",
       "id": 39
     },
@@ -1134,7 +1134,7 @@
         }
       ],
       "gender": "Women",
-      "price": "1193",
+      "price": "119",
       "discount": "20",
       "id": 42
     },
@@ -2386,6 +2386,7 @@
       "gender": "Women",
       "price": "309",
       "discount": "10",
+      "category":"Shorts",
       "id": 84
     },
     {
@@ -2417,7 +2418,7 @@
         }
       ],
       "gender": "Men",
-      "price": "15966",
+      "price": "159",
       "discount": "30",
       "id": 85
     },
@@ -2446,7 +2447,7 @@
         }
       ],
       "gender": "Men",
-      "price": "2184",
+      "price": "218",
       "discount": "10",
       "id": 86
     },
@@ -2479,7 +2480,7 @@
         }
       ],
       "gender": "Men",
-      "price": "3277",
+      "price": "327",
       "discount": "15",
       "id": 87
     },
@@ -2508,7 +2509,7 @@
         }
       ],
       "gender": "Men",
-      "price": "4799",
+      "price": "479",
       "discount": "20",
       "id": 88
     },
@@ -2541,7 +2542,7 @@
         }
       ],
       "gender": "Men",
-      "price": "3999",
+      "price": "399",
       "discount": "20",
       "id": 89
     },
@@ -2574,7 +2575,7 @@
         }
       ],
       "gender": "Men",
-      "price": "2945",
+      "price": "294",
       "discount": "25",
       "id": 90
     },
@@ -2611,7 +2612,7 @@
         }
       ],
       "gender": "Men",
-      "price": "2213",
+      "price": "221",
       "discount": "25",
       "id": 91
     },
@@ -2640,7 +2641,7 @@
         }
       ],
       "gender": "Men",
-      "price": "2449",
+      "price": "244",
       "discount": "25",
       "id": 92
     },
@@ -2673,7 +2674,7 @@
         }
       ],
       "gender": "Men",
-      "price": "4799",
+      "price": "479",
       "discount": "20",
       "id": 93
     },
@@ -2961,7 +2962,7 @@
         }
       ],
       "gender": "Women",
-      "price": "1799",
+      "price": "179",
       "discount": "50",
       "id": 102
     },
@@ -2993,78 +2994,8 @@
       "price": "689",
       "discount": "50",
       "id": 103
-    },
-    {
-      "params": {
-        "category": [],
-        "_sort": null,
-        "_order": null
-      },
-      "id": 104
-    },
-    {
-      "params": {
-        "category": [],
-        "_sort": null,
-        "_order": null
-      },
-      "id": 105
-    },
-    {
-      "params": {
-        "category": [],
-        "_sort": null,
-        "_order": null
-      },
-      "id": 106
-    },
-    {
-      "params": {
-        "category": [],
-        "_sort": null,
-        "_order": null
-      },
-      "id": 107
-    },
-    {
-      "params": {
-        "category": [],
-        "_sort": null,
-        "_order": null
-      },
-      "id": 108
-    },
-    {
-      "params": {
-        "category": [],
-        "_sort": null,
-        "_order": null
-      },
-      "id": 109
-    },
-    {
-      "params": {
-        "category": [],
-        "_sort": null,
-        "_order": null
-      },
-      "id": 110
-    },
-    {
-      "params": {
-        "category": [],
-        "_sort": null,
-        "_order": null
-      },
-      "id": 111
-    },
-    {
-      "params": {
-        "category": [],
-        "_sort": null,
-        "_order": null
-      },
-      "id": 112
     }
+    
+    
   ]
 }
