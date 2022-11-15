@@ -87,7 +87,7 @@ export const Navbar=()=>{
                 </Menu>
             </Box>
             <Box height='100%'>
-                <Link><Image src="ONE STOP.png" height="100%" bgColor='none'/></Link>
+                <Link><Image src={ONESTOP} height="100%" bgColor='none'/></Link>
             </Box>
             <Box>
                 <Menu>
