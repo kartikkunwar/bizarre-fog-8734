@@ -177,7 +177,7 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: false,
-                sigin: payload
+                sigin: [...payload]
 
             }
         case types.POST_FAIL_SignIn:

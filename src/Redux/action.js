@@ -109,7 +109,7 @@ export const UserRegister = (params) => (dispatch) => {
     })
 }
 
-export const UserSignIn = (dispatch) => {
+export const UserSignIn = () => (dispatch) => {
     // dispatch({ type: types.POST_REQUEST_SignIn })
     return axios.get("http://localhost:8080/sigin").then((res) => {
         //  console.log(res);

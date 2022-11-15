@@ -15,6 +15,8 @@ import { NotFound } from '../components/PageNotFound'
 import SignIn from  "../components/SignIn"
 import SignUp from  "../components/SignUp"
 import { PrivateRoute } from '../kartikcontext/privateroute'
+import Updateuser from '../Admin/User/Updateuser'
+import EditUser from '../Admin/User/EditUser'
 
 const MainRoutes = () => {
     return (
@@ -31,6 +33,8 @@ const MainRoutes = () => {
             <Route path='/editproduct' element={<PrivateRouteAdmin> <EditProduct/> </PrivateRouteAdmin>}/>
             <Route path='/updateproduct' element={<PrivateRouteAdmin> <DeleteProduct/> </PrivateRouteAdmin>}/>
             <Route path='/addproduct' element={<PrivateRouteAdmin> <AddProduct/> </PrivateRouteAdmin>}/>
+            <Route path='/updateuser' element={<PrivateRouteAdmin> <Updateuser/> </PrivateRouteAdmin>}/>
+            <Route path='/edituser' element={<PrivateRouteAdmin> <EditUser/> </PrivateRouteAdmin>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
     )

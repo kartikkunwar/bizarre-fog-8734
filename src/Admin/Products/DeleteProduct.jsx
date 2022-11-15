@@ -11,7 +11,7 @@ const DeleteProduct = () => {
             <NavBarAdmin />
             <SidePannalAdmin />
             <DeleteForm />
-            <FooterAdmin/>
+            {/* <FooterAdmin/> */}
         </div>
     );
 };

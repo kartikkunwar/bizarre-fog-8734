@@ -1,19 +1,18 @@
 import React from 'react';
-import AddForm from './AddForm';
 import NavBarAdmin from "../../components/NavBarAdmin"
 import SidePannalAdmin from "../../components/SidePannalAdmin"
 import FooterAdmin from '../../components/FooterAdmin';
+import DisplayForm from './DisplayForm';
 
-const AddProduct = () => {
-
+const Updateuser = () => {
     return (
         <div>
             <NavBarAdmin />
             <SidePannalAdmin />
-            <AddForm />
-            {/* <FooterAdmin/> */}
+            <DisplayForm/>
+            <FooterAdmin />
         </div>
     );
 };
 
-export default AddProduct;
+export default Updateuser;

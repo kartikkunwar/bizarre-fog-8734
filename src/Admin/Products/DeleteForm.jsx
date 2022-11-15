@@ -101,11 +101,6 @@ const DeleteForm = () => {
                                                 </td>
 
                                                 <td className="project-actions text-right">
-                                                    <button className="btn btn-primary btn-sm">
-                                                        <i className="fas fa-folder">
-                                                        </i>
-                                                        View
-                                                    </button>
                                                     <Link to="/editproduct" state={{elem}}>
                                                     <button className="btn btn-info btn-sm">
                                                         <i className="fas fa-pencil-alt">
