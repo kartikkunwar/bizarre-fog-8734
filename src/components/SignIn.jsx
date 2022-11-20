@@ -28,7 +28,7 @@ React.useEffect(()=>{
     kartik()
     .then((res)=>setDt(res.data))
     .catch((err)=>console.log(err)) 
-},[])
+},[dt])
  
   const dispatch = useDispatch()
   const initialState = { 

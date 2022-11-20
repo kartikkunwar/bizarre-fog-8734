@@ -2,7 +2,7 @@ import { Box, Button, Divider, HStack, Image, StackDivider, Text, VStack } from 
 import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import axios from "axios"
-import React from "react"
+import React, { useRef } from "react"
 import { Link } from "react-router-dom"
 
 
@@ -14,6 +14,7 @@ export const ShowTab=({setShowdown})=>{
     const [bags,setBags]=React.useState(false)
     const [dt,setDt]=React.useState([])
     const [showtabdata,setShowtabdata]=React.useState([])
+    const menuRef=useRef();
 
     const kartik=()=>{
         return axios.get("http://localhost:8080/product") 
@@ -25,6 +26,13 @@ export const ShowTab=({setShowdown})=>{
         .catch((err)=>console.log(err)) 
     },[])
     
+    React.useEffect(()=>{
+        document.addEventListener('mousedown',(e)=>{
+            if(!menuRef.current.contains(e.target)){
+                closeshowtab(false)
+            }
+        })
+    })
 
     const handleclothing=()=>{
         setClothing(true);
@@ -48,7 +56,7 @@ export const ShowTab=({setShowdown})=>{
     }
     
     return(
-        <Box  width="100%" border='1px solid black' position='fixed' top='80px' zIndex='2' bgColor='white' maxH='380px' overflow='auto'>
+        <Box ref={menuRef} width="100%" border='1px solid black' position='fixed' top='80px' zIndex='2' bgColor='white' maxH='380px' overflow='auto'>
            <Box>
             <HStack spacing='24px'>
                 <Button onClick={handleclothing}>Clothing</Button>
