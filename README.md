@@ -2,8 +2,8 @@
 
 # ONE-STOP
 
+![landing](https://user-images.githubusercontent.com/105916551/205904443-0f7bb6eb-a06e-4e4c-8926-c104040ddb79.png)
 
-![zee5](https://user-images.githubusercontent.com/105916551/200227460-e38792c3-4f2f-4e29-badc-5af68e44e767.png)
 
 ## Description
 
@@ -22,9 +22,11 @@
 
 ### Features 
 - Data appeared at dom with using DOM manipulation.
+- Admin panel to maintain inventory and users.
 - User registration functionality and form validation.
-- Variety of video playlist.
-- User can stream movies and shows online. 
+- Variety of products.
+- Filtering and sorting based on choices.
+- Dynamic cart. 
 
 
 ### Lessons Learned
@@ -35,6 +37,13 @@
 
 ### Screenshots
 
-![other](https://user-images.githubusercontent.com/105916551/200226180-cca8e28a-bc37-4798-8ab0-29f2c39fbdc7.png)
-![video](https://user-images.githubusercontent.com/105916551/200227288-0fc7c09e-5b91-42ae-995e-b0659c3e487f.png)
 
+![Login](https://user-images.githubusercontent.com/105916551/205904712-25419e8c-86ac-474a-b6e9-bc8669342201.png)
+
+![search](https://user-images.githubusercontent.com/105916551/205904844-6d67d03e-393b-4db5-b612-af684ed61868.png)
+
+![tab](https://user-images.githubusercontent.com/105916551/205904874-765757e7-c634-4873-a2f3-f9176457ff38.png)
+
+![single](https:![cart](https://user-images.githubusercontent.com/105916551/205904920-2e9cfdc3-169c-4082-9c05-e4592ab92083.png)
+
+![footer](https://user-images.githubusercontent.com/105916551/205904949-ae75974d-b6ac-4f3f-90fd-32f33687dfa9.png)
