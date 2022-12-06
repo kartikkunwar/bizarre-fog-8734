@@ -47,9 +47,9 @@
 
 ![tab](https://user-images.githubusercontent.com/105916551/205904874-765757e7-c634-4873-a2f3-f9176457ff38.png)
 
-### Single Product Page
+### Cart
 
-![single](https:![cart](https://user-images.githubusercontent.com/105916551/205904920-2e9cfdc3-169c-4082-9c05-e4592ab92083.png)
+![single](https://user-images.githubusercontent.com/105916551/205904920-2e9cfdc3-169c-4082-9c05-e4592ab92083.png)
 
 ### Footer
 
