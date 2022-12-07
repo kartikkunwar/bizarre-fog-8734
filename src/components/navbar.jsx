@@ -53,10 +53,13 @@ export const Navbar=()=>{
         // }else{
         //  navigate("/signin")
         // }
+        console.log(log)
         if(curruser.length){
             setlocaldata("user",[])
             setCurruser([])
+           if(log){
             changelog();
+           }
             setLgalert(true)
             setTimeout(()=>{
                 setLgalert(false)
@@ -82,7 +85,7 @@ export const Navbar=()=>{
                 </InputGroup>
             </Box>
             <Box width='5%'  ml="3%" display='flex' alignItems='center'>
-                <Box bgColor='yellow' p='8px' color='black' borderRadius='50%'><span bgColor='blue'>{qtydata}</span></Box><Link to='/cart'><FontAwesomeIcon icon={faCartArrowDown} color='white' fontSize={25}></FontAwesomeIcon></Link>
+                {qtydata>0&&<Box bgColor='yellow' p='8px' color='black' borderRadius='50%'><span bgColor='blue'>{qtydata}</span></Box>}<Link to='/cart'><FontAwesomeIcon icon={faCartArrowDown} color='white' fontSize={25}></FontAwesomeIcon></Link>
             </Box>
             <Box width='15%'  textAlign='center'>
             <Menu >

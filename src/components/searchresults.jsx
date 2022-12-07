@@ -50,7 +50,7 @@ export const SearchResults = ({ query, setQuery }) => {
                 setQuery("")
             }
         })
-    })
+    },[])
 
     const closeshowtab = () => {
         setShowdrop(false)
