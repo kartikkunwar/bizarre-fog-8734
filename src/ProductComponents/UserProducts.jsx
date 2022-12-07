@@ -1,4 +1,4 @@
-import { Button } from '@chakra-ui/react';
+import { Box, Button, Image, Text } from '@chakra-ui/react';
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
@@ -37,22 +37,18 @@ const UserProducts = () => {
     <>
       {productList.length > 0 && productList.map(product => {
         return (
-         <Link to={`/product/${product.id}`}> <div key={product.id} className="product-list">
-
-            <div> <h3>{product.title}</h3></div>
-            <div>
-              <img src={product.mainImage} alt={product.title} style={{ height: "300px", width: "100%" }} />
-            </div>
-            <div>
-              {product.category}
-            </div>
-            <div>
-              <h4> ${product.price}</h4>
-            </div>
-            <div>
+         <Link to={`/product/${product.id}`}> <Box key={product.id} h='100%' className="product-list" display='flex' flexDirection='column' gap='2%' justifyContent='center' alignItems='center'>
+            <Box h="60%" display='flex'  alignItems='center'>
+              <Image src={product.mainImage} alt={product.title}  h='100%' w='100%'/>
+            </Box>
+            <Box h='5%' display='flex'  alignItems='center'> <Text fontSize='18px' fontWeight='bold'>{product.title}</Text></Box>
+            <Box h='5%' display='flex'  alignItems='center'>
+              <Text fontSize='18px' fontWeight='bold'> ${product.price}</Text>
+            </Box>
+            <Box h='5%' display='flex'  alignItems='center'>
             <button className='button-product'>BUY NOW</button>
-            </div>
-          </div></Link>
+            </Box>
+          </Box></Link>
         )
       })}
     </>

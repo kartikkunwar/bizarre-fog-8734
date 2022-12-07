@@ -2941,16 +2941,10 @@
   ],
   "sigin": [
     {
-      "name": "juber",
-      "email": "juber@gmail.com",
-      "password": "7894",
+      "name": "rinni",
+      "email": "rinni@gmail.com",
+      "password": "rinni",
       "id": 1
-    },
-    {
-      "name": "rahul sharma",
-      "email": "rahul@gmail.com",
-      "password": "1010",
-      "id": 7
     }
   ]
 }

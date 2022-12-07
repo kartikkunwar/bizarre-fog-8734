@@ -11,10 +11,12 @@ import {faBagShopping} from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom"
 import ClockLoader from "react-spinners/ClockLoader";
 import { Alert } from "react-bootstrap"
+import { getlocaldata } from "../utils/localstoragedata"
 
 export const Cart = () => {
 
     const data = useSelector((el) => el.cartItem)
+    // const userinfo=getlocaldata("user")||[]
     const [price, setPrice] = React.useState(0)
     const [totalprice, setTotalPrice] = React.useState(0)
     const [disc, setDisc] = React.useState(0)
@@ -30,6 +32,12 @@ export const Cart = () => {
         slidesToShow: 1,
         slidesToScroll: 1
     };
+
+    // if(userinfo.length){
+    //     console.log(userinfo.cart)
+    // }else{
+    //     console.log("no")
+    // }
 
     React.useEffect(() => {
         let p = 0;

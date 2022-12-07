@@ -1,3 +1,4 @@
+import { Box, Heading } from '@chakra-ui/react';
 import React from 'react';
 import styled from "styled-components"
 import { Footer } from '../components/footer';
@@ -14,6 +15,9 @@ const AllProducts = () => {
          {/* <WrapperCustomer id='customer'>
             <h1>CLOTHING FOR CUSTOMER</h1>
         </WrapperCustomer> */}
+        <Box w='20%' margin='auto'  display='flex' justifyContent='center' mt='100px' >
+          <Heading color='gray'>ONE STOP</Heading>
+        </Box>
      
     <Wrapper color="green">
       <WrapperFilterSort>
@@ -49,30 +53,27 @@ const Wrapper = styled.div`
   // border:${({color})=>`3px solid ${color};`}
   //  display:flex;
    min-height:100vh;
-   padding:50px;
-   background-color: floralwhite;
-   margin-top:80px;
+   padding:10px;
+   margin-top:10px;
   
 `;
 const WrapperFilterSort = styled.div`
- width:300px;
+  width:250px;
   position:fixed;
   padding:50px;
-  border:2px solid teal;
-   background:linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1))
-
- 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-right:2px solid gray;
 `;
 const WrapperUserProduct = styled.div`
 width:80%;
 padding:20px;
-margin-left:300px;
+margin-left:310px;
 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;  
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,max-content));
 justify-content:center;
-grid-gap:30px;
-background: repeating-linear-gradient(red, yellow 10%, green 20%)
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+grid-gap:10px;
 `
 
 

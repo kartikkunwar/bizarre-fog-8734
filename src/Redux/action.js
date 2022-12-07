@@ -102,7 +102,7 @@ export const adminLoginFail = (dispatch) =>{
 export const UserRegister = (params) => (dispatch) => {
     dispatch({ type: types.POST_REQUEST_SignUp })
     return axios.post("http://localhost:8080/sigin", params).then((res) => {
-        //  console.log(res.data);
+         console.log(res.data);
         return dispatch({type:types.POST_SUCCESS_SignUp,paylod:res.data})
     }).catch((err) => {
         return dispatch({type:types.POST_FAIL_SignUp})

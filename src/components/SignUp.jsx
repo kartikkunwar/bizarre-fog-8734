@@ -10,9 +10,10 @@ import {FcGoogle} from 'react-icons/fc'
 import {BsFacebook} from 'react-icons/bs'
 import {BsApple} from 'react-icons/bs'
 import './SignIn.css'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { UserRegister } from '../Redux/action';
+import axios from 'axios';
 
 const SignUp = () => {
   
@@ -20,14 +21,24 @@ const SignUp = () => {
     name: "",
     email: "",
     password: "",
+    cart:[]
   });
   const navigate = useNavigate()
   const [icon , setIcon]=useState(eyeOff)
 
   const [pass, setPass]= useState(false);
-  
+  const [dt,setDt]=useState([])
 
-// console.log(form)
+
+  const getAllUsers=()=>{
+    return axios.get("http://localhost:8080/sigin") 
+  }
+
+  React.useEffect(()=>{
+    getAllUsers()
+    .then((res)=>setDt(res.data))
+    .catch((err)=>console.log(err)) 
+  },[])
 
   const handleToggle=()=>{
     if(pass===false){
@@ -44,10 +55,16 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // signup_attemp(form, navigate);
-   dispatch(UserRegister(form))
-   navigate("/signin")
-     
+    
+    let x=dt.filter((el)=>el.email==form.email)
+    
+    if(x.length){
+      alert("email is already registered")
+    }
+    else{
+      dispatch(UserRegister(form))
+      navigate("/signin")
+    }
   };
 
  

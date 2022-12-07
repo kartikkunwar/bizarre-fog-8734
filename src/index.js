@@ -16,13 +16,13 @@ import { store } from './Redux/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <PassContextProvider>
-  <Provider store={store}>
-    <BrowserRouter>
-      <ChakraProvider>
-        <App />
-      </ChakraProvider>
-    </BrowserRouter>
-  </Provider>
+    <Provider store={store}>
+      <BrowserRouter>
+        <ChakraProvider>
+          <App />
+        </ChakraProvider>
+      </BrowserRouter>
+    </Provider>
   </PassContextProvider>
 );
 

@@ -10,6 +10,7 @@ import { SearchResults } from "./searchresults"
 import { useSelector } from "react-redux"
 import { PassContext } from "../kartikcontext/passcontext";
 import ONESTOP from "../Admin/Photo/ONE STOP.png"
+import { getlocaldata, setlocaldata } from "../utils/localstoragedata"
 
 export const Navbar=()=>{
       const [showdown,setShowdown]=React.useState(false)
@@ -18,8 +19,19 @@ export const Navbar=()=>{
       const {log,changelog}=React.useContext(PassContext)
       const [lgalert,setLgalert]=React.useState(false)
       const navigate=useNavigate();
+      const [curruser,setCurruser]=React.useState([]);
 
       const qtydata=useSelector((el)=>el.cartQty)
+
+      
+      
+      React.useEffect(()=>{
+        const x=getlocaldata("user")||[]
+        if(x.length){
+            setCurruser(x)
+        }
+        
+      },[curruser])
       const setmen=()=>{
          setShowdown(true)
          setShowdownwomen(false)
@@ -32,14 +44,25 @@ export const Navbar=()=>{
         setQuery(e.target.value)
      }
      const lgio=()=>{
-        if(log){
+        // if(log){
+        //     changelog();
+        //     setLgalert(true)
+        // setTimeout(()=>{
+        //     setLgalert(false)
+        //  },5000)
+        // }else{
+        //  navigate("/signin")
+        // }
+        if(curruser.length){
+            setlocaldata("user",[])
+            setCurruser([])
             changelog();
             setLgalert(true)
-        setTimeout(()=>{
-            setLgalert(false)
-         },5000)
+            setTimeout(()=>{
+                setLgalert(false)
+            },5000)
         }else{
-         navigate("/signin")
+            navigate("/signin")
         }
      }
      
@@ -59,14 +82,14 @@ export const Navbar=()=>{
                 </InputGroup>
             </Box>
             <Box width='5%'  ml="3%" display='flex' alignItems='center'>
-                <Box bgColor='yellow' p='8px' color='black' borderRadius='50%'><span bgColor='yellow'>{qtydata}</span></Box><Link to='/cart'><FontAwesomeIcon icon={faCartArrowDown} color='white' fontSize={25}></FontAwesomeIcon></Link>
+                <Box bgColor='yellow' p='8px' color='black' borderRadius='50%'><span bgColor='blue'>{qtydata}</span></Box><Link to='/cart'><FontAwesomeIcon icon={faCartArrowDown} color='white' fontSize={25}></FontAwesomeIcon></Link>
             </Box>
             <Box width='15%'  textAlign='center'>
             <Menu >
-                 <MenuButton className="lgb" as={Button} bgColor='teal' rightIcon={<ChevronDownIcon />} ><FontAwesomeIcon icon={faUser} color='white' fontSize={30}></FontAwesomeIcon></MenuButton>
+                 <MenuButton className="lgb" as={Button} bgColor='teal' rightIcon={<ChevronDownIcon />} >{curruser.length?curruser.map((el)=><Text>{el.name}</Text>):<FontAwesomeIcon icon={faUser} color='white' fontSize={30}></FontAwesomeIcon>}</MenuButton>
                     <MenuList color='black'>
-                        <Link to='/signup'><MenuItem className="mitem">{!log? 'Signup': 'Settings'}</MenuItem></Link>
-                        <MenuItem className="mitem" onClick={lgio}>{!log? 'Login': 'Logout'}</MenuItem>
+                        <Link to='/signup'><MenuItem className="mitem">{!curruser.length? 'Signup': 'Settings'}</MenuItem></Link>
+                        <MenuItem className="mitem" onClick={lgio}>{!curruser.length? 'Login': 'Logout'}</MenuItem>
                         <Link to='/admin'><MenuItem className="mitem">Admin Login</MenuItem></Link>
                     </MenuList>
                 </Menu>
@@ -94,8 +117,8 @@ export const Navbar=()=>{
                     <MenuButton><FontAwesomeIcon icon={faUser} color='white' fontSize={30}></FontAwesomeIcon></MenuButton>
                     <MenuList>
                         <Link to='/cart'><MenuItem className="mitem" bgColor='lightyellow'><span>{qtydata}</span><FontAwesomeIcon icon={faCartArrowDown} color='black' fontSize={25}></FontAwesomeIcon></MenuItem></Link>
-                        <MenuItem className="mitem" onClick={lgio}>{!log? 'Login': 'Logout'}</MenuItem>
-                        <MenuItem className="mitem">{!log? 'Signup': 'Settings'}</MenuItem>
+                        <MenuItem className="mitem" onClick={lgio}>{!curruser.length? 'Login': 'Logout'}</MenuItem>
+                        <MenuItem className="mitem">{!curruser.length? 'Signup': 'Settings'}</MenuItem>
                         <Link to='/admin'><MenuItem className="mitem">Admin Login</MenuItem></Link>                                                
                     </MenuList>
                 </Menu>
