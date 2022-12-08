@@ -13,7 +13,7 @@ export const Checkout = () => {
                     <FormLabel fontSize={18}>Mobile No.</FormLabel>
                     <InputGroup mt='-10px'>
                         <InputLeftAddon children='+91' />
-                        <Input type='tel' placeholder='phone number' />
+                        <Input type='number' placeholder='phone number' />
                     </InputGroup>
                     <FormLabel fontSize={18}>Name</FormLabel>
                     <Input mt='-10px' />
