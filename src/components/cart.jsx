@@ -33,6 +33,7 @@ export const Cart = () => {
         slidesToScroll: 1
     };
 
+
     // if(userinfo.length){
     //     console.log(userinfo.cart)
     // }else{
@@ -85,6 +86,10 @@ export const Cart = () => {
 
     const changehandler = (e) => {
         setCode(e.target.value)
+    }
+
+    const nextpage=()=>{
+        alert("Page is under progress. Sorry for the inconvinience")
     }
 
 
@@ -178,7 +183,7 @@ export const Cart = () => {
                     </Box>
                     <Box display={{ base: 'block', md: 'block', lg: 'flex' }} justifyContent='space-around'>
                         <Box w={{ base: '100%', md: '100%', lg: '30%' }} display='flex' alignItems='center' bgColor='lightyellow'><Text fontSize={30}>Total  ₹ {totalprice}</Text></Box>
-                        <Box w={{ base: '100%', md: '100%', lg: '80%' }} color='white'><Button w='80%' bgColor='teal' p='30px' className="btnhv" colorScheme='teal' fontSize={22}>Checkout</Button></Box>
+                        <Box w={{ base: '100%', md: '100%', lg: '80%' }} color='white'><Button w='80%' bgColor='teal' p='30px' className="btnhv" colorScheme='teal' fontSize={22} onClick={nextpage}>Checkout</Button></Box>
                     </Box>
                 </Box>
             </Box>
