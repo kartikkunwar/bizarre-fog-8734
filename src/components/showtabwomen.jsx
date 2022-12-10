@@ -17,7 +17,7 @@ export const ShowTabwomen = ({ setShowdownwomen }) => {
     const menuRef=useRef();
 
     const kartik = () => {
-        return axios.get("http://localhost:8080/product")
+        return axios.get("https://plum-perfect-anemone.cyclic.app/product")
     }
 
     React.useEffect(() => {

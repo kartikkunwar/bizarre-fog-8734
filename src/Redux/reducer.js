@@ -9,6 +9,7 @@ const initialState = {
     isError: false,
     cartItem: getlocaldata("mcart") || [],
     cartQty: getlocaldata("mquantity") || 0,
+    curruser:getlocaldata("user")||[],
     isadminAuth: true,
     isuserauth: false
 }

@@ -22,7 +22,7 @@ const SignIn = () => {
   const [dt,setDt]=useState([])
   const {log,changelog}=React.useContext(PassContext)
   const getAllUsers=()=>{
-    return axios.get("http://localhost:8080/sigin") 
+    return axios.get("https://plum-perfect-anemone.cyclic.app/sigin") 
 }
 
 React.useEffect(()=>{

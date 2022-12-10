@@ -36,7 +36,7 @@ export const SingleProduct=()=>{
     const currentuser=getlocaldata("user")||[];
    
     const kartik=()=>{
-        return axios.get(`http://localhost:8080/product/${id}`) 
+        return axios.get(`https://plum-perfect-anemone.cyclic.app/product/${id}`) 
     }
     
     useEffect(()=>{

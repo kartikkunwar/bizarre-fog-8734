@@ -3,7 +3,7 @@ import * as types from "./actionType"
 
 export const addProduct = (queryParams) => (dispatch) => {
     dispatch({ type: types.POST_REQUEST_PRODUCT })
-    return axios.post("http://localhost:8080/product",queryParams).then((res) => {
+    return axios.post("https://plum-perfect-anemone.cyclic.app/product",queryParams).then((res) => {
         // console.log(res);
         return dispatch({type:types.POST_SUCCESS_PRODUCT,paylod:res.data})
     }).catch((err) => {
@@ -13,7 +13,7 @@ export const addProduct = (queryParams) => (dispatch) => {
 
 export const getProduct = () => (dispatch) => {
     dispatch({type:types.GET_REQUEST_PRODUCT})
-    return axios.get(`http://localhost:8080/product`)
+    return axios.get(`https://plum-perfect-anemone.cyclic.app/product`)
     .then((res)=>{
         return dispatch({type:types.GET_SUCCESS_PRODUCT,payload:res.data})
     }).catch((err)=>{
@@ -23,7 +23,7 @@ export const getProduct = () => (dispatch) => {
 
 export const deleteProduct= (id) => (dispatch)=>{
     dispatch({type:types.DELETE_REQUEST_PRODUCT})
-    return axios.delete(`http://localhost:8080/product/${id}`)
+    return axios.delete(`https://plum-perfect-anemone.cyclic.app/product/${id}`)
     .then((res)=>{
         dispatch({type:types.DELETE_SUCCESS_PRODUCT,payload:res.data})
         // console.log(res.data);
@@ -36,7 +36,7 @@ export const deleteProduct= (id) => (dispatch)=>{
 
 export const updateProduct = (data) => (dispatch) =>{
     dispatch({type:types.UPDATE_REQUEST_PRODUCT})
-    return axios.patch(`http://localhost:8080/product/${data.id}`,data)
+    return axios.patch(`https://plum-perfect-anemone.cyclic.app/product/${data.id}`,data)
     .then((res)=>{
         console.log(res.data);
     })
@@ -56,7 +56,7 @@ const getProductRequest = ()=>{
     // console.log(queryParams);
     dispatch(getProductRequest)
 
-    return axios.get("http://localhost:8080/product",queryParams).then((res)=>{
+    return axios.get("https://plum-perfect-anemone.cyclic.app/product",queryParams).then((res)=>{
         dispatch({
             type:types.GET_PRODUCTS_SUCCESS,
             payload:res.data
@@ -81,7 +81,7 @@ export const adjustItemqty=(item,qty)=>(dispatch)=>{
 }
 
 export const getAllProduct=(dispatch)=>{
-   return axios.get("http://localhost:8080/product")
+   return axios.get("https://plum-perfect-anemone.cyclic.app/product")
    .then((res)=>dispatch({type:types.GET_SUCCESS_ALLPRODUCT,payload:res.data}))
    .catch((err)=>console.log(err))
 
@@ -101,7 +101,7 @@ export const adminLoginFail = (dispatch) =>{
 
 export const UserRegister = (params) => (dispatch) => {
     dispatch({ type: types.POST_REQUEST_SignUp })
-    return axios.post("http://localhost:8080/sigin", params).then((res) => {
+    return axios.post("https://plum-perfect-anemone.cyclic.app/sigin", params).then((res) => {
          console.log(res.data);
         return dispatch({type:types.POST_SUCCESS_SignUp,paylod:res.data})
     }).catch((err) => {
@@ -111,7 +111,7 @@ export const UserRegister = (params) => (dispatch) => {
 
 export const UserSignIn = () => (dispatch) => {
     // dispatch({ type: types.POST_REQUEST_SignIn })
-    return axios.get("http://localhost:8080/sigin").then((res) => {
+    return axios.get("https://plum-perfect-anemone.cyclic.app/sigin").then((res) => {
         //  console.log(res);
         return dispatch({type:types.POST_SUCCESS_SignIn,payload:res.data})
     }).catch((err) => {

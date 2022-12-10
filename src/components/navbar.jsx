@@ -53,7 +53,6 @@ export const Navbar=()=>{
         // }else{
         //  navigate("/signin")
         // }
-        console.log(log)
         if(curruser.length){
             setlocaldata("user",[])
             setCurruser([])

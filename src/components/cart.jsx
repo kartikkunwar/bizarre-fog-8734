@@ -8,7 +8,7 @@ import { removeProductCart } from "../Redux/action"
 import { adjustItemqty } from "../Redux/action"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faBagShopping} from "@fortawesome/free-solid-svg-icons"
-import { Link } from "react-router-dom"
+import { Link, Navigate, useNavigate } from "react-router-dom"
 import ClockLoader from "react-spinners/ClockLoader";
 import { Alert } from "react-bootstrap"
 import { getlocaldata } from "../utils/localstoragedata"
@@ -16,6 +16,7 @@ import { getlocaldata } from "../utils/localstoragedata"
 export const Cart = () => {
 
     const data = useSelector((el) => el.cartItem)
+    const logged=useSelector((el)=>el.curruser)
     // const userinfo=getlocaldata("user")||[]
     const [price, setPrice] = React.useState(0)
     const [totalprice, setTotalPrice] = React.useState(0)
@@ -24,6 +25,7 @@ export const Cart = () => {
     const [flag,setFlag]=React.useState(false)
     const dispatch = useDispatch()
     const [anim,setAmin]=React.useState(false)
+    const navigate=useNavigate();
 
     const settings = {
         dots: false,
@@ -88,9 +90,13 @@ export const Cart = () => {
         setCode(e.target.value)
     }
 
-    // const nextpage=()=>{
-    //     alert("Page is under progress. Sorry for the inconvinience")
-    // }
+    const nextpage=()=>{
+        if(data.length&&logged.length){
+            navigate("/checkout")
+        }else{
+            return;
+        }
+    }
 
 
 
@@ -183,7 +189,7 @@ export const Cart = () => {
                     </Box>
                     <Box display={{ base: 'block', md: 'block', lg: 'flex' }} justifyContent='space-around'>
                         <Box w={{ base: '100%', md: '100%', lg: '30%' }} display='flex' alignItems='center' bgColor='lightyellow'><Text fontSize={30}>Total  ₹ {totalprice}</Text></Box>
-                        <Box w={{ base: '100%', md: '100%', lg: '80%' }} color='white'><Link to='/checkout'><Button w='80%' bgColor='teal' p='30px' className="btnhv" colorScheme='teal' fontSize={22} >Checkout</Button></Link></Box>
+                        <Box w={{ base: '100%', md: '100%', lg: '80%' }} color='white'><Button w='80%' bgColor='teal' p='30px' className="btnhv" colorScheme='teal' fontSize={22} onClick={nextpage}>Checkout</Button></Box>
                     </Box>
                 </Box>
             </Box>
