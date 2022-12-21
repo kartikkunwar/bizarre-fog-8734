@@ -14,18 +14,19 @@ import { UserSignIn } from '../Redux/action';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { PassContext } from "../kartikcontext/passcontext";
+import { setlocaldata } from '../utils/localstoragedata';
 
 
 const SignIn = () => {
   // const data=useSelector((el)=>console.log(el))
   const [dt,setDt]=useState([])
   const {log,changelog}=React.useContext(PassContext)
-  const kartik=()=>{
-    return axios.get("http://localhost:8080/sigin") 
+  const getAllUsers=()=>{
+    return axios.get("https://plum-perfect-anemone.cyclic.app/sigin") 
 }
 
 React.useEffect(()=>{
-    kartik()
+    getAllUsers()
     .then((res)=>setDt(res.data))
     .catch((err)=>console.log(err)) 
 },[dt])
@@ -69,10 +70,11 @@ React.useEffect(()=>{
       return el.email==loginData.email&&el.password==loginData.password
     })
       if(x.length){
+        setlocaldata("user",x)
         changelog();
         navigate("/")
       }else{
-        alert("wrong info")
+        alert("Please enter the correct info.")
       }
     
   // }

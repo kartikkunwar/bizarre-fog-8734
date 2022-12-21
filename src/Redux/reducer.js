@@ -9,6 +9,7 @@ const initialState = {
     isError: false,
     cartItem: getlocaldata("mcart") || [],
     cartQty: getlocaldata("mquantity") || 0,
+    curruser:getlocaldata("user")||[],
     isadminAuth: true,
     isuserauth: false
 }
@@ -63,11 +64,14 @@ const reducer = (state = initialState, action) => {
             const item = state.allProduct.find((el) => el.id == payload.id)
             const incart = state.cartItem.find((item) => item.id == payload.id ? true : false)
             const addcart = incart ? state.cartItem.map(item => item.id == payload.id ? { ...item, qty: item.qty + 1 } : item) : [...state.cartItem, { ...item, qty: 1 }]
-            setlocaldata("mcart", addcart)
+            setlocaldata("mcart",addcart)
+            // const user=state.sigin.find((el)=>el.id==1)
+            // console.log(user)
             const incqty = incart ? state.cartQty : state.cartQty + 1
             setlocaldata("mquantity", incqty)
+            
             return {
-                ...state, isError: false, isLoading: false, cartItem: addcart, cartQty: incqty
+                ...state, isError: false, isLoading: false, cartItem:addcart,cartQty:incqty
             }
         case types.CART_REMOVE_SUCCESS:
             const remite = state.cartItem.filter((el) => el.id !== payload.id)
@@ -159,7 +163,7 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: false,
-                sigin: [...payload]
+                sigin: payload
 
             }
         case types.POST_FAIL_SignUp:

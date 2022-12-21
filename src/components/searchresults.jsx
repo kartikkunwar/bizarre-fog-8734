@@ -14,7 +14,7 @@ export const SearchResults = ({ query, setQuery }) => {
     const [act, setAct] = React.useState(0)
 
     const kartik = () => {
-        return axios.get("http://localhost:8080/product")
+        return axios.get("https://plum-perfect-anemone.cyclic.app/product")
             .then((res) => setDt(res.data))
             .catch((err) => console.log(err))
     }
@@ -50,7 +50,7 @@ export const SearchResults = ({ query, setQuery }) => {
                 setQuery("")
             }
         })
-    })
+    },[])
 
     const closeshowtab = () => {
         setShowdrop(false)

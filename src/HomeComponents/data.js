@@ -37,7 +37,7 @@ export const lystSeller=[
  export const lystSellerTwo = [
     {
         id:1,
-        image:"https://cdna.lystit.com/cms/Q4_Nov_Lyst_Homepage_Top_Lyst_Banner_600x600_US_8d5732b497.jpg",
+        image:"https://cdna.lystit.com/cms/designer_rail_off_white_co_virgil_abloh_d8c6b37a9f.jpeg",
         title:"FEERAGAMO SS22 PREVIEN"
 
     },

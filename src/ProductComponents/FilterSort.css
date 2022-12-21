@@ -15,7 +15,6 @@ justify-content: center;
 }
 .filter-1{
     margin-bottom: 20px;
-
 }
 .filter-1 h4{
     font-size: 25px;
@@ -24,4 +23,8 @@ justify-content: center;
 }
 .filter-2 label{
    margin-left: 10px;  
+}
+.buttp{
+    width: 100%;
+    padding: 20px;
 }

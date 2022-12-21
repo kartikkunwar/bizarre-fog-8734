@@ -10,6 +10,7 @@ import {addproductcart} from "../Redux/action"
 import {getAllProduct} from "../Redux/action"
 import ClockLoader from "react-spinners/ClockLoader";
 import { PassContext } from "../kartikcontext/passcontext";
+import { getlocaldata } from "../utils/localstoragedata"
 
 export const SingleProduct=()=>{
     const [dt,setDt]=React.useState([])
@@ -21,6 +22,8 @@ export const SingleProduct=()=>{
     const [showalert,setShowalert]=React.useState(false)
     const {log,changelog}=React.useContext(PassContext)
     const [lgalert,setLgalert]=React.useState(false)
+    const [thisuser,setThisuser]=React.useState(null)
+
     // const navigate=useNavigate();
     const settings = {
         dots: false,
@@ -30,14 +33,22 @@ export const SingleProduct=()=>{
         slidesToScroll: 1
       };
 
-
+    const currentuser=getlocaldata("user")||[];
+   
     const kartik=()=>{
-        return axios.get(`http://localhost:8080/product/${id}`) 
+        return axios.get(`https://plum-perfect-anemone.cyclic.app/product/${id}`) 
     }
+    
     useEffect(()=>{
             kartik()
             .then((res)=>setDt(res.data))
             .catch((err)=>console.log(err))
+
+            if(currentuser.length){
+                for(let i=currentuser.length-1;i>currentuser.length-2;i--){
+                    setThisuser(currentuser[i].id)
+                }
+            }
     
     },[id]);
 
@@ -46,6 +57,7 @@ export const SingleProduct=()=>{
             setBulk(dt.imageList)
             setDis(Math.floor(dt.price-(dt.price*dt.discount/100)))
         }
+        
     })
 
     useEffect(()=>{
@@ -59,7 +71,7 @@ export const SingleProduct=()=>{
     },[])
     const cartdata=(data)=>{
         
-        if(log){
+        if(currentuser.length){
         dispatch(addproductcart(data))
         setShowalert(true)
         setTimeout(()=>{

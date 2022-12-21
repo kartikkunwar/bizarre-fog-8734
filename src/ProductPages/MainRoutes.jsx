@@ -17,6 +17,8 @@ import SignUp from  "../components/SignUp"
 import { PrivateRoute } from '../kartikcontext/privateroute'
 import Updateuser from '../Admin/User/Updateuser'
 import EditUser from '../Admin/User/EditUser'
+import { Checkout } from '../components/checkout'
+import { Payment } from '../components/cartpayment'
 
 const MainRoutes = () => {
     return (
@@ -28,6 +30,8 @@ const MainRoutes = () => {
             <Route path='/admin' element={<Login/>}/>
             <Route path='/signin' element={<SignIn/>}/>
             <Route path='/signup' element={<SignUp/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
+            <Route path='/payment' element={<Payment/>}/>
             <Route path='/dashboard' element={<Dashboard/>}/>
             <Route path='/contactcard' element={<PrivateRouteAdmin> <ContactAdmin/> </PrivateRouteAdmin>}/>
             <Route path='/editproduct' element={<PrivateRouteAdmin> <EditProduct/> </PrivateRouteAdmin>}/>
