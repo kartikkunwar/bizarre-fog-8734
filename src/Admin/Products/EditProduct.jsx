@@ -11,7 +11,7 @@ const EditProduct = () => {
 
     const data = location.state.elem
     return (
-        <div>
+        <div className='wrapper'>
             <NavBarAdmin/>
             <SidePannalAdmin/>
             <EditForm titleprop={data.title} shortprop={data.short} categoryprop={data.category} genderprop={data.gender} priceprop={data.price} discountprop={data.discount} id={data.id} imageprop={data.imageList}/>

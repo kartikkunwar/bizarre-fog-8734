@@ -11,12 +11,12 @@ const NavBarAdmin = () => {
                 </li>
                 <Link to="/dashboard">
                     <li className="nav-item d-none d-sm-inline-block">
-                        <a href="" className="nav-link">Home</a>
+                        <a href="index3.html" className="nav-link">Home</a>
                     </li>
                 </Link>
                 <Link to="/contactcard">
                     <li className="nav-item d-none d-sm-inline-block">
-                        <p className="nav-link">Contact</p>
+                        <a href="#" className="nav-link">Contact</a>
                     </li>
                 </Link>
             </ul>

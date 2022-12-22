@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { adminLoginFail, adminLoginRequest, adminLoginSuccess } from '../../Redux/action';
@@ -39,7 +39,7 @@ const Login = () => {
     }
 
     return (
-        <div style={{ margin: "auto", marginTop: "10%"}} className="login-box">
+        <div style={{ margin: "auto", marginTop: "10%" }} className="login-box">
             <Link to="/">
                 <div className="login-logo">
                     <a href="#"><b>One</b>Stop</a>
@@ -75,11 +75,9 @@ const Login = () => {
                         </div>
                     </div>
                     {/* /.social-auth-links */}
-                    <Link to="/">
-                        <p className="mb-1">
-                            <a href="#">Back To Home</a>
-                        </p>
-                    </Link>
+                    <p className="mb-1">
+                        <Link to="/">Back To Home</Link>
+                    </p>
                 </div>
                 {/* /.login-card-body */}
             </div>

@@ -73,12 +73,11 @@ const AddForm = () => {
 
     return (
         <div className="content-wrapper">
-            {/* Content Header (Page header) */}
             <section className="content-header">
                 <div className="container-fluid">
                     <div className="row mb-2">
                         <div className="col-sm-6">
-                            <h1>General Form</h1>
+                            <h1>Add Products</h1>
                         </div>
                         <div className="col-sm-6">
                             <ol className="breadcrumb float-sm-right">
@@ -87,96 +86,78 @@ const AddForm = () => {
                             </ol>
                         </div>
                     </div>
-                </div>{/* /.container-fluid */}
-            </section>
-            {/* Main content */}
-            <section className="content">
-                <div className="container-fluid">
-                    <div className="row">
-                        {/* left column */}
-                        <div className="col-md-6">
-                            {/* general form elements */}
-                            <div className="card card-primary">
-                                <div className="card-header">
-                                    <h3 className="card-title">Products</h3>
-                                </div>
-                                {/* /.card-header */}
-                                {/* form start */}
-                                <div>
-                                    <div className="card-body">
-                                        <div className="div-group">
-                                            <label htmlFor="exampleInputEmail1">Title</label>
-                                            <input onChange={(e) => setTitle(e.target.value)} type="text" className="form-control" placeholder="Enter Title" />
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="exampleInputPassword1">Short Description</label>
-                                            <input onChange={(e) => setShort(e.target.value)} type="text" className="form-control" placeholder="Enter Short Description" />
-                                        </div>
-                                        {/* select */}
-                                        <div className="form-group">
-                                            <label>Category</label>
-                                            <select onChange={(e) => setcategory(e.target.value)} className="custom-select">
-                                                <option value="">Choose</option>
-                                                <option value="Beachwear">Beachwear</option>
-                                                <option value="Coats">Coats</option>
-                                                <option value="Jackets">Jackets</option>
-                                                <option value="Shirts">Shirts</option>
-                                                <option value="Shorts">Shorts</option>
-                                                <option value="Suits">Suits</option>
-                                            </select>
-                                        </div>
-                                        {/* select */}
-                                        <div className="form-group">
-                                            <label>Gender</label>
-                                            <select onChange={(e) => setgender(e.target.value)} className="custom-select">
-                                                <option value="Men">Men</option>
-                                                <option value="Women">Women</option>
-                                            </select>
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="exampleInputPassword1">Image</label>
-                                            {imageList.length > 0
-                                                ? imageList.map((input, index) => (
-                                                    <div style={{ display: "flex" }} key={index}>
-                                                        <input type="text"
-                                                            label={`input ${index + 1}`}
-                                                            className="form-control"
-                                                            placeholder="Image"
-                                                            onChange={(event) => handleInputChange(event, index)}
-                                                        />
-                                                        <button
-                                                            disabled={imageList.length === 1}
-                                                            onClick={() => handleRemoveItem(index)}>
-                                                            <span role="img" aria-label="x emoji">
-                                                                ❌
-                                                            </span>
-                                                        </button>
-                                                    </div>
-                                                ))
-                                                : "No item in the list "}
-                                            <button onClick={handleListAdd} disabled={isDisabled} style={{marginTop:"10px"}} type="button" class="btn btn-primary btn-block"><i class="fa fa-bell"></i> Add Image</button>
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="exampleInputEmail1">Price</label>
-                                            <input onChange={(e) => setprice(e.target.value)} type="number" className="form-control" placeholder="Enter Price" />
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="exampleInputEmail1">Discount</label>
-                                            <input onChange={(e) => setdiscount(e.target.value)} type="text" className="form-control" placeholder="Enter Discount" />
-                                        </div>
-                                    </div>
-                                    {/* /.card-body */}
-                                    <div className="card-footer">
-                                        <button onClick={handleclick} style={{ marginTop: "-50px" }} className="btn btn-primary">Submit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                        </div>
-                    </div>
                 </div>
             </section>
+            <div className="card-primary" style={{background:"white",borderRadius:"20px"}}>
+                <div className="card-header">
+                    <h3 className="card-title">Products</h3>
+                </div>
+                <form>
+                    <div className="card-body">
+                        <div className="form-group">
+                            <label htmlFor="exampleInputEmail1">Title</label>
+                            <input onChange={(e) => setTitle(e.target.value)} type="text" className="form-control" placeholder="Enter Title" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">Short Description</label>
+                            <input onChange={(e) => setShort(e.target.value)} type="text" className="form-control" placeholder="Enter Short Description" />
+                        </div>
+                        <div className="form-group">
+                            <label>Category</label>
+                            <select onChange={(e) => setcategory(e.target.value)} className="form-control">
+                                <option value="">Choose</option>
+                                <option value="Beachwear">Beachwear</option>
+                                <option value="Coats">Coats</option>
+                                <option value="Jackets">Jackets</option>
+                                <option value="Shirts">Shirts</option>
+                                <option value="Shorts">Shorts</option>
+                                <option value="Suits">Suits</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label>gender</label>
+                            <select onChange={(e) => setgender(e.target.value)} className="form-control">
+                                <option value="Men">Men</option>
+                                <option value="Women">Women</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">Image</label>
+                            {imageList.length > 0
+                                ? imageList.map((input, index) => (
+                                    <div style={{ display: "flex" }} key={index}>
+                                        <input type="text"
+                                            label={`input ${index + 1}`}
+                                            className="form-control"
+                                            placeholder="Image"
+                                            onChange={(event) => handleInputChange(event, index)}
+                                        />
+                                        <button
+                                            disabled={imageList.length === 1}
+                                            onClick={() => handleRemoveItem(index)}>
+                                            <span role="img" aria-label="x emoji">
+                                                ❌
+                                            </span>
+                                        </button>
+                                    </div>
+                                ))
+                                : "No item in the list "}
+                            <button onClick={handleListAdd} disabled={isDisabled} style={{ marginTop: "10px" }} type="button" class="btn btn-primary btn-block"><i class="fa fa-bell"></i> Add Image</button>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">Price</label>
+                            <input onChange={(e) => setprice(e.target.value)} type="number" className="form-control" placeholder="Enter Price" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">Discount</label>
+                            <input onChange={(e) => setdiscount(e.target.value)} type="text" className="form-control" placeholder="Enter Discount" />
+                        </div>
+                    </div>
+                    <div className="card-footer">
+                        <button type="submit" className="btn btn-primary" onClick={handleclick}>Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };

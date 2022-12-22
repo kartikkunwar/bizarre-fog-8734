@@ -50,7 +50,7 @@ const DisplayForm = () => {
                 {/* Main content */}
                 <section className="content">
                     {/* Default box */}
-                    <div className="card">
+                    <div className="card-primary" style={{background:"white",borderRadius:"20px"}}>
                         <div className="card-body p-0">
                             <table className="table table-striped projects">
                                 <thead>
