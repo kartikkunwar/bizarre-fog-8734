@@ -7,11 +7,11 @@ import FooterAdmin from '../../components/FooterAdmin';
 const AddProduct = () => {
 
     return (
-        <div>
+        <div className='wrapper'>
             <NavBarAdmin />
             <SidePannalAdmin />
             <AddForm />
-            {/* <FooterAdmin/> */}
+            <FooterAdmin/>
         </div>
     );
 };
