@@ -1,6 +1,6 @@
   
 import React, { useEffect, useState } from 'react';
-import { Box, Button, Grid, GridItem, Input,Image,Text, Flex,span } from '@chakra-ui/react'
+import { Box, Button, Grid, GridItem, Input,Image,Text, Flex,span, useToast } from '@chakra-ui/react'
 import { Link, useNavigate, } from 'react-router-dom';
 import { signup_attemp, UserSignIn } from '../Redux/action';
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
@@ -33,6 +33,8 @@ const SignUp = () => {
   const getAllUsers=()=>{
     return axios.get("https://plum-perfect-anemone.cyclic.app/sigin") 
   }
+
+  const toast = useToast()
 
   React.useEffect(()=>{
     getAllUsers()
@@ -120,44 +122,69 @@ const SignUp = () => {
         
          </form>
 
-       <div style={{ marginBottom: "100px" }} className="create">
-         
-         <br/>
-         <hr/>
-         <Box   h='300px' w='full'  mt='50px' >
-        <Box border='1px solid black' h='55px' w='full' mt='2%' >
-            <Flex>
-                <Box  h='55px' w='75px'>              
-                <FcGoogle  className='google'/>
+         <p>Already have an account?</p>
+              <Link style={{ textDecoration: "underline", marginLeft: "5px" }} to="/signin"><strong>SignIn</strong></Link>
+
+              <div style={{ marginBottom: "100px" }} className="create">
+              <p>Create new account</p>
+              <Link style={{ textDecoration: "underline", marginLeft: "5px" }} to="/signup"><strong>SignUp</strong></Link>
+              <br />
+              <hr />
+              <Box h='300px' w='full' mt='50px' onClick={() => toast({
+                  title: 'Comming Soon',
+                  description: "Auth 2.0 will be soon updated",
+                  position:"top",
+                  status: 'info',
+                  duration: 2000,
+                  isClosable: true,
+                })} >
+                <Box border='1px solid black' h='55px' w='full' mt='2%' >
+                  <Flex>
+                    <Box h='55px' w='75px'>
+                      <FcGoogle className='google' />
+                    </Box>
+                    <Box h='55px' w='full'>
+                      <Button fontSize='xl' pb='20px' textAlign='center' w='100%' h="100%"><strong>Continue with Google</strong></Button>
+                    </Box>
+                  </Flex>
                 </Box>
-                <Box  h='55px' w='full'>
-                <Button  fontSize='xl' pb='20px' textAlign='center'  w='100%'><strong>Continue with Google</strong></Button>
+                <Box border='1px solid black' mt='2%' onClick={() => toast({
+                  title: 'Comming Soon',
+                  description: "Auth 2.0 will be soon updated",
+                  position:"top",
+                  status: 'info',
+                  duration: 2000,
+                  isClosable: true,
+                })} >
+                  <Flex>
+                    <Box h='55px' w='80px'>
+                      <BsApple className='apple' />
+                    </Box>
+                    <Box h='55px' w='full'>
+                      <Button fontSize='xl' pb='20px' textAlign='center' w='100%' h="100%" alignItems={"center"}><strong>Continue with Apple</strong></Button>
+                    </Box>
+                  </Flex>
                 </Box>
-            </Flex>
-        </Box>
-        <Box  border='1px solid black' mt='2%' >
-        <Flex>
-                <Box  h='55px' w='80px'>
-                <BsApple className='apple'/>
+
+                <Box border='1px solid black' mt='2%' onClick={() => toast({
+                  title: 'Comming Soon',
+                  description: "Auth 2.0 will be soon updated",
+                  position:"top",
+                  status: 'info',
+                  duration: 2000,
+                  isClosable: true,
+                })} >
+                  <Flex >
+                    <Box h='55px' w='80px'>
+                      <BsFacebook className='facebook' />
+                    </Box>
+                    <Box h='55px' w='full'>
+                      <Button fontSize='xl' pb='20px' textAlign='center' w='100%' h="100%"><strong>Continue with Facebook</strong></Button>
+                    </Box>
+                  </Flex>
                 </Box>
-                <Box  h='55px' w='full'>
-                <Text fontSize='xl' pb='20px' textAlign='center'  w='100%'><strong>Continue with Apple</strong></Text>
-                </Box>
-            </Flex>
-        </Box>
-        
-        <Box  border='1px solid black' mt='2%' >
-        <Flex >
-                <Box  h='55px' w='80px'>
-                <BsFacebook className='facebook'/>
-                </Box>
-                <Box  h='55px' w='full'>
-                <Text fontSize='xl' pb='20px' textAlign='center'  w='100%'><strong>Continue with Facebook</strong></Text>
-                </Box>
-            </Flex>
-        </Box>
-       </Box> 
-    </div>       
+              </Box>
+            </div>     
 </Box>
 </GridItem> 
 

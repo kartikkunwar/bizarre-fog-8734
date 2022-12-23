@@ -11,7 +11,17 @@ export const addProduct = (queryParams) => (dispatch) => {
     })
 }
 
-export const getProduct = () => (dispatch) => {
+export const getProduct = (page=1) => (dispatch) => {
+    dispatch({type:types.GET_REQUEST_PRODUCT})
+    return axios.get(`https://plum-perfect-anemone.cyclic.app/product?_page=${page}`)
+    .then((res)=>{
+        return dispatch({type:types.GET_SUCCESS_PRODUCT,payload:res.data})
+    }).catch((err)=>{
+        return dispatch({type:types.GET_FAIL_PRODUCT})
+    })
+} 
+
+export const getProductevery = () => (dispatch) => {
     dispatch({type:types.GET_REQUEST_PRODUCT})
     return axios.get(`https://plum-perfect-anemone.cyclic.app/product`)
     .then((res)=>{
@@ -80,7 +90,7 @@ export const adjustItemqty=(item,qty)=>(dispatch)=>{
     dispatch({type:types.CART_ADJUST_SUCCESS,payload:{item,qty}})
 }
 
-export const getAllProduct=(dispatch)=>{
+export const getAllProduct=()=>(dispatch)=>{
    return axios.get("https://plum-perfect-anemone.cyclic.app/product")
    .then((res)=>dispatch({type:types.GET_SUCCESS_ALLPRODUCT,payload:res.data}))
    .catch((err)=>console.log(err))

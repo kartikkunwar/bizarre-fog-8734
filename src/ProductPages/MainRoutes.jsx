@@ -19,6 +19,7 @@ import Updateuser from '../Admin/User/Updateuser'
 import EditUser from '../Admin/User/EditUser'
 import { Checkout } from '../components/checkout'
 import { Payment } from '../components/cartpayment'
+import AddUser from '../Admin/User/AddUser'
 
 const MainRoutes = () => {
     return (
@@ -39,6 +40,7 @@ const MainRoutes = () => {
             <Route path='/addproduct' element={<PrivateRouteAdmin> <AddProduct/> </PrivateRouteAdmin>}/>
             <Route path='/updateuser' element={<PrivateRouteAdmin> <Updateuser/> </PrivateRouteAdmin>}/>
             <Route path='/edituser' element={<PrivateRouteAdmin> <EditUser/> </PrivateRouteAdmin>}/>
+            <Route path='/adduser' element={<PrivateRouteAdmin> <AddUser/> </PrivateRouteAdmin>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
     )

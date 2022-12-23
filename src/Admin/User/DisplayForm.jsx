@@ -19,7 +19,7 @@ const DisplayForm = () => {
     const handleClick = (id) =>{
         // console.log("This is ID"+id);
         // dispatch(deleteProduct(id)).then((dispatch(getProduct())))
-        axios.delete(`http://localhost:8080/sigin/${id}`)
+        axios.delete(`https://plum-perfect-anemone.cyclic.app/sigin/${id}`)
         .then((res)=>{
             dispatch(UserSignIn())
         })

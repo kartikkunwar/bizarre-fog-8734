@@ -1,18 +1,22 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteProduct, getProduct } from "../../Redux/action"
+import { deleteProduct, getProduct, getProductevery } from "../../Redux/action"
 import EditProduct from './EditProduct';
 
 import {Link} from "react-router-dom"
+import { useState } from 'react';
 
 const DeleteForm = () => {
 
     const dispatch = useDispatch()
 
+    const [page,setPage]=useState(1)
+
     const data = useSelector(store => store.product)
 
     useEffect(() => {
-        dispatch(getProduct())
+        dispatch(getProduct(page))
+        // dispatch(getProductevery())
     }, [data])
 
     const handleClick = (id) =>{
@@ -20,7 +24,7 @@ const DeleteForm = () => {
         dispatch(deleteProduct(id)).then((dispatch(getProduct())))
     }
 
-    // console.log(data);
+    // console.log(page);
 
     return (
         <div className="content-wrapper">
@@ -120,6 +124,8 @@ const DeleteForm = () => {
                                 }
                             </tbody>
                         </table>
+                        <button type="button" class="btn btn-block btn-primary btn-flat" disabled={page==1} onClick={()=>setPage((page)=>page-1)}>Previous</button>
+                        <button type="button" class="btn btn-block btn-primary btn-flat" disabled={data.length < 10} onClick={()=>setPage((page)=>page+1)}>Next</button>
                     </div>
                     {/* /.card-body */}
                 </div>

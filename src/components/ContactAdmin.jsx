@@ -11,10 +11,10 @@ const ContactAdmin = () => {
     return (
         <div className="wrapper">
             {/* Navbar */}
-            <NavBarAdmin/>
+            <NavBarAdmin />
             {/* /.navbar */}
             {/* Main Sidebar Container */}
-            <SidePannalAdmin/>
+            <SidePannalAdmin />
             {/* Content Wrapper. Contains page content */}
             <div className="content-wrapper">
                 {/* Content Header (Page header) */}
@@ -35,11 +35,10 @@ const ContactAdmin = () => {
                 </section>
                 {/* Main content */}
                 <section className="content">
-                    {/* Default box */}
-                    <div className="card card-solid">
-                        <div className="card-body pb-0">
-                            <div className="row">
-                            <div className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
+                    <div className="card-solid" >
+                        <div className="card-body pb-0" >
+                            <div className="row" >
+                            <div className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column" style={{height:"200px"}}>
                                     <div className="card bg-light d-flex flex-fill">
                                         <div className="card-header text-muted border-bottom-0">
                                             Full-Stack Web Developer
@@ -61,7 +60,7 @@ const ContactAdmin = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
+                                <div className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column" style={{height:"200px"}}>
                                     <div className="card bg-light d-flex flex-fill">
                                         <div className="card-header text-muted border-bottom-0">
                                             Full-Stack Web Developer
@@ -83,7 +82,7 @@ const ContactAdmin = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
+                                <div className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column" style={{height:"200px"}}>
                                     <div className="card bg-light d-flex flex-fill">
                                         <div className="card-header text-muted border-bottom-0">
                                             Full-Stack Web Developer
@@ -105,7 +104,7 @@ const ContactAdmin = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
+                                <div className="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column" style={{height:"200px",marginTop:"50px"}}>
                                     <div className="card bg-light d-flex flex-fill">
                                         <div className="card-header text-muted border-bottom-0">
                                             Full-Stack Web Developer
@@ -129,14 +128,11 @@ const ContactAdmin = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* /.card-footer */}
                     </div>
-                    {/* /.card */}
                 </section>
-                {/* /.content */}
+
             </div>
-            {/* /.content-wrapper */}
-            {/* <FooterAdmin/> */}
+            <FooterAdmin />
         </div>
 
     );
