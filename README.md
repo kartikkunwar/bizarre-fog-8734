@@ -35,7 +35,7 @@
 - Enjoyed the process of learning and creating the E-commerce website.
 
 ### Admin Credientials
--Username :- admin@gmail.com
+- Username :- admin@gmail.com
 - Password :- admin
 
 ### Screenshots
