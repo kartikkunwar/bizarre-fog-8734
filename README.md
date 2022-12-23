@@ -34,6 +34,9 @@
 - Gain excessive knowledge on application of React, Redux, Chakra UI, Bootstrap, JSON server .
 - Enjoyed the process of learning and creating the E-commerce website.
 
+### Admin Credientials
+-Username :- admin@gmail.com
+- Password :- admin
 
 ### Screenshots
 
