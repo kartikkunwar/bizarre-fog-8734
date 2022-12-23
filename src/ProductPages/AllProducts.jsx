@@ -10,28 +10,28 @@ import UserProducts from '../ProductComponents/UserProducts';
 
 const AllProducts = () => {
   return (
-      <div>
-         <Navbar/>
-         {/* <WrapperCustomer id='customer'>
+    <div>
+      <Navbar />
+      {/* <WrapperCustomer id='customer'>
             <h1>CLOTHING FOR CUSTOMER</h1>
         </WrapperCustomer> */}
-        <Box w='20%' margin='auto'  display='flex' justifyContent='center' mt='100px' >
-          <Heading color='gray'>ONE STOP</Heading>
-        </Box>
-     
-    <Wrapper color="green">
-      <WrapperFilterSort>
-        <FilterSort/>
-       
+      <Box w='20%' margin='auto' display='flex' justifyContent='center' mt='100px' >
+        <Heading color='gray'>ONE STOP</Heading>
+      </Box>
 
-      </WrapperFilterSort>
+      <Wrapper color="green">
+        <WrapperFilterSort>
+          <FilterSort />
+
+
+        </WrapperFilterSort>
 
         <WrapperUserProduct>
-          <UserProducts/>
+          <UserProducts />
         </WrapperUserProduct>
-        
-    </Wrapper>
-    <Footer/>
+
+      </Wrapper>
+      <Footer />
     </div>
   )
 }
@@ -50,7 +50,7 @@ const AllProducts = () => {
 
 const Wrapper = styled.div`
   //  border:1px solid blue;
-  // border:${({color})=>`3px solid ${color};`}
+  // border:${({ color }) => `3px solid ${color};`}
   //  display:flex;
    min-height:100vh;
    padding:10px;

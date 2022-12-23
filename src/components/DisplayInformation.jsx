@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
-import { getProduct, UserSignIn } from "../Redux/action"
+import { getProduct, getProductevery, UserSignIn } from "../Redux/action"
 
 const DisplayInformation = () => {
 
@@ -11,7 +11,7 @@ const DisplayInformation = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        dispatch(getProduct())
+        dispatch(getProductevery())
         dispatch(UserSignIn())
     }, [])
 

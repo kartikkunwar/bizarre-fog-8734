@@ -133,16 +133,10 @@ export const SingleProduct=()=>{
                     </Box><Box><Text>{dt.discount}% discount</Text></Box>
                     <Divider orientation='horizontal'  margin='auto'/>
                     <Text>inclusive of all taxes</Text>
-                    <Box  lineHeight='50px'>
-                       <Text>Select Size</Text>
-                       <Button mr='20px'>S</Button>
-                       <Button mr='20px'>M</Button>
-                       <Button mr='20px'>L</Button>
-                       <Button>XL</Button>
-                    </Box><Divider orientation='horizontal'  margin='auto'/>
+                    <Divider orientation='horizontal'  margin='auto'/>
                     <Box  display='flex' flexDirection='column' gap='30px' color='white'>
                        <Button className="btnhv" p='30px' w='60%' borderRadius='20px' colorScheme='teal' onClick={()=>cartdata(dt)}>ADD TO CART</Button>
-                       <Button className="btnhv" p='30px' w='60%' borderRadius='20px' colorScheme='teal'>ADD TO WISHLIST</Button>
+                       {/* <Button className="btnhv" p='30px' w='60%' borderRadius='20px' colorScheme='teal'>ADD TO WISHLIST</Button> */}
                     </Box>
                   
                </Box>

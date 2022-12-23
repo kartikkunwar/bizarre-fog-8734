@@ -26,7 +26,7 @@ const EditFormuser = ({nameprop,emailprop,idprop}) => {
             email
         }
         // console.log(obj);
-        axios.patch(`http://localhost:8080/sigin/${idprop}`,obj)
+        axios.patch(`https://plum-perfect-anemone.cyclic.app/sigin/${idprop}`,obj)
         .then((res)=>{
             dispatch(UserSignIn())
             navigate("/updateuser")
