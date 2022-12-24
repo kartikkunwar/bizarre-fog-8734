@@ -1,29 +1,40 @@
 import React from 'react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { UserRegister } from '../../Redux/action';
 
 const AddUserForm = () => {
 
-    const [name,setname]=useState("")
-    const [email,setemail]=useState("")
-    const [Password,setPassword]=useState("")
+    const [name, setname] = useState("")
+    const [email, setemail] = useState("")
+    const [Password, setPassword] = useState("")
 
     const dispatch = useDispatch()
 
-    const handleclick = (e) =>{
+    const navigate = useNavigate()
+
+    const handleclick = (e) => {
         e.preventDefault();
-        let obj={
-            name:name,
-            email:email,
-            password:Password
+        let obj = {
+            name: name,
+            email: email,
+            password: Password
         }
-        console.log(obj);
-        try {
-            dispatch(UserRegister(obj))
-        } catch (error) {
-            console.log(error);
+        if (obj.name == "" || obj.email == "" || obj.password == "") {
+            alert("Please Fill all the Details")
         }
+        // console.log(obj);
+        else {
+            try {
+                dispatch(UserRegister(obj))
+                navigate("/updateuser")
+                alert("User Successfully added")
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
         // console.log(obj);
     }
 

@@ -45,27 +45,27 @@ export const Footer = () => {
                     <Box mb={{ base: "50px", md: "50px" }}>
                         <Heading fontSize={{ base: '22', md: '24', lg: '26' }}>INTERNATIONAL</Heading>
                         <UnorderedList listStyleType='none'>
-                            <ListItem>Lyst - AU</ListItem>
-                            <ListItem>Lyst - CA</ListItem>
-                            <ListItem>Lyst - UK</ListItem>
-                            <ListItem>Lyst - Deutschland</ListItem>
-                            <ListItem>Lyst - España</ListItem>
-                            <ListItem>Lyst - France</ListItem>
-                            <ListItem>Lyst - Italia</ListItem>
-                            <ListItem>Lyst - Netherland</ListItem>
+                        <a href="https://www.lyst.com/en-au/"><ListItem>Lyst - AU</ListItem></a>
+                        <a href="https://www.lyst.com/en-ca/"><ListItem>Lyst - CA</ListItem></a>
+                        <a href="https://www.lyst.co.uk/"><ListItem>Lyst - UK</ListItem></a>
+                        <a href="https://www.lyst.com/de-de/"><ListItem>Lyst - Deutschland</ListItem></a>
+                        <a href="https://www.lyst.com/es-es/"><ListItem>Lyst - España</ListItem></a>
+                        <a href="https://www.lyst.com/fr-fr/"><ListItem>Lyst - France</ListItem></a>
+                        <a href="https://www.lyst.com/it-it/"><ListItem>Lyst - Italia</ListItem></a>
+                        <a href="https://www.lyst.com/nl-nl/"><ListItem>Lyst - Netherland</ListItem></a>
                         </UnorderedList>
                     </Box>
                     <Box>
                         <Heading fontSize={{ base: '22', md: '24', lg: '26' }}>HELP AND INFO</Heading>
                         <UnorderedList listStyleType='none'>
                             <a href="https://help.lyst.com/hc/en-gb"><ListItem>Help center</ListItem></a>
-                            <ListItem>About us</ListItem>
-                            <ListItem>Shipping policy</ListItem>
-                            <ListItem>Return policy</ListItem>
-                            <ListItem>Payments</ListItem>
-                            <ListItem>Terms & Conditions</ListItem>
-                            <ListItem>Developers</ListItem>
-                            <ListItem>Contact</ListItem>
+                            <a href="https://www.lyst.com/about/"><ListItem>About us</ListItem></a>
+                            <a href="https://help.lyst.com/hc/en-gb/articles/360020556180"><ListItem>Shipping policy</ListItem></a>
+                            <a href="https://help.lyst.com/hc/en-gb/articles/360020590839"><ListItem>Return policy</ListItem></a>
+                            <a href="https://help.lyst.com/hc/en-gb/articles/115004438525"><ListItem>Payments</ListItem></a>
+                            <a href="https://www.lyst.com/help/terms-and-conditions/"><ListItem>Terms & Conditions</ListItem></a>
+                            <a href="https://making.lyst.com/"><ListItem>Developers</ListItem></a>
+                            <a href="https://www.lyst.com/help/contact-us/"><ListItem>Contact</ListItem></a>
                         </UnorderedList>
                     </Box>
                 </Box>
