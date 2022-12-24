@@ -1,3 +1,4 @@
+import { useToast } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -8,6 +9,8 @@ const AddForm = () => {
     const dispatch = useDispatch()
 
     const navigate = useNavigate()
+
+    const toast = useToast()
 
     const [title, setTitle] = useState("")
     const [short, setShort] = useState("")
@@ -55,7 +58,8 @@ const AddForm = () => {
         setInputList(newInputList);
     };
 
-    const handleclick = () => {
+    const handleclick = (event) => {
+        event.preventDefault()
         let obj = {
             title,
             short,
@@ -65,8 +69,13 @@ const AddForm = () => {
             price,
             discount
         }
-        dispatch(addProduct(obj))
-        navigate("/updateproduct")
+        if (obj.title == "" || obj.short == "" || obj.category == "" || obj.price == "" || obj.discount == "" || obj.imageList[0].input == "") {
+            alert("Please fill all the details")
+        } else {
+            dispatch(addProduct(obj))
+            navigate("/updateproduct")
+            alert("Product Successfully added")
+        }
         // console.log(obj);
 
     }
@@ -88,7 +97,7 @@ const AddForm = () => {
                     </div>
                 </div>
             </section>
-            <div className="card-primary" style={{background:"white",borderRadius:"20px"}}>
+            <div className="card-primary" style={{ background: "white", borderRadius: "20px" }}>
                 <div className="card-header">
                     <h3 className="card-title">Products</h3>
                 </div>
